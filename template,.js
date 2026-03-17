@@ -1,862 +1,2856 @@
-/* ================================================================================================
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='true' b:defaultwidgetversion='3' b:js='true' b:layoutsVersion='3' b:responsive='true' b:templateVersion='1.3.0' expr:dir='data:blog.languageDirection' lang='id' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' xmlns:g='http://base.google.com/ns/1.0'>
+  <b:attr name='xmlns' value=''/>
+  <b:attr name='xmlns:b' value=''/>
+  <b:attr name='xmlns:expr' value=''/>
+  <b:attr name='xmlns:data' value=''/>
 
-    Peringatan !
+  <!-- Creator : Dipu Bhandari ======= -->
 
-===================================================================================================
+  &lt;!--<head>--&gt;
+  &lt;head&gt;
 
-    Mengubah / Menghapus file javascript (js) ini dapat mengakibatkan :
+  <script async='async' src='//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'/>
 
-    1. Kerusakan / error pada template
-    2. Menghilangkan fungsi update / perbaikan otomatis pada template
-    3. Tidak akan mendapatkan support / bantuan dari kreator template
+  <!-- == AHC == -->
 
-    Terima kasih sudah menggunakan karya saya. :)
+  <meta content='yes' name='apple-mobile-web-app-capable'/>
+  <meta expr:content='data:skin.vars.keycolor' name='apple-mobile-web-app-status-bar-style'/>
+  <meta expr:content='data:skin.vars.keycolor' name='msapplication-navbutton-color'/>
+  <meta expr:content='data:skin.vars.keycolor' name='theme-color'/>
 
-    Salam,
-    KangRian.NET
+  <meta expr:charset='data:blog.encoding'/>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
+  <link expr:href='data:blog.canonicalHomepageUrl + &quot;favicon.ico&quot;' rel='icon'/>
+  <meta expr:content='data:blog.title' property='og:site_name'/>
+  <b:if cond='data:blog.url == data:blog.canonicalHomepageUrl'>
+    <title>
+      <data:blog.title/>
+    </title>
+    <meta expr:content='data:blog.title' itemprop='name'/>
+    <meta expr:content='data:blog.title' name='twitter:title'/>
+    <meta expr:content='data:blog.title' name='twitter:image:alt'/>
+    <meta expr:content='data:blog.title' property='og:image:alt'/>
+    <meta expr:content='data:blog.title' property='og:title'/>
+    <meta expr:content='data:blog.title' name='keywords'/>
+    <meta expr:content='data:blog.title' property='article:tag'/>
+    <b:else/>
+    <b:if cond='data:blog.pageType == &quot;index&quot;'>
+      <b:if cond='data:blog.searchLabel'>
+        <title>
+          <data:blog.pageName/> &#8212;
+          <data:blog.title/>
+        </title>
+        <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' itemprop='name'/>
+        <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' name='twitter:title'/>
+        <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' name='twitter:image:alt'/>
+        <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' property='og:image:alt'/>
+        <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' property='og:title'/>
+        <meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.title' name='keywords'/>
+        <meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.title' property='article:tag'/>
+        <b:else/>
+        <b:if cond='data:blog.searchQuery'>
+          <title>
+            <data:blog.searchQuery/> &#8212;
+            <data:blog.title/>
+          </title>
+          <meta expr:content='data:blog.searchQuery + &quot; — &quot; + data:blog.title' itemprop='name'/>
+          <meta expr:content='data:blog.searchQuery + &quot; — &quot; + data:blog.title' name='twitter:title'/>
+          <meta expr:content='data:blog.searchQuery + &quot; — &quot; + data:blog.title' name='twitter:image:alt'/>
+          <meta expr:content='data:blog.searchQuery + &quot; — &quot; + data:blog.title' property='og:image:alt'/>
+          <meta expr:content='data:blog.searchQuery + &quot; — &quot; + data:blog.title' property='og:title'/>
+          <meta expr:content='data:blog.searchQuery + &quot;, &quot; + data:blog.title' name='keywords'/>
+          <meta expr:content='data:blog.searchQuery + &quot;, &quot; + data:blog.title' property='article:tag'/>
+          <b:else/>
+          <title><data:blog.title/></title>
+          <meta expr:content='data:blog.title' itemprop='name'/>
+          <meta expr:content='data:blog.title' name='twitter:title'/>
+          <meta expr:content='data:blog.title' name='twitter:image:alt'/>
+          <meta expr:content='data:blog.title' property='og:image:alt'/>
+          <meta expr:content='data:blog.title' property='og:title'/>
+          <meta expr:content='data:blog.title' name='keywords'/>
+          <meta expr:content='data:blog.title' property='article:tag'/>
+        </b:if>
+      </b:if>
+      <b:else/>
+      <b:if cond='data:blog.pageType == &quot;error_page&quot;'>
+        <title>404 -
+          <data:blog.title/>
+        </title>
+        <meta expr:content='&quot;404 — &quot; + data:blog.title' itemprop='name'/>
+        <meta expr:content='&quot;404 — &quot; + data:blog.title' name='twitter:title'/>
+        <meta expr:content='&quot;404 — &quot; + data:blog.title' name='twitter:image:alt'/>
+        <meta expr:content='&quot;404 — &quot; + data:blog.title' property='og:image:alt'/>
+        <meta expr:content='&quot;404 — &quot; + data:blog.title' property='og:title'/>
+        <meta expr:content='&quot;404, &quot; + data:blog.title' name='keywords'/>
+        <meta expr:content='&quot;404, &quot; + data:blog.title' property='article:tag'/>
+        <b:else/>
+        <b:if cond='data:blog.pageType == &quot;item&quot;'>
+          <title>
+            <data:blog.pageName/> &#8212;
+            <data:blog.title/>
+          </title>
+          <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' itemprop='name'/>
+          <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' name='twitter:title'/>
+          <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' name='twitter:image:alt'/>
+          <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' property='og:image:alt'/>
+          <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' property='og:title'/>
+          <meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.title' name='keywords'/>
+          <meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.title' property='article:tag'/>
+          <b:else/>
+          <b:if cond='data:blog.pageType == &quot;static_page&quot;'>
+            <title>
+              <data:blog.pageName/> &#8212;
+              <data:blog.title/>
+            </title>
+            <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' itemprop='name'/>
+            <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' name='twitter:title'/>
+            <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' name='twitter:image:alt'/>
+            <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' property='og:image:alt'/>
+            <meta expr:content='data:blog.pageName + &quot; — &quot; + data:blog.title' property='og:title'/>
+            <meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.title' name='keywords'/>
+            <meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.title' property='article:tag'/>
+          </b:if>
+        </b:if>
+      </b:if>
+    </b:if>
+  </b:if>
+  <meta expr:content='data:blog.metaDescription' name='description'/>
+  <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+  <meta expr:content='data:blog.metaDescription' itemprop='description'/>
 
-    Terakhir Diperbarui : 1/6/2022 @ 14:41
+  <b:if cond='data:blog.postImageUrl'>
+    <link expr:href='resizeImage(data:blog.postImageUrl, 800, &quot;1:1&quot;)' rel='image_src'/>
+    <meta expr:content='resizeImage(data:blog.postImageUrl, 800, &quot;1:1&quot;)' itemprop='image'/>
+    <meta expr:content='resizeImage(data:blog.postImageUrl, 800, &quot;1:1&quot;)' property='og:image'/>
+    <meta expr:content='resizeImage(data:blog.postImageUrl, 800, &quot;1:1&quot;)' name='twitter:image'/>
+    <meta expr:content='resizeImage(data:blog.postImageUrl, 800, &quot;1:1&quot;)' name='twitter:image:src'/>
+    <meta content='800' property='og:image:width'/>
+    <meta content='400' property='og:image:height'/>
+  </b:if>
+  <link expr:href='data:blog.canonicalUrl' rel='canonical'/>
+  <link expr:href='data:blog.canonicalUrl' hreflang='x-default' rel='alternate'/>
+  <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
+  <meta content='summary_large_image' name='twitter:card'/>
+  <meta content='article' property='og:type'/>
+  <meta content='@username' name='twitter:site'/>
+  <meta content='@username' name='twitter:creator'/>
+  <meta content='OgYroXMh7F91HZEKUvh11T9pvhb27IQNOL2dk2BQHec' name='google-site-verification'/>
+  <meta content='CFD64403EA573827C68A8A88B34308B7' name='msvalidate.01'/>
+  <meta content='index, follow' name='robots'/>
+  <meta content='index, follow' name='googlebot'/>
+  <link expr:href='data:blog.canonicalHomepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot; — Atom&quot;' rel='alternate' type='application/atom+xml'/>
+  <link expr:href='data:blog.canonicalHomepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot; — RSS&quot;' rel='alternate' type='application/rss+xml'/>
+  <link expr:href='&quot;https://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot; — Atom&quot;' rel='service.post' type='application/atom+xml'/>
+  <link href='https://www.blogger.com/openid-server.g' rel='openid.server'/>
+  <link expr:href='data:blog.canonicalHomepageUrl' rel='openid.delegate'/>
 
-================================================================================================ */
+  <include expiration='7d' path='*.css'/>
+  <include expiration='7d' path='*.js'/>
+  <include expiration='3d' path='*.gif'/>
+  <include expiration='3d' path='*.jpeg'/>
+  <include expiration='3d' path='*.jpg'/>
+  <include expiration='3d' path='*.png'/>
+  <include expiration='3d' path='*.webp'/>
+  <include expiration='3d' path='*.ico'/>
+  <meta content='sat, 02 jun 2021 00:00:00 GMT' http-equiv='expires'/>
+  <meta content='public' http-equiv='Cache-control'/>
 
-var _0x173287 = _0x4917;
-(function (_0x3e085e, _0x42cbda) {
-    var _0x3adc05 = _0x4917,
-        _0x413b41 = _0x3e085e();
-    while (!![]) {
-        try {
-            var _0x1b4d09 = -parseInt(_0x3adc05(0x2d6)) / 0x1 * (parseInt(_0x3adc05(0x213)) / 0x2) + -parseInt(_0x3adc05(0x258)) / 0x3 * (-parseInt(_0x3adc05(0x220)) / 0x4) + parseInt(_0x3adc05(0x15f)) / 0x5 * (parseInt(_0x3adc05(0x272)) / 0x6) + parseInt(_0x3adc05(0x26b)) / 0x7 * (-parseInt(_0x3adc05(0x104)) / 0x8) + parseInt(_0x3adc05(0x2a6)) / 0x9 + parseInt(_0x3adc05(0x1a6)) / 0xa * (parseInt(_0x3adc05(0x29c)) / 0xb) + -parseInt(_0x3adc05(0x1a7)) / 0xc;
-            if (_0x1b4d09 === _0x42cbda) break;
-            else _0x413b41['push'](_0x413b41['shift']());
-        } catch (_0x1ae9bd) {
-            _0x413b41['push'](_0x413b41['shift']());
-        }
+  <link href='//ajax.googleapis.com' rel='dns-prefetch'/>
+  <link href='//www.google-analytics.com' rel='dns-prefetch'/>
+  <link href='//www.googletagservices.com' rel='dns-prefetch'/>
+  <link href='//resources.blogblog.com' rel='dns-prefetch'/>
+
+  <link href='//www.blogger.com' rel='dns-prefetch'/>
+  <link href='//1.bp.blogspot.com' rel='dns-prefetch'/>
+  <link href='//2.bp.blogspot.com' rel='dns-prefetch'/>
+  <link href='//3.bp.blogspot.com' rel='dns-prefetch'/>
+  <link href='//4.bp.blogspot.com' rel='dns-prefetch'/>
+  <link href='//lh3.googleusercontent.com' rel='dns-prefetch'/>
+  <link href='//blogger.googleusercontent.com' rel='dns-prefetch'/>
+
+  <link href='//www.youtube.com' rel='dns-prefetch'/>
+  <link href='//img.youtube.com' rel='dns-prefetch'/>
+
+  <link href='//github.com' rel='dns-prefetch'/>
+  <link href='//cdn.rawgit.com' rel='dns-prefetch'/>
+  <link href='//cdn.jsdelivr.net' rel='dns-prefetch'/>
+  <link href='//dummyimage.com' rel='dns-prefetch'/>
+  <link href='//i.ibb.co' rel='dns-prefetch'/>
+
+  <!-- == / AHC == -->
+
+  <b:skin><![CDATA[
+/*
+
+<!-- VARIABLE -->
+
+<Variable name="keycolor" description="Main Color" type="color" default="#55626f" value="#8a5a3b"/>
+
+<Group description="Utama">
+
+    <Variable
+    description="Latar Cerah"
+    name="silver"
+    type="color"
+    default="#f6f6f6"
+    value="#f6efe7"/>
+
+    <Variable
+    description="Latar Gelap"
+    name="gray"
+    type="color"
+    default="#838383"
+    value="#75685f"/>
+
+    <Variable
+    description="Teks"
+    name="teks"
+    type="color"
+    default="#232323"
+    value="#1c1612"/>
+
+
+    <Variable name="lebar" description="Lebar"
+    type="length"
+    min="768px"
+    max="1280px"
+    default="1140px"
+    value="1140px"/>
+
+    <Variable name="radius" description="Radius 1"
+    type="length"
+    min="4px"
+    max="12px"
+    default="4px"
+    value="8px"/>
+
+    <Variable name="radius2" description="Radius 2"
+    type="length"
+    min="8px"
+    max="16px"
+    default="8px"
+    value="16px"/>
+
+    <Variable name="header.height" description="Tinggi Header"
+    type="length"
+    min="60px"
+    max="100px"
+    default="80px"
+    value="60px"/>
+
+    <Variable name="footer.height" description="Tinggi Footer"
+    type="length"
+    min="100px"
+    max="140px"
+    default="120px"
+    value="100px"/>
+
+</Group>
+
+<Group description="Komentar Baru Blogger (Contempo, Soho, Emporio, Notable)">
+    <Variable name="body.background" description="Body Background" type="background" color="#dddfe2" default="#dddfe2 none repeat scroll top left"  value="#dddfe2 none repeat scroll top left"/>
+    <Variable name="body.font" description="Font" type="font" default="normal 400 14px Roboto, Arial, sans-serif"  value="normal 400 14px Arial,sans-serif"/>
+    <Variable name="body.text.color" description="Text Color" type="color" default="#1d2129"  value="#000000"/>
+    <Variable name="body.text.font" description="1" type="font" default="$(body.font)"  value="normal 400 14px Roboto,Arial,sans-serif"/>
+    <Variable name="posts.background.color" description="2" type="color" default="transparent"  value="rgba(0,0,0,0)"/>
+    <Variable name="body.link.color" description="3" type="color" default="$(keycolor)"  value="#434343"/>
+    <Variable name="body.link.visited.color" description="4" type="color" default="$(keycolor)"  value="#434343"/>
+    <Variable name="body.link.hover.color" description="5" type="color" default="#1d2129"  value="#000000"/>
+    <Variable name="blog.title.font" description="6" type="font" default="$(body.text.font)"  value="normal 400 14px Roboto, Arial, sans-serif"/>
+    <Variable name="blog.title.color" description="7" type="color" default="#fff"  value="#ffffff"/>
+    <Variable name="header.icons.color" description="8" type="color" default="#fff"  value="#ffffff"/>
+    <Variable name="tabs.font" description="9" type="font" default="$(body.text.font)"  value="normal 400 14px Arial,sans-serif"/>
+    <Variable name="tabs.color" description="10" type="color" default="#ccc"  value="#cbcbcb"/>
+    <Variable name="tabs.selected.color" description="11" type="color" default="#fff"  value="#ffffff"/>
+    <Variable name="tabs.overflow.background.color" description="12" type="color" default="#fff"  value="#ffffff"/>
+    <Variable name="tabs.overflow.color" description="13" type="color" default="$(body.text.color)"  value="#1d2129"/>
+    <Variable name="tabs.overflow.selected.color" description="14" type="color" default="$(body.text.color)"  value="#1d2129"/>
+    <Variable name="posts.title.color" description="15" type="color" default="$(body.text.color)"  value="#1d2129"/>
+    <Variable name="posts.title.font" description="16" type="font" default="$(body.text.font)"  value="normal 400 14px Arial,sans-serif"/>
+    <Variable name="posts.text.font" description="17" type="font" default="$(body.text.font)"  value="normal 400 14px Arial,sans-serif"/>
+    <Variable name="posts.text.color" description="18" type="color" default="$(body.text.color)"  value="#1d2129"/>
+    <Variable name="posts.icons.color" description="19" type="color" default="$(body.text.color)"  value="#6c6f74"/>
+    <Variable name="labels.background.color" description="20" type="color" default="$(keycolor)"  value="#434343"/>
+</Group>
+
+*/
+
+:root {
+
+--key: $(keycolor);
+--black: $(teks);
+--silver: $(silver);
+--gray: $(gray);
+--border: rgba(0 0 0 / 7.5%);
+
+--radius: $(radius);
+--lebar: $(lebar);
+--header_height: $(header.height);
+--footer_height: $(footer.height);
+
+--card_shadow : 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+--inset_shadow : inset 0 -1px 0 0 rgba(0 0 0 / 10%);
+}
+
+*,*:before,*:after { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; -webkit-font-smoothing: subpixel-antialiased; -moz-osx-font-smoothing: grayscale; -webkit-text-size-adjust: 100%; box-sizing: border-box; word-wrap: break-word; outline: 0; padding: 0; margin: 0; } @media only screen and (max-width: 768px) { * { cursor: default !important; } } @media only screen and (min-width: 1280px) { *::-webkit-scrollbar { width: 5px; } *::-webkit-scrollbar-track { background: white; } *::-webkit-scrollbar-thumb { background: var(--key); } } ::-moz-selection { background: var(--border); } ::selection { background: var(--border); } input { background-color: transparent; } input::-webkit-outer-spin-button,input::-webkit-inner-spin-button { /* display: none; <- Crashes Chrome on hover */ -webkit-appearance: none; margin: 0; /* <-- Apparently some margin are still there even though it's hidden */ } input[type=number] { -moz-appearance: textfield; /* Firefox */ } button { display: inline-block; vertical-align: middle; line-height: 1; border: 1px solid var(--border); padding: 0 15px; height: 40px; cursor: pointer; box-shadow: inset 0 -2px 0 0 var(--border); font-size: 100%; border-radius: var(--radius); background-color: transparent; } button:active { box-shadow: none; } svg { display: block; max-width: 100%; height: auto; margin: auto; } img,iframe { display: block; margin: auto; max-width: 100%; height: auto; transition: opacity .5s; border: 0; } img[data-src],iframe[data-src] { opacity: 0; } .video { display: block; padding-top: 56.25%; position: relative; background: #000; overflow: hidden; border-radius: var(--radius); max-width: 100%; } .video iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; } .pop-content .video { margin: -20px -20px; padding-top: calc(56.25% + 25px); border-radius: 0; width: calc(100% + 40px); max-width: calc(100% + 40px); } h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: 400; } a { text-decoration: none; color: var(--gray); cursor: pointer; } b { font-weight: 600; } hr { border: 0; border-bottom: 1px solid var(--border); } @keyframes spinner { to { transform: rotate(360deg); } } .loading { position: relative; min-height: 40px; } .loading:before { content: ''; background: white; opacity: .9; position: absolute; z-index: 1; top: 0; left: 0; width: 100%; height: 100%; } .loading:after { content: ''; box-sizing: border-box; position: absolute; z-index: 2; top: 50%; left: 50%; width: 30px; height: 30px; margin-top: -15px; margin-left: -15px; border-radius: 50%; border: 1px solid var(--border); border-top-color: var(--key); animation: spinner .6s linear infinite; } body.loading:before { position: fixed; z-index: 9999; } body.loading:after { position: fixed; z-index: 10000; width: 40px; height: 40px; margin-top: -20px; margin-left: -20px; } .wrapper { width: var(--lebar); max-width: calc(100% - 40px); margin: auto; } body { background: white; color: var(--black); min-height: 100vh; font-size: 17px; line-height: 1.7; } @media only screen and (max-width: 768px) { body { font-size: 15px; line-height: 1.5; } } #header { position: sticky; top: 0; z-index: 100; background: var(--key); box-shadow: inset 0 -1px 0 0 var(--border); } #header.shadow { box-shadow: inset 0 -1px 0 0 var(--border), 0 1px 5px var(--border); } #header .wrapper { max-width: 100%; } #header #header-section { display: grid; grid-template-columns: auto 1fr auto auto; } #header #header-section .widget { border-right: 1px solid var(--border); } #header #header-section .widget:last-of-type { border-right: 0; } #header #header-section .widget>a[class] { display: flex; height: var(--header_height); padding: 0 20px; font-weight: 600; font-size: 120%; line-height: 1; color: white; } #header #header-section .widget>a[class]>* { display: block; margin: auto 0; } #header #header-section .widget>a[class] svg { fill: white; } #header #header-section a[class=logo] span img { display: inline-block; vertical-align: middle; max-height: 30px; width: auto; } #header #header-section a[class=logo] span small { display: inline-block; vertical-align: middle; margin-left: 15px; font-weight: normal; font-size: 70%; opacity: .7; font-style: italic; } #header #header-section #pop-menu { text-align: center; } #header #header-section #pop-menu ul,#header #header-section #pop-menu ul li,#header #header-section #pop-menu ul li a { display: block; } #header #header-section #pop-menu>ul li a { display: block; padding: 20px; border-bottom: 1px solid var(--border); } #header #header-section #pop-menu>ul { margin: -20px -20px 20px; } #header #header-section #pop-menu>ul li.dropdown>ul.sub { display: none; background: var(--silver); } #header #header-section #pop-menu>ul li.dropdown a i svg { transition: .2s; } #header #header-section #pop-menu>ul li.dropdown.active a i svg { transform: rotate(-180deg); } #header #header-section #pop-menu small { display: block; font-size: 80%; letter-spacing: 1px; } #header #header-section #pop-search form { display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; } #header #header-section #pop-search form input,#header #header-section #pop-search form button { display: block; width: 100%; border: 1px solid var(--border); background: transparent; color: var(--black); padding: 10px 20px; font-size: 90%; border-radius: var(--radius); } #header #header-section #pop-search form input { text-overflow: ellipsis; } #header #header-section #pop-search form button { cursor: pointer; background: var(--key); box-shadow: var(--inset_shadow); height: auto; } #header #header-section #pop-search form button svg { fill: white; } #header #header-section #pop-search form input:focus { border-color: var(--key); } #header #header-section #pop-search form nav { grid-column: 1/3; font-size: 80%; } #header #header-section #pop-search form nav ul { display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px; } #header #header-section #pop-search form nav ul li,#header #header-section #pop-search form nav ul li a { display: block; min-width: 0; } #header #header-section #pop-search form nav ul li a { display: grid; grid-template-columns: 1fr auto; grid-gap: 15px; padding: 15px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 90%; box-shadow: var(--inset_shadow); } #header #header-section #pop-search form nav ul li a:hover { color: var(--key); } #header #header-section #pop-search form nav ul li a:active { box-shadow: none; } #header #header-section #pop-search form nav ul li a>* { display: flex; align-items: center; } #header #header-section #pop-search form nav ul li a span { min-width: 0; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 100%; } #header #header-section #pop-search form nav ul li a small { padding: 5px 15px; border-radius: 100px; background: var(--key); color: white; line-height: 1; font-weight: 600; transition: .1s; } #header #header-section #pop-search form nav ul li:hover a small { background: var(--key); color: white; } @media only screen and (max-width: 768px) { #header #header-section #pop-search form nav ul { grid-template-columns: repeat(2, 1fr); grid-gap: 10px; } #header #header-section a[class=logo] span small { display: none; } } #main { padding: 40px 0; } #main.flex { display: flex; min-height: calc(100vh - var(--header_height) - var(--footer_height)); } @media only screen and (max-width: 1280px) { #main { padding: 20px 0; } } #slide-banner { display: grid; grid-template-columns: 2fr 1fr; grid-gap: 20px; margin-bottom: 40px; } #slide-banner #slideshow-home .youtube a { display: block; position: relative; padding-top: 50%; } #slide-banner #slideshow-home .youtube a img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover } #slide-banner #slideshow-home .youtube a svg { display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: auto; height: 20%; opacity: 1; visibility: visible; } #slide-banner #slideshow-home .youtube:hover a svg { transform: translate(-50%, -50%) scale(1.1); } /*#slide-banner #slideshow-home .youtube a svg .bg { fill: rgba(0 0 0 / 50%); transition: .1s; } */#slide-banner #slideshow-home .youtube a svg .bg { fill: rgb(255 0 0 / 70%); } #slide-banner #slideshow-home .youtube a svg .play { fill: white; } #slide-banner #slideshow-home a { display: block; } #slide-banner #slideshow-home img { display: block; width: 100%; border-radius: var(--radius); box-shadow: var(--card_shadow); } #slide-banner #banner-home img { border-radius: var(--radius); } @media only screen and (max-width: 768px) { #slide-banner { grid-template-columns: 1fr; grid-gap: 0; margin: -20px -20px 0; } #slide-banner #slideshow-home img { border-radius: 0; box-shadow: none; } #slide-banner #banner-home { position: relative; z-index: 1; box-shadow: 0 -5px 0 0 var(--border); } #slide-banner #banner-home img { border-radius: 0; box-shadow: none; } } #label-banner { margin-bottom: 20px; } #label-banner img { border-radius: var(--radius); margin-left: -20px; max-width: calc(100% + 40px); width: calc(100% + 40px); } @media only screen and (max-width: 1280px) { #label-banner { margin-top: -20px; } #label-banner img { border-radius: 0; } } #main article .post-body .hide { display: none; } #main header.page-title { position: sticky; top: calc(var(--header_height) - 1px); z-index: 99; margin: 0 -20px; display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; padding: 15px 20px; border-radius: 0 0 var(--radius) var(--radius); box-shadow: var(--card_shadow); overflow: hidden; background: white; } #main header.page-title>* { display: flex; min-width: 0; } #main header.page-title>*>* { display: block; margin: auto 0; line-height: 1.2; } #main header.page-title h2 { display: inline-block; letter-spacing: 1px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; } #main header.page-title h3 { font-size: 90%; } #main header.page-title #sort select { height: 40px; padding: 0 20px; border: 1px solid var(--border); background: transparent; border-radius: 100px; /* hide arrow */ -webkit-appearance: none; -moz-appearance: none; text-indent: 1px; text-overflow: ellipsis; width: 100%; color: var(--black); background: transparent no-repeat; background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z'/%3E%3C/svg%3E"); background-size: auto 15px; background-position: calc(100% - 20px) center; padding-right: 30px; } #main header.page-title #sort select option { font-size: 120%; } #main header.page-title #sort select::-ms-expand { display: none; } #main .is_single article.is_page h1 { font-size: 150%; } #main .is_single article.is_post { display: grid; grid-template-columns: 1fr 1fr; grid-gap: 40px; margin-bottom: 40px; } @media only screen and (max-width: 768px) { #main .is_single article.is_post { grid-template-columns: 1fr; } } #main .is_single article .sticky { position: sticky; top: 100px; width: 100%; } #main .is_single #pop-bagikan .grid-preview { display: grid; grid-template-columns: auto 1fr; grid-gap: 20px; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 20px; padding: 20px; } #main .is_single #pop-bagikan .grid-preview img { border-radius: var(--radius); box-shadow: var(--card_shadow); } #main .is_single #pop-bagikan .grid-preview .info { display: flex; align-items: center; } #main .is_single #pop-bagikan .grid-preview .info .wrap { width: 100%; } #main .is_single #pop-bagikan .grid-preview .info .wrap h4 { font-weight: 600; } #main .is_single #pop-bagikan .grid-preview .info .wrap small { display: block; color: var(--gray); } #main .is_single #pop-bagikan .grid { display: grid; grid-template-columns: repeat(4, 1fr); } #main .is_single #pop-bagikan .grid>* { text-align: center; } #main .is_single #pop-bagikan .grid i { display: flex; width: 50px; height: 50px; border-radius: 50px; box-shadow: var(--card_shadow); margin: auto; align-items: center; justify-content: center; transition: .1s; } #main .is_single #pop-bagikan .grid a:active i { box-shadow: none; } #main .is_single #pop-bagikan .grid i.whatsapp svg { fill: #0DC143; } #main .is_single #pop-bagikan .grid i.telegram svg { fill: #2199CB; } #main .is_single #pop-bagikan .grid i.facebook svg { fill: #1B74E4; } #main .is_single #pop-bagikan .grid i.twitter svg { fill: #1d9bf0; } #main .is_single #pop-bagikan .grid .copy { padding: 20px; grid-column: 1/5; display: grid; grid-template-columns: 1fr auto; border-top: 1px solid var(--border); margin: 20px -20px -20px; border-radius: 0; } #main .is_single #pop-bagikan .grid .copy input,#main .is_single #pop-bagikan .grid .copy button { width: 100%; border: 0; padding: 10px 20px; background: transparent; border-radius: 100px; } #main .is_single #pop-bagikan .grid .copy input { text-overflow: ellipsis; color: var(--black); } #main .is_single #pop-bagikan .grid .copy button { border: 1px solid var(--border); color: var(--key); cursor: pointer; background: transparent; font-size: 80%; } #main .is_single article.is_post .title { font-size: 150%; margin-bottom: 15px; } #main .is_single article.is_post .price { font-size: 130%; } #main .is_single article.is_post .price>* { display: inline-block; vertical-align: middle; line-height: 1; } #main .is_single article.is_post .price b { color: var(--key); } #main .is_single article.is_post .price small { background: var(--key); color: white; font-size: 60%; padding: 5px 10px; margin-right: 5px; border-radius: var(--radius); } #main .is_single article.is_post .price s { opacity: .6; margin-right: 5px; font-size: 90%; } #main .is_single article.is_post .price span { opacity: .6; font-size: 80%; margin-left: 5px; } #main .is_single article.is_post .option { display: grid; grid-gap: 20px; font-size: 90%; } #main .is_single article.is_post .option .item { display: grid; grid-template-columns: 1fr 2.5fr; grid-gap: 20px; } #main .is_single article.is_post .option .item fieldset { border: 0; } #main .is_single article.is_post .option .item.variant button { border: 1px solid var(--border); margin: 0 5px 10px 0; height: auto; padding: 10px 15px; font-size: 90%; } #main .is_single article.is_post .option .item.variant button.active { border: 1px solid var(--key); color: var(--key); } #main .is_single article.is_post .option .item.qty fieldset { display: grid; grid-template-columns: 1fr 1.5fr 1fr; grid-gap: 5px; } #main .is_single article.is_post .option .item.qty fieldset>* { display: block; width: 100%; line-height: 1; height: 40px; border: 1px solid var(--border); text-align: center; } #main .is_single article.is_post .option .item.qty fieldset input { border-radius: var(--radius); } #main .is_single article.is_post .marketplace { color: gray; } #main .is_single article.is_post .marketplace a { display: inline-block; vertical-align: middle; white-space: nowrap; line-height: 1; font-size: 80%; margin-right: 5px; margin-top: 10px; border: 1px solid var(--border); padding: 7.5px 15px; border-radius: var(--radius); box-shadow: inset 0 -2px 0 0 var(--border); } #main .is_single article.is_post .marketplace a:active { box-shadow: none; } #main .is_single article.is_post .marketplace a img { display: inline-block; vertical-align: middle; height: 20px; border-radius: var(--radius); } #main .is_single article.is_post .cta { display: grid; grid-template-columns: auto 1fr; grid-gap: 10px; margin: 20px 0; } #main .is_single article.is_post .cta.disabled { position: relative; opacity: .5; } #main .is_single article.is_post .cta.disabled:after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: no-drop; } #main .is_single article.is_post .cta button { display: block; width: 100%; height: 60px; border: 1px solid var(--key); color: var(--key); padding: 0 20px; } #main .is_single article.is_post .cta button svg { display: inline-block; vertical-align: middle; width: 24px; height: 24px; fill: var(--key); } #main .is_single article.is_post .cta button.cart-add { background: var(--key); color: white; } #main .is_single article.is_post .cta button.cart-add svg { margin-right: 5px; fill: white; } #main .is_single article.is_post .cta button.buy { } #main .is_single article .attr { display: none; /*display: grid;*/ grid-template-columns: 1fr auto; grid-gap: 40px 20px; font-size: 80%; background: white; margin-top: 40px; } #main .is_single article .attr>span { display: flex; align-items: center; } #main .is_single article .attr a { color: var(--black); } #main .is_single article .attr img { display: inline-block; vertical-align: middle; border-radius: 100px; margin-right: 10px; box-shadow: 0 0 0 1px var(--border); } #main .is_single article.is_post figure.cover { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 20px; margin-bottom: 40px; } #main .is_single article.is_post figure.cover a:first-of-type { grid-column: 1/5; } #main .is_single article.is_post figure.cover a img { width: 100%; border-radius: var(--radius); box-shadow: var(--card_shadow); } #main .is_single article.is_post figure.cover a:active img { box-shadow: none; } #main .is_single article .breadcrumb { display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; color: var(--gray); font-size: 80%; } #main .is_single article .breadcrumb ol { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } #main .is_single article .breadcrumb a.bagikan { display: flex; border-left: 1px solid var(--border); padding-left: 20px; } #main .is_single article .breadcrumb a.bagikan>i { display: block; margin: auto; } #main .is_single article .breadcrumb ol,#main .is_single article .breadcrumb ol li { display: inline; } #main .is_single article .breadcrumb .pager { display: inline-block; margin: 5px; opacity: .5; } #main .is_single article .update { display: block; padding: 10px 20px; border: 1px solid var(--border); border-radius: var(--radius); margin-top: 40px; font-size: 90%; } #main .is_single article .post-body { margin-top: 30px; padding-top: 30px; font-size: 90%; line-height: 1.6; border-top: 1px solid var(--border); } #main .is_single article.is_post .post-body { } #main .is_single article .post-body a { color: var(--key); margin: auto !important; text-decoration: underline; } #main .is_single article .post-body .tr-caption-container { color: var(--gray); } #main .is_single article .post-body img { display: block; margin: 10px auto; border-radius: var(--radius); box-shadow: var(--card_shadow); border: 1px solid var(--border); } #main .is_single article .post-body .video { display: block; margin: 10px auto; } #main .is_single article .post-body blockquote { background: var(--silver); padding: 30px; border: 1px solid var(--border); border-radius: var(--radius); font-size: 105%; margin-top: 20px; } #main .is_single article .post-body blockquote mark { display: inline-block; background: var(--key); color: white; border-radius: 2px; padding: 0 2px; } #main .is_single article .post-body code { font-family: monospace, monospace; } #main .is_single article .post-body pre { overflow: hidden; box-shadow: inset 0 0 0 1px var(--black); border-radius: var(--radius); font-size: 90%; margin-top: 20px; } #main .is_single article .post-body pre code { display: block; max-width: 100%; overflow-x: auto; padding: 20px; } #main .is_single article .post-body pre header { display: block; background: var(--black); color: white; padding: 10px 20px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; } #main .is_single article .post-body pre code mark { display: inline-block; background: var(--key); color: white; border-radius: 2px; padding: 0 2px; } #main .is_single article .post-body h2 { font-size: 200%; font-weight: 600; border-top: 1px solid var(--border); padding-top: 20px; padding-bottom: 10px; margin: 20px 0; } #main .is_single article .post-body h3 { font-size: 150%; font-weight: 600; margin-top: 20px; } #main .is_single article .post-body ol,#main .is_single article .post-body ul { margin-left: 2em; padding: 20px 0; } #main .is_single article .post-body ol>li,#main .is_single article .post-body ul>li { margin-bottom: 10px; } #main .is_single article .post-body ol>li:last-of-type,#main .is_single article .post-body ul>li:last-of-type { margin-bottom: 0; } #main .is_single article .post-body .table { border: 1px solid var(--border); max-width: 100%; overflow-x: auto; border-radius: var(--radius); margin-top: 20px; } #main .is_single article .post-body .table table { width: 100%; border-collapse: collapse; } #main .is_single article .post-body .table table thead th { border-bottom: 1px solid var(--border); } #main .is_single article .post-body .table table th,#main .is_single article .post-body table td { padding: 10px; text-align: center; vertical-align: middle; } #main .is_single article .post-body .table table tbody tr:nth-child(odd) td { background: var(--silver); } #main .is_single article .post-body .btn { cursor: pointer; text-decoration: none !important; display: inline-block; vertical-align: middle; padding: 10px 24px; border-radius: var(--radius); border: 1px solid var(--border); color: var(--key); box-shadow: inset 0 -2px 0 0 rgba(0 0 0 / 10%); } #main .is_single article .post-body .btn:active { box-shadow: none; } #main .is_single article .post-body .btn.cta { background: var(--key); border: 1px solid var(--key); color: white; } #main .is_single article .post-body .btn.cta i.icon { color: #fff !important; } #main .is_single article .post-body .btn.block { display: block; text-align: center; } #main .is_single article .post-body .btn-group { display: flex; } #main .is_single article .post-body .btn-group .btn { width: 100%; margin-right: 20px !important; } #main .is_single article .post-body .btn-group .btn:last-of-type { margin-right: 0 !important; } #main .is_single article #comments .comments-title { display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; border: 1px solid var(--border); padding: 20px; border-radius: var(--radius); font-size: 90%; } #main .is_single article a.comments-add { text-decoration: none !important; display: block; padding: 20px; border: 1px solid var(--border); text-align: center; border-radius: var(--radius); margin-top: 40px; font-size: 90%; } #main .is_single article #comments iframe.comment-form { display: block; border: none; width: 100%; height: 364px; } #main .is_single article #comments .comment-actions,#main .is_single article #comments .comment-replies,#main .is_single article #comments .continue,#main .is_single article #comments .loadmore { display: none; } #main .is_single article #comments #comments-block { display: grid; grid-gap: 40px; margin-bottom: 40px; } #main .is_single article #comments #comments-block .comment { display: grid; grid-template-columns: auto 1fr; grid-gap: 20px; } #main .is_single article #comments #comments-block .comment .avatar-image-container { border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; border-radius: 60px; } #main .is_single article #comments #comments-block .comment .avatar-image-container img { border-radius: 50px; width: 50px; height: 50px; object-fit: cover; } #main .is_single article #comments #comments-block .comment .comment-block { direction: ltr; display: block; } #main .is_single article #comments #comments-block .comment .comment-author { line-height: 1; } #main .is_single article #comments #comments-block .comment .comment-author .datetime { display: block; direction: ltr; line-height: 1; margin-top: 10px; margin-bottom: 10px; font-size: 80%; opacity: .8; } #main .is_single article #comments #comments-block .comment .comment-author .user { font-style: normal; font-weight: 600; } #main .is_single article #comments #comments-block .comment .comment-author .user a { color: var(--black); } #main .is_single article #comments #comments-block .comment .comment-author .icon.blog-author:before { content: 'check_circle'; font-family: 'Material Icons'; display: inline-block; margin-top: -5px; margin-left: 5px; vertical-align: middle; color: var(--key); font-size: 24px; height: 24px; width: 24px; overflow: hidden; } #main .is_single article #comments #comments-block .comment .comment-text { word-break: break-word; direction: ltr; margin-top: 10px; padding: 20px; border-radius: 0 var(--radius) var(--radius) var(--radius); border: 1px solid var(--border); box-shadow: var(--card_shadow); line-height: 1.5; display: inline-block; transition: .1s; } #main .is_single article #comments #comments-block .comment .comment-text pre code { display: block; font-size: 90%; max-width: 55vw; overflow-x: auto; padding: 20px; border: 1px solid var(--black); border-radius: var(--radius); } #main .is_single article #comments #comments-block .comment .comment-text .comment-timestamp { font-size: 80%; opacity: .5; } #main .is_single article #comments #comments-block .comment.focus .comment-text { border-color: var(--key); } #main .is_single article #comments #comments-block .comment:nth-child(even) { direction: rtl; text-align: right; } #main .is_single article #comments #comments-block .comment:nth-child(even) .comment-author { text-align: right; } #main .is_single article #comments #comments-block .comment:nth-child(even) .comment-text { border-radius: var(--radius) 0 var(--radius) var(--radius); text-align: left; } #main .is_single #blog-pager { margin-top: 40px; border-top: 2px dashed var(--border); padding-top: 40px; display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 40px; } @media only screen and (max-width: 768px) { #main .is_single #blog-pager { grid-template-columns: 1fr; } } #main .is_single #blog-pager a { display: grid; grid-template-columns: auto 1fr; grid-gap: 20px; border-radius: var(--radius); box-shadow: var(--card_shadow); font-size: 90%; padding: 20px; } #main .is_single #blog-pager a b { color: var(--key); } #main .is_single #blog-pager a .flex { display: flex; align-items: center; } #main .is_single #blog-pager a .flex.right { justify-content: end; } #main .is_single #blog-pager a:active { box-shadow: none; } #main .is_single #blog-pager a:nth-child(2) { text-align: right; direction: rtl; } #main .is_single #blog-pager a:nth-child(2)>* { direction: ltr; } #main .is_single #blog-pager a figure { display: block; min-width: 60px; } #main .is_single #blog-pager a figure img { border-radius: var(--radius); width: 100%; } #main .is_single #blog-pager a small { color: var(--gray); } #main .is_single #blog-pager a h3 { line-height: 1.4; } #main .is_loop { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 40px 20px; margin: 40px 0; } @media only screen and (max-width: 768px) { #main .is_loop { grid-template-columns: repeat(2, 1fr); } } #main .is_loop article { min-width: 0; position: relative; transition: .1s; } #main .is_loop article:active { box-shadow: none; } #main .is_loop article figure.cover a { display: block; margin-bottom: 20px; } #main .is_loop article figure.cover a img { width: 100%; box-shadow: var(--card_shadow); border-radius: var(--radius); } #main .is_loop article figure.cover a:active img { box-shadow: none; } #main .is_loop article.empty figure.cover a img { opacity: .5; } #main article.empty figure.cover a { position: relative; } #main article.empty figure.cover a span.empty { display: flex; position: absolute; background: rgba(0 0 0 / 50%); color: white; text-align: center; border-radius: 0 var(--radius) 0 var(--radius); bottom: 0; left: 0; font-size: 70%; padding: 7.5px 15px; } #main article.empty figure.cover a span.empty b { display: block; margin: auto; font-weight: normal; } #main .is_loop article a { display: block; transition: .1s; color: var(--black); } #main .is_loop article .title { line-height: 1.4; font-size: 80%; font-weight: 600; margin-bottom: 5px; display: block; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } #main .is_loop article .price { display: block; font-size: 80%; } #main .is_loop article .price small { position: absolute; top: 20px; right: 0; background: var(--key); color: white; border-radius: var(--radius) 0 0 var(--radius); padding: 7.5px 10px; font-weight: 600; font-size: 90%; letter-spacing: .5px; box-shadow: var(--card_shadow); line-height: 1; } #main .is_loop article .price s,#main .is_loop article .price span { display: inline-block; color: var(--gray); } #main .is_loop article .price s { margin-right: 2.5px; } #main .is_loop article .price span { margin-left: 2.5px; } #main .is_loop article .price b { color: var(--key); } #main .is_loop article .post-body { display: none; } #main .loadmore-btn { margin-top: 40px; display: block; padding: 20px; text-align: center; border-radius: var(--radius); border: 1px solid var(--border); font-size: 90%; letter-spacing: 1px; overflow: hidden; } #main .loadmore-btn.loading { text-indent: -9999px; } #feature { padding: 60px 0; background: var(--key); color: white; } #feature .feature-section { display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 30px; } #feature .feature-section .widget .grid { display: flex; } #feature .feature-section .widget .grid { margin: auto; display: grid; grid-template-columns: auto 1fr; grid-gap: 15px; font-size: 90%; } #feature .feature-section .widget .grid .icon { display: flex; width: 80px; border-radius: var(--radius); border-right: 1px solid var(--border); } #feature .feature-section .widget .grid .icon img { display: block; margin: auto; max-width: 60%; fill: var(--key); } #feature .feature-section .widget:hover .icon img { transform: scale(1.1); } #feature .feature-section .widget .grid .info { display: flex; line-height: 1.4; } #feature .feature-section .widget .grid .info .wrap { display: block; margin: auto; width: 100%; } #feature .feature-section .widget .grid .info h3 { font-weight: 600; margin-bottom: 5px; } #feature .feature-section .widget .grid .info p { font-size: 90%; opacity: .8; } @media only screen and (max-width: 1280px) { #feature { overflow: auto; } #feature .wrapper { max-width: 100%; } #feature .feature-section { display: block; white-space: nowrap; padding-left: 20px; } #feature .feature-section .widget { display: inline-block; width: 65%; max-width: 400px; border-right: 1px solid var(--border); padding-right: 20px; margin-right: 20px; } #feature .feature-section .widget:last-of-type { border-right: 0; padding-right: 0; } #feature .feature-section .widget .grid h3, #feature .feature-section .widget .grid p { white-space: normal; } #feature .feature-section .widget .grid { grid-template-columns: 1fr; text-align: center; } #feature .feature-section .widget .grid .icon { margin: auto; border-right: 0; } } #contact { display: grid; grid-template-columns: 2fr 1.5fr; grid-gap: 40px; padding: 40px 0; font-size: 90%; } #contact .shippay { grid-column: 1/3; } #contact .shippay { border-top: 1px solid var(--border); padding-top: 40px; line-height: 1; } #contact .shippay figure { display: inline-block; vertical-align: middle; margin-left: 10px; margin-bottom: 10px; border: 1px solid var(--border); border-radius: 100px; padding: 5px 15px; line-height: 1; } #contact .shippay figure img { display: inline-block; vertical-align: middle; max-height: 24px; } #contact .shippay figure figcaption { display: inline-block; font-size: 90%; vertical-align: middle; margin-left: 10px; } #contact .widget:last-of-type { text-align: center; padding-left: 40px; border-left: 1px solid var(--border); } @media only screen and (max-width: 960px) { #contact { grid-template-columns: 1fr; text-align: center; } #contact .widget:last-of-type { border-top: 1px solid var(--border); padding-top: 40px; padding-left: 0; border-left: 0; } #contact .shippay { grid-column: auto; text-align: center; } #contact .shippay b { display: block; margin-bottom: 20px; } #contact .shippay figure { margin: 5px; } } #contact .widget h3 { font-weight: 600; font-size: 120%; margin-bottom: 20px; color: var(--key); } #contact .widget p { color: var(--gray); } #footer { border-top: 1px solid var(--border); display: flex; height: var(--footer_height); align-items: center; font-size: 90%; line-height: 1.5; } #footer #footer-section { color: var(--gray); } #footer #footer-section .LinkList { display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; } #footer #footer-section .LinkList>* { display: flex; } #footer #footer-section .LinkList>*>.wrap { margin: auto; width: 100%; } #footer #footer-section h3 { margin-bottom: 20px; font-size: 120%; } #footer #footer-section .socmed { display: block; margin-bottom: 5px; } #footer #footer-section .socmed a { margin-right: 5px; } #footer #footer-section .socmed a:last-of-type { margin-right: 0; } #footer #footer-section .socmed a i.icon svg { width: 24px; height: 24px; } #footer #footer-section a[href*='#'] { margin-left: 10px; display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 50px; box-shadow: var(--card_shadow); } #footer #footer-section a[href*='#']:active { box-shadow: none; } #footer #footer-section a[href*='#']:first-of-type { margin-left: 0; } #footer #footer-section a[href*='#']:hover i.icon { color: var(--black); } @media only screen and (max-width: 480px) { #footer #footer-section { text-align: center; } #footer #footer-section .LinkList { grid-template-columns: 1fr; grid-gap: 5px; } #footer #footer-section .LinkList .right p { display: block; margin: auto; } } #pop-chat .ui { display: flex; flex-wrap: wrap; flex-direction: column; justify-content: space-between; height: 300px; background: var(--silver); margin: -20px; padding: 20px; } #pop-chat .ui p span { display: inline-block; background: var(--key); color: white; padding: 10px 20px; box-shadow: var(--card_shadow); border-radius: 0 var(--radius) var(--radius) var(--radius); } #pop-chat .ui form { position: relative; display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; margin: -20px; padding: 20px; margin-top: auto; background: white; border-top: 1px solid var(--border); } #pop-chat .ui form input,#pop-chat .ui form button { display: block; width: 100%; height: 60px; border: 1px solid var(--border); padding: 0 20px; border-radius: var(--radius); } #pop-chat .ui form .opengraph { display: none; position: absolute; left: 20px; width: calc(100% - 40px); bottom: calc(100% - 10px); grid-template-columns: 50px 1fr; grid-gap: 15px; padding: 15px; background: rgba(255 255 255 / 50%); box-shadow: var(--card_shadow); border-radius: var(--radius); } #pop-chat .ui form input:focus~.opengraph { display: grid; } #pop-chat .ui form .opengraph>* { min-width: 0; } #pop-chat .ui form .opengraph img { border-radius: var(--radius); } #pop-chat .ui form .opengraph .info>* { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 90%; } #pop-chat .ui form .opengraph small { color: var(--gray); } i.icon { font-weight: normal; font-style: normal; line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block; vertical-align: middle; direction: ltr; -webkit-font-smoothing: antialiased; } i.icon svg { display: block; width: 24px; height: 24px; fill: var(--key); } i.icon.left { margin-right: 10px; } i.icon.right { margin-left: 10px; } small i.icon svg { width: 20px; height: 20px; } small i.icon.left { margin-right: 5px; } small i.icon.right { margin-left: 5px; } [target*="pop-"] { cursor: pointer; } [id*="pop-"] { display: none; } .pop { position: fixed; z-index: 9999; top: 0; left: 0; width: 100%; height: 100%; overflow: auto; padding: 40px 0; background: rgba(0 0 0 / 50%); display: flex; text-align: left; font-size: 1rem; font-weight: 400; text-transform: none; transition: transform, margin .1s; visibility: hidden; opacity: 0; } .pop.open { visibility: visible; opacity: 1; } body.pop-open { overflow-y: hidden; } .pop .pop-wrap { display: block; margin: auto; background: white; box-shadow: var(--long_shadow); border-radius: var(--radius); overflow: hidden; width: 500px; max-width: calc(100% - 40px); transition: .1s; transform-origin: bottom center; transform: scale(.9); } .pop.open .pop-wrap { transform: scale(1); } .pop .pop-wrap .pop-header { border-bottom: 1px solid var(--border); display: grid; grid-template-columns: 1fr auto; grid-gap: 20px; } .pop .pop-wrap .pop-header .pop-title { display: flex; padding: 20px; overflow: hidden; } .pop .pop-wrap .pop-header .pop-title h3 { display: block; margin: auto 0; max-width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; font-size: 100%; font-weight: 400; } .pop .pop-wrap .pop-header .pop-title h3 .pop-back { display: inline-block; vertical-align: middle; margin-right: 10px; width: 20px; height: 20px; } .pop .pop-wrap .pop-header .pop-title h3 .pop-back svg { fill: var(--gray); } .pop .pop-wrap .pop-header .pop-close { display: flex; background: transparent; border: 0; font-size: 200%; line-height: 1; cursor: pointer; padding: 0 20px; opacity: .5; } .pop .pop-wrap .pop-header .pop-close:hover { opacity: 1; } .pop .pop-wrap .pop-header .pop-close:active { transform: scale(.9); } .pop .pop-wrap .pop-header .pop-close svg { display: block; margin: auto; width: 24px; height: 24px; fill: var(--black); stroke: var(--black); } .pop.open .pop-wrap .pop-content { display: block; } .pop .pop-wrap .pop-content { padding: 20px; line-height: 1.5; } .pop .pop-wrap .pop-content hr { width: calc(100% + 40px); margin: 0 -20px; } @media only screen and (max-width: 768px) { .pop { padding: 0; } .pop .pop-wrap { margin-bottom: 0; max-width: 100%; width: 100% !important; border-radius: var(--radius) var(--radius) 0 0; transform: none; } .pop .pop-wrap .pop-content { max-height: 80vh; overflow-y: auto; } } [data-lightbox] { cursor: zoom-in; } #lightbox { display: flex; /*display: none;*/ position: fixed; z-index: 9999999; top: 0; left: 0; width: 100%; height: 100%; overflow-y: auto; padding: 40px 0; background: rgba(0 0 0 / 50%); transition: .1s; visibility: hidden; opacity: 0; } #lightbox.open { visibility: visible; opacity: 1; } body.lightbox_open { overflow: hidden; } #lightbox .lb-wrap { max-width: calc(100% - 40px); position: relative; z-index: 1; display: block; margin: auto; color: #fff; } #lightbox .lb-close { width: 40px; height: 40px; border-radius: 40px; display: inline-block; /*box-shadow: 0 0 0 4px rgba(0 0 0 / 10%);*/ background: rgba(0 0 0 / 20%) no-repeat center center; background-image: url("data:image/svg+xml,%3Csvg style='fill:white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'%3E%3C/path%3E%3C/svg%3E"); background-size: 80% auto; background-position: center center; background-repeat: no-repeat; cursor: pointer; transition: .1s; } #lightbox .lb-close:hover { background-color: rgba(0 0 0 / 30%); } #lightbox .lb-close:active { box-shadow: none; background-color: rgba(0 0 0 / 40%); } #lightbox .lb-np { display: inline-block; width: 40px; height: 40px; border-radius: 40px; background: rgba(0 0 0 / 20%) no-repeat center center; background-size: 60% auto; background-position: center center; background-repeat: no-repeat; cursor: pointer; transition: .1s; } #lightbox .lb-np:hover { background-color: rgba(0 0 0 / 30%); } #lightbox .lb-np:active { background-color: rgba(0 0 0 / 40%); } #lightbox .lb-np.lb-prev { margin-right: 5px; background-image: url("data:image/svg+xml,%3Csvg style='fill:white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z'%3E%3C/path%3E%3C/svg%3E"); } #lightbox .lb-np.lb-next { margin-left: 5px; background-image: url("data:image/svg+xml,%3Csvg style='fill:white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z'%3E%3C/path%3E%3C/svg%3E"); } #lightbox .lb-wrap figure { position: relative; display: block; margin: auto; } #lightbox .lb-wrap.lb-loading { min-height: 40px; } #lightbox .lb-wrap.lb-loading:after { content: ''; position: absolute; z-index: 1000; top: 50%; left: 50%; width: 40px; height: 40px; margin-top: -20px; margin-left: -20px; border-radius: 50%; border: 1px solid rgba(255, 255, 255, .2); border-top-color: white; animation: lightbox_preload .75s linear infinite; } @keyframes lightbox_preload { to { transform: rotate(360deg); } } #lightbox .lb-wrap figure .lb-img { display: block; margin: auto; position: relative; } #lightbox .lb-wrap figure .lb-img img { display: block; border-radius: 8px; max-height: calc(100vh - 150px); box-shadow: 0 0 0 7.5px rgba(0 0 0 / 10%); } #lightbox .lb-wrap figure .lb-img img { transition: opacity .5s; } #lightbox .lb-wrap figure .lb-img img[data-src] { opacity: 0; } #lightbox .lb-wrap figure .lb-img .lb-count { position: absolute; bottom: 20px; right: 20px; display: block; margin: auto; background: rgba(0 0 0 / 20%); padding: 7.5px 15px; line-height: 1; border-radius: 100px; font-size: 80%; } #lightbox .lb-wrap figure .lb-nav { position: relative; z-index: 1; display: block; float: right; margin-top: 20px; margin-left: 20px; } #lightbox .lb-wrap figure figcaption { font-size: 100%; display: block; margin-top: 20px; } #lightbox .lb-wrap figure figcaption h4 { font-weight: 600; font-size: 100%; line-height: 1.4; text-shadow: 0 2px 4px rgba(0 0 0 / 40%); } #lightbox .lb-wrap figure figcaption p { margin-top: 5px; font-weight: 400; font-size: 80%; opacity: .6; } .slideshow { max-width:100vw; display: block; position: relative; overflow: hidden; } .slideshow header { position: absolute; z-index: 1; bottom: 0; left: 0; width: 100%; background-image: linear-gradient(transparent, rgba(0 0 0 / 50%)); padding: 20% 5% 5%; text-shadow: 0 1px 2px rgba(0 0 0 / 10%); color: white; } .slideshow header h2 { font-weight: 600; font-size: 120%; } .slideshow .slideshow-item,.slideshow .widget { display: none; } .slideshow .slideshow-item:first-of-type,.slideshow .widget:first-of-type { display: block; } .slideshow [class*=nav-] { position: absolute; z-index: 2; top: 50%; transform: translateY(-50%); bottom: 20px; right: 20px; border: 0; line-height: 1; cursor: pointer; transition: .1s; background: rgba(0 0 0 / 10%); border-radius: 100px; visibility: visible; opacity: 1; padding: 0; width: 40px; height: 40px; display: flex; transition: .1s; visibility: hidden; opacity: 0; } .slideshow:hover [class*=nav-] { visibility: visible; opacity: 1; } .slideshow:hover [class*=nav-]:active { transition: none; } .slideshow [class=nav-left] { left: -20px; border-radius: 0 40px 40px 0; } .slideshow [class=nav-right] { right: -20px; border-radius: 40px 0 0 40px; } .slideshow:hover [class=nav-left] { left: 0; } .slideshow:hover [class=nav-right] { right: 0; } .slideshow [class*=nav-] svg { display: block; margin: auto; width: 24px; height: 24px; fill: #fff; } @media only screen and (max-width: 768px) { .slideshow [class*=nav-] { visibility: visible; opacity: 1; } .slideshow [class=nav-left] { left: 0; } .slideshow [class=nav-right] { right: 0; } } [data-feed] { min-height: 200px; } @media only screen and (max-width: 768px) { [data-feed] .is_loop { display: flex !important; grid-gap: 20px !important; overflow-x: auto !important; margin: 40px -20px 0 !important; padding: 0 20px 20px !important; } [data-feed] .is_loop article { min-width: 70vw !important; } } /* CART */#cart-btn { display: block; position: fixed; z-index: 99; bottom: 30px; right: 30px; background: var(--key) no-repeat 15px center; background-size: auto 30px; background-image: url("data:image/svg+xml,%3Csvg fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M387.9 373.7h49.2l17.5-75.4h-66.7zM387.9 448h.5c18.7 0 33.4-12.5 38.3-29.5l6-25.9h-44.8V448zM265.4 392.5h103.7V448H265.4zM75 373.7h49v-75.4H57.5zM142.9 192h103.7v87.5H142.9zM265.4 192h103.7v87.5H265.4zM85.5 418.3c4.7 17 19.4 29.7 38.1 29.7h.5v-55.5H79.4l6.1 25.8zM142.9 392.5h103.7V448H142.9zM265.4 298.3h103.7v75.4H265.4zM142.9 298.3h103.7v75.4H142.9z' /%3E%3Cpath d='M464 192h-47.9V96c0-17.6-14.4-32-32-32H127.9c-17.6 0-32 14.4-32 32v96H48c-10.3 0-17.9 9.6-15.6 19.6l19.7 67.9H124V106c0-7.7 6.3-14 14-14h236c7.7 0 14 6.3 14 14v173.5h72l19.6-67.9c2.3-10-5.3-19.6-15.6-19.6z' /%3E%3C/svg%3E"); color: white; width: 300px; height: auto; padding-left: 40px; transition: .1s; transform-origin: bottom center; transform: scale(.5); visibility: hidden; opacity: 0; } #cart-btn.open { transform: scale(1); visibility: visible; opacity: 1; } @media only screen and (max-width: 480px) { #cart-btn { width: calc(100% - 60px); } } #cart-btn>.wrap { display: grid; grid-template-columns: 1fr auto; padding: 15px; text-align: left; } #cart { display: block; position: fixed; z-index: 100; top: 0; width: 400px; height: 100%; background: white; transition: .1s; visibility: hidden; opacity: 0; right: -15px; } #cart.open { visibility: visible; opacity: 1; right: 0; } @media only screen and (max-width: 480px) { #cart { width: 100%; } } #cart .header { display: flex; height: 80px; padding: 0 30px; background: white; border-bottom: 1px solid var(--border); } #cart .header>.wrap { margin: auto; width: 100%; display: grid; grid-template-columns: 1fr auto; text-align: left; } #cart .header>.wrap b { display: flex; } #cart .header>.wrap b>span { display: block; margin: auto; margin-left: 0; } #cart .header>.wrap #cart-close { display: inline-block; vertical-align: middle; width: 32px; height: 32px; cursor: pointer; } #cart .header>.wrap #cart-close:before { content: ''; display: block; position: fixed; z-index: -1; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0 0 0 / 50%); } #cart .list_n_form { display: none; overflow-y: auto; height: calc(100% - 80px - 80px - 60px); background: white; box-shadow: inset 0 5px 15px var(--border), inset 0 -5px 15px var(--border); font-size: 90%; } #cart .list_n_form .list .item { display: grid; grid-template-columns: 1fr 100px; grid-gap: 15px; padding: 30px; } #cart .list_n_form .list .item.focus { background: skyblue; } #cart .list_n_form .list .item { border-bottom: 2px dashed var(--border); } #cart .list_n_form .list .item:last-of-type { border-bottom: none; } #cart .list_n_form .list .item .left .title { } #cart .list_n_form .list .item .left .note { display: block; width: 100%; border: 0; border-bottom: 1px solid var(--border); padding: 5px 0; margin: 5px 0; } #cart .list_n_form .list .item .left .variant,#cart .list_n_form .list .item .left .total { color: var(--key); } #cart .list_n_form .list .item .left .unit { opacity: .6; } #cart .list_n_form .list .item .right a.link { display: block; position: relative; border-radius: var(--radius); overflow: hidden; box-shadow: var(--card_shadow); } #cart .list_n_form .list .item .right a.link img.img { display: block; width: 100px; height: 100px; object-fit: cover; } #cart .list_n_form .list .item .right a.link small.weight { position: absolute; bottom: 0; right: 0; background: rgba(0 0 0 / 50%); color: white; display: inline-block; padding: 5px 10px; line-height: 1; border-radius: var(--radius) 0 0 0; } #cart .list_n_form .list .item .right fieldset.qty { display: grid; grid-template-columns: 1fr 1.5fr 1fr; grid-gap: 5px; border: 0; margin-top: 10px; } #cart .list_n_form .list .item .right fieldset.qty>* { display: block; width: 100%; line-height: 1; height: 30px; padding: 0; border: 1px solid var(--border); text-align: center; } #cart .list_n_form .list .item .right fieldset.qty input { border-radius: var(--radius); } #cart .list_n_form .form { border: 0; padding: 15px 30px; border-top: 2px solid var(--key); display: grid; grid-gap: 15px; } #cart .list_n_form .form fieldset { display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 15px; border: 0; width: 100%; } #cart .list_n_form .form input,#cart .list_n_form .form select,#cart .list_n_form .form textarea { display: block; width: 100%; height: 40px; border: 0; font-size: 90%; border-bottom: 1px solid var(--border); text-overflow: ellipsis; background: transparent no-repeat left center; background-size: auto 20px; padding-left: 30px; } #cart .list_n_form .form [name]:focus { border-color: var(--key); } #cart .list_n_form .form input[name=name] { background-image: url("data:image/svg+xml,%0A%3Csvg fill='rgba(0 0 0 / 20%)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M447.8 438.3c-7.2-31.8-48.3-47.3-62.5-52.3-15.6-5.5-37.8-6.8-52.1-10-8.2-1.8-20.1-6.3-24.1-11.1s-1.6-49.3-1.6-49.3 7.4-11.5 11.4-21.7c4-10.1 8.4-37.9 8.4-37.9s8.2 0 11.1-14.4c3.1-15.7 8-21.8 7.4-33.5-.6-11.5-6.9-11.2-6.9-11.2s6.1-16.7 6.8-51.3c.9-41.1-31.3-81.6-89.6-81.6-59.1 0-90.6 40.5-89.7 81.6.8 34.6 6.7 51.3 6.7 51.3s-6.3-.3-6.9 11.2c-.6 11.7 4.3 17.8 7.4 33.5 2.8 14.4 11.1 14.4 11.1 14.4s4.4 27.8 8.4 37.9c4 10.2 11.4 21.7 11.4 21.7s2.4 44.5-1.6 49.3c-4 4.8-15.9 9.3-24.1 11.1-14.3 3.2-36.5 4.5-52.1 10-14.2 5-55.3 20.5-62.5 52.3-1.1 5 2.7 9.7 7.9 9.7H440c5.1 0 8.9-4.7 7.8-9.7z'/%3E%3C/svg%3E"); } #cart .list_n_form .form input[name=phone] { background-image: url("data:image/svg+xml,%0A%3Csvg fill='rgba(0 0 0 / 20%)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M436.9 364.8c-14.7-14.7-50-36.8-67.4-45.1-20.2-9.7-27.6-9.5-41.9.8-11.9 8.6-19.6 16.6-33.3 13.6-13.7-2.9-40.7-23.4-66.9-49.5-26.2-26.2-46.6-53.2-49.5-66.9-2.9-13.8 5.1-21.4 13.6-33.3 10.3-14.3 10.6-21.7.8-41.9C184 125 162 89.8 147.2 75.1c-14.7-14.7-18-11.5-26.1-8.6 0 0-12 4.8-23.9 12.7-14.7 9.8-22.9 18-28.7 30.3-5.7 12.3-12.3 35.2 21.3 95 27.1 48.3 53.7 84.9 93.2 124.3l.1.1.1.1c39.5 39.5 76 66.1 124.3 93.2 59.8 33.6 82.7 27 95 21.3 12.3-5.7 20.5-13.9 30.3-28.7 7.9-11.9 12.7-23.9 12.7-23.9 2.9-8.1 6.2-11.4-8.6-26.1z'/%3E%3C/svg%3E"); } #cart .list_n_form .form input[name=email] { background-image: url("data:image/svg+xml,%0A%3Csvg fill='rgba(0 0 0 / 20%)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M460.6 147.3L353 256.9c-.8.8-.8 2 0 2.8l75.3 80.2c5.1 5.1 5.1 13.3 0 18.4-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8l-75-79.9c-.8-.8-2.1-.8-2.9 0L313.7 297c-15.3 15.5-35.6 24.1-57.4 24.2-22.1.1-43.1-9.2-58.6-24.9l-17.6-17.9c-.8-.8-2.1-.8-2.9 0l-75 79.9c-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8c-5.1-5.1-5.1-13.3 0-18.4l75.3-80.2c.7-.8.7-2 0-2.8L51.4 147.3c-1.3-1.3-3.4-.4-3.4 1.4V368c0 17.6 14.4 32 32 32h352c17.6 0 32-14.4 32-32V148.7c0-1.8-2.2-2.6-3.4-1.4z'/%3E%3Cpath d='M256 295.1c14.8 0 28.7-5.8 39.1-16.4L452 119c-5.5-4.4-12.3-7-19.8-7H79.9c-7.5 0-14.4 2.6-19.8 7L217 278.7c10.3 10.5 24.2 16.4 39 16.4z'/%3E%3C/svg%3E"); } #cart .list_n_form .form textarea[name=address] { background-image: url("data:image/svg+xml,%0A%3Csvg fill='rgba(0 0 0 / 20%)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M258.5 104.1c-1.5-1.2-3.5-1.2-5 0l-156 124.8c-.9.8-1.5 1.9-1.5 3.1v230c0 1.1.9 2 2 2h108c1.1 0 2-.9 2-2V322c0-1.1.9-2 2-2h92c1.1 0 2 .9 2 2v140c0 1.1.9 2 2 2h108c1.1 0 2-.9 2-2V232c0-1.2-.6-2.4-1.5-3.1l-156-124.8z'/%3E%3Cpath d='M458.7 204.2l-189-151.4C265.9 49.7 261 48 256 48s-9.9 1.7-13.7 4.8L160 119.7V77.5c0-1.1-.9-2-2-2H98c-1.1 0-2 .9-2 2v92.2l-42.7 35.1c-3.1 2.5-5.1 6.2-5.3 10.2-.2 4 1.3 7.9 4.1 10.7 2.6 2.6 6.1 4.1 9.9 4.1 3.2 0 6.3-1.1 8.8-3.1l183.9-148c.5-.4.9-.4 1.3-.4s.8.1 1.3.4l183.9 147.4c2.5 2 5.6 3.1 8.8 3.1 3.7 0 7.2-1.4 9.9-4.1 2.9-2.8 4.4-6.7 4.2-10.7-.3-4-2.2-7.7-5.4-10.2z'/%3E%3C/svg%3E"); } #cart .list_n_form .form textarea[name=note] { background-image: url("data:image/svg+xml,%3Csvg fill='rgba(0 0 0 / 20%)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M64 368v80h80l235.727-235.729-79.999-79.998L64 368zm377.602-217.602c8.531-8.531 8.531-21.334 0-29.865l-50.135-50.135c-8.531-8.531-21.334-8.531-29.865 0l-39.468 39.469 79.999 79.998 39.469-39.467z'/%3E%3C/svg%3E"); } #cart .list_n_form .form select[name=shipping] { background-image: url("data:image/svg+xml,%0A%3Csvg fill='rgba(0 0 0 / 20%)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M440.8 129.5L261.7 49.2c-3.6-1.6-7.7-1.6-11.3 0L71.2 129.5c-6 2.7-6.2 11.8-.4 14.8l178.7 94.1c4.1 2.2 8.9 2.2 13 0l178.7-94.1c5.8-3 5.6-12.1-.4-14.8zM280.2 462.9l180.1-95.3c2.2-1.4 3.6-4 3.6-6.8V175.9c0-5.9-5.8-9.7-10.7-7.1l-180.1 92.8c-2.6 1.3-4.2 4.1-4.2 7.1V456c.1 6.2 6.4 10 11.3 6.9zM48 175.9v184.8c0 2.8 1.4 5.4 3.6 6.8l180.1 95.3c5 3.2 11.2-.6 11.2-6.8V268.7c0-3-1.6-5.8-4.2-7.1l-180-92.8c-4.9-2.6-10.7 1.3-10.7 7.1z'/%3E%3C/svg%3E"); } #cart .list_n_form .form select[name=payment] { background-image: url("data:image/svg+xml,%3Csvg fill='rgba(0 0 0 / 20%)' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M404 160H108c-33.1 0-60 26.9-60 60v168c0 33.1 26.9 60 60 60h296c33.1 0 60-26.9 60-60V220c0-33.1-26.9-60-60-60zM342.9 65L108 110.9c-18 4-44 22.1-44 44.1 0 0 15-19 49-19h287v-20.5c0-12.6-5-28.7-13.9-37.6-11.3-11.3-27.5-16.2-43.2-12.9z'/%3E%3C/svg%3E"); } #cart .list_n_form .form .detail { position: relative; border: 1px solid var(--border); padding: 15px; border-radius: var(--radius) var(--radius) var(--radius) 0; box-shadow: 1px 1px 0 0 var(--border); margin-bottom: -10px; } #cart .list_n_form .form .detail img { max-height: 40px; float: right; margin-left: 15px; } #cart .list_n_form .form .detail h4 { display: block; font-weight: 600; font-size: 80%; color: var(--key); } #cart .list_n_form .form .detail p { line-height: 1.2; } #cart .list_n_form .form .detail:before { content: ''; position: absolute; top: 100%; left: -1px; border: 5px solid; border-color: var(--border) var(--border) transparent transparent; } #cart .list_n_form .form textarea { min-height: 60px; resize: vertical; background-position: top left; } #cart .cta,#cart .empty { display: none; background: white; color: var(--gray); } #cart .empty { height: calc(100% - 80px); display: flex; padding: 0 30px; } #cart .empty>.wrap { margin: auto; width: 100%; text-align: center; } #cart .empty>.wrap svg { display: block; margin: auto; margin-bottom: 15px; width: 50%; height: auto; fill: var(--border); } #cart .cta { border-top: 1px solid var(--border); } #cart .cta .subtotal { display: flex; height: 80px; padding: 0 30px; font-size: 90%; } #cart .cta .subtotal>.wrap { margin: auto; width: 100%; } #cart .cta .subtotal>.wrap .grid { display: grid; grid-template-columns: 1fr auto; } #cart .cta .subtotal>.wrap .grid b { color: var(--key); } #cart .cta .subtotal>.wrap .grid a { color: var(--key); } #cart .cta button.checkout { display: block; width: 100%; background: var(--key); border-color: var(--key); color: white; font-size: 110%; height: 60px; border-radius: 0; } #cart .cta button.checkout svg { display: inline-block; vertical-align: middle; margin-right: 15px; fill: white; width: 24px; height: 24px; } 
+
+]]></b:skin>
+  <style>
+    /* &#9472;&#9472;&#9472; Global palette and shadows &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; */
+    :root {
+      --key:          #8a5a3b;
+      --silver:       #f6efe7;
+      --gray:         #6f6257;
+      --black:        #1c1612;
+      --gold:         #b07d4a;
+      --gold-light:   #d4a76a;
+      --card_shadow:  0 2px 6px rgba(55,30,10,.06), 0 1px 2px rgba(55,30,10,.04);
+      --card_shadow_hover:
+        0 24px 52px -10px rgba(44,20,8,.26),
+        0 10px 20px -6px rgba(44,20,8,.16),
+        0 0 0 1.5px rgba(138,90,59,.22);
+      --inset_shadow: inset 0 -1px 0 0 rgba(0,0,0,.08);
+      --thumb_radius: 16px 16px 0 0;
     }
-}(_0x972e, 0xc5474));
 
-window[_0x173287(0x205)] = function () {
-    etc(), slideshow(), product_convert(), product_sort(), shortcode(), cart(), lazyload(), lightbox(), pop(), popwin(), timeago(), translate(), custom_js();
-};
-
-function cart() {
-    var _0x2a474e = _0x173287,
-        _0x98b432 = _0x2a474e(0x231) + $_config[_0x2a474e(0x2c6)][_0x2a474e(0x2c7)] + _0x2a474e(0x146) + $_config[_0x2a474e(0x2c6)]['checkout_phone'] + _0x2a474e(0x280);
-    $_config[_0x2a474e(0x29b)][_0x2a474e(0x109)] && (_0x98b432 += '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22email\x22\x20name=\x22email\x22\x20placeholder=\x22' + $_config[_0x2a474e(0x2c6)][_0x2a474e(0x17f)] + _0x2a474e(0x1bf));
-    $_config[_0x2a474e(0x29b)]['address'] && (_0x98b432 += _0x2a474e(0x1b4) + $_config[_0x2a474e(0x2c6)]['checkout_address'] + _0x2a474e(0x28c));
-    $_config[_0x2a474e(0x29b)][_0x2a474e(0x15a)] && (_0x98b432 += _0x2a474e(0x1a8) + $_config[_0x2a474e(0x2c6)][_0x2a474e(0x2c9)] + _0x2a474e(0x19f));
-    if ($_config['checkout_form'][_0x2a474e(0x253)]) {
-        _0x98b432 += _0x2a474e(0x2b0) + $_config[_0x2a474e(0x2c6)][_0x2a474e(0x19d)] + _0x2a474e(0x2ae) + $_config['text'][_0x2a474e(0x19d)] + '\x20:\x22>\x20\x20\x20\x20\x20\x20\x20\x20';
-        for (var _0x49176e in $_config[_0x2a474e(0x12d)]) {
-            var _0xe26c0 = $_config['checkout_form_shipping'][_0x49176e];
-            _0xe26c0[_0x2a474e(0x278)] == !![] && ($(_0x2a474e(0x105) + _0xe26c0[_0x2a474e(0x1c1)] + _0x2a474e(0x2a8))['on'](_0x2a474e(0x1dc), function () { }), _0x98b432 += '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22' + _0x49176e + _0x2a474e(0x1ca) + _0xe26c0['info'] + _0x2a474e(0x1be) + _0xe26c0['img'] + '\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20' + _0x49176e + '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</option>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');
-        }
-        _0x98b432 += _0x2a474e(0x25f);
-    }
-    if ($_config[_0x2a474e(0x29b)][_0x2a474e(0x148)]) {
-        $(_0x2a474e(0x196))['append'](_0x2a474e(0x2c8) + $_config[_0x2a474e(0x2c6)][_0x2a474e(0x1fc)] + _0x2a474e(0x13e)), _0x98b432 += '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20name=\x22payment\x22\x20required>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22\x22\x20selected\x20hidden>' + $_config[_0x2a474e(0x2c6)][_0x2a474e(0x1fc)] + _0x2a474e(0x2ae) + $_config['text'][_0x2a474e(0x1fc)] + '\x20:\x22>\x20\x20\x20\x20\x20\x20\x20\x20';
-        for (var _0x49176e in $_config['checkout_form_payment']) {
-            var _0x2342e4 = $_config[_0x2a474e(0x111)][_0x49176e];
-            _0x2342e4[_0x2a474e(0x278)] == !![] && ($('#contact\x20.shippay')[_0x2a474e(0x206)](_0x2a474e(0x2e5) + _0x49176e + '\x22\x20src=\x22' + _0x2342e4[_0x2a474e(0x1c1)] + _0x2a474e(0x108) + _0x49176e + '</figcaption></figure>'), $('<img\x20src=\x22' + _0x2342e4['img'] + _0x2a474e(0x2a8))['on'](_0x2a474e(0x1dc), function () { }), _0x98b432 += _0x2a474e(0x128) + _0x49176e + _0x2a474e(0x1ca) + _0x2342e4[_0x2a474e(0x20e)] + _0x2a474e(0x1be) + _0x2342e4[_0x2a474e(0x1c1)] + '\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20' + _0x49176e + _0x2a474e(0x157));
-        }
-        _0x98b432 += '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</optgroup>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x20\x20\x20\x20\x20\x20\x20\x20';
-    }
-    $(_0x2a474e(0x29e))['append'](_0x98b432), $(_0x2a474e(0x29e))['on'](_0x2a474e(0x2ba), _0x2a474e(0x16a), function () {
-        var _0x66b551 = _0x2a474e,
-            _0x5d0124 = $(this),
-            _0x5d6bad = _0x5d0124[_0x66b551(0x2d7)](),
-            _0x22e48b = $(_0x66b551(0x19a), _0x5d0124),
-            _0x14c02b = _0x22e48b[_0x66b551(0x13d)](_0x66b551(0x112)),
-            _0x2149dd = _0x22e48b[_0x66b551(0x13d)]('data-img');
-        _0x5d0124[_0x66b551(0x27c)](_0x66b551(0x21c))['remove'](), $('<img\x20src=\x22' + _0x2149dd + _0x66b551(0x2a8))['on']('load', function () {
-            var _0x1a16a8 = _0x66b551;
-            $('\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22detail\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22' + _0x2149dd + '\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h4>' + _0x5d6bad + _0x1a16a8(0x255) + _0x14c02b + _0x1a16a8(0x1aa))[_0x1a16a8(0x150)](_0x5d0124)[_0x1a16a8(0x1ad)]()[_0x1a16a8(0x178)]();
-        });
-    }), $(_0x2a474e(0x29e))['on'](_0x2a474e(0x18e), _0x2a474e(0x21c), function () {
-        var _0x2d20fa = _0x2a474e;
-        $(this)[_0x2d20fa(0x237)](_0x2d20fa(0x16a))[_0x2d20fa(0x189)]();
-    });
-    var _0x31ae04 = [];
-    localStorage[_0x2a474e(0x140)] && (_0x31ae04 = JSON[_0x2a474e(0x215)](localStorage['cart']), _0x5e1fbd());
-    $('.product')['on']('click', _0x2a474e(0x241), function () {
-        var _0x435ab2 = _0x2a474e,
-            _0x1a7ba8 = $(this)[_0x435ab2(0x1a1)]('.product'),
-            _0x381396 = Number(_0x1a7ba8[_0x435ab2(0x13d)]('id')),
-            _0x1590d2 = $(_0x435ab2(0x18c), _0x1a7ba8)[_0x435ab2(0x13d)](_0x435ab2(0x2b5)),
-            _0x2eebb5 = location[_0x435ab2(0x2df)],
-            _0x329a71 = $(_0x435ab2(0x233), _0x1a7ba8)[_0x435ab2(0x2c6)]()[_0x435ab2(0x141)](/\n/g, '')['replaceAll']('\x20\x20', ''),
-            _0x2864bb = '',
-            _0x4984f6 = Number($('.price\x20b', _0x1a7ba8)[_0x435ab2(0x13d)]('data-price')),
-            _0x3417e9 = Number($(_0x435ab2(0x154), _0x1a7ba8)['attr'](_0x435ab2(0x26c))),
-            _0x4c8bc7 = $('.price', _0x1a7ba8)[_0x435ab2(0x13d)](_0x435ab2(0x188)),
-            _0x36d334 = Number($(_0x435ab2(0x161), _0x1a7ba8)[_0x435ab2(0x2d7)]());
-        $(_0x435ab2(0x216), _0x1a7ba8)['length'] && ($(_0x435ab2(0x1c4), _0x1a7ba8)[_0x435ab2(0x136)] && (_0x381396 = _0x381396 + '|' + $(_0x435ab2(0x248), _0x1a7ba8)[_0x435ab2(0x2c6)]()[_0x435ab2(0x141)](/\n/g, '')[_0x435ab2(0x2b8)]('\x20\x20', '') + _0x435ab2(0x2e6) + $('.variant\x20button.active', _0x1a7ba8)['text']()['replace'](/\n/g, '')[_0x435ab2(0x2b8)]('\x20\x20', ''), _0x2864bb = {
-            'label': $('.variant\x20label', _0x1a7ba8)[_0x435ab2(0x2c6)]()[_0x435ab2(0x141)](/\n/g, '')['replaceAll']('\x20\x20', ''),
-            'value': $(_0x435ab2(0x1c4), _0x1a7ba8)['text']()['replace'](/\n/g, '')[_0x435ab2(0x2b8)]('\x20\x20', '')
-        }));
-        $('#cart-btn')[_0x435ab2(0x1d3)]('open'), setTimeout(function () {
-            var _0x532dbf = _0x435ab2;
-            $(_0x532dbf(0x124))[_0x532dbf(0x1a0)](_0x532dbf(0x1f7));
-        }, 0x64);
-        for (var _0x266253 in _0x31ae04) {
-            if (_0x31ae04[_0x266253]['id'] == _0x381396) {
-                _0x31ae04[_0x266253][_0x435ab2(0x1a4)] = _0x36d334, _0xf396a0(), _0x5e1fbd();
-                return;
-            }
-        }
-        var _0x16adfe = {
-            'id': _0x381396,
-            'img': _0x1590d2,
-            'title': _0x329a71,
-            'link': _0x2eebb5,
-            'variant': _0x2864bb,
-            'price': _0x4984f6,
-            'weight': _0x3417e9,
-            'unit': _0x4c8bc7,
-            'qty': _0x36d334
-        };
-        _0x31ae04[_0x435ab2(0x2b9)](_0x16adfe), _0xf396a0(), _0x5e1fbd();
-    }), $('#cart-btn,\x20.cart-btn-head')['on'](_0x2a474e(0x18e), function () {
-        var _0x110f0d = _0x2a474e;
-        $(_0x110f0d(0x151))['addClass'](_0x110f0d(0x1f7)), $('body')[_0x110f0d(0x182)](_0x110f0d(0x166), 'hidden');
-    }), $(_0x2a474e(0x2b7))['on'](_0x2a474e(0x18e), function () {
-        var _0x3f4e7c = _0x2a474e;
-        $(_0x3f4e7c(0x151))[_0x3f4e7c(0x1d3)](_0x3f4e7c(0x1f7)), $(_0x3f4e7c(0x2ab))[_0x3f4e7c(0x182)]('overflow', 'auto');
-    }), $(_0x2a474e(0x151))['on'](_0x2a474e(0x18e), '.qty\x20button', function () {
-        var _0x39c6a2 = _0x2a474e,
-            _0x4322b6 = $(this)[_0x39c6a2(0x1a1)]('.item'),
-            _0x5245ed = Number($(_0x39c6a2(0x161), _0x4322b6)[_0x39c6a2(0x2d7)]());
-        $(this)[_0x39c6a2(0x2c6)]() == '-' ? _0x5245ed = _0x5245ed - 0x1 : _0x5245ed = _0x5245ed + 0x1, $(_0x39c6a2(0x161), _0x4322b6)[_0x39c6a2(0x2d7)](_0x5245ed)[_0x39c6a2(0x177)]('change');
-    }), $(_0x2a474e(0x151))['on']('change', _0x2a474e(0x294), function () {
-        var _0x19e760 = _0x2a474e,
-            _0x27ce58 = $(this)[_0x19e760(0x1a1)](_0x19e760(0x179)),
-            _0x3eb5d3 = _0x27ce58['attr']('data-index'),
-            _0x1460ef = Number($(this)[_0x19e760(0x2d7)]());
-        if (_0x1460ef > 0x0) {
-            _0x31ae04[_0x3eb5d3][_0x19e760(0x1a4)] = _0x1460ef, _0xf396a0(), _0x5e1fbd();
-            return;
-        } else !confirm($_config['text'][_0x19e760(0x1cc)]) ? (_0x1460ef = 0x1, $('.qty\x20input', _0x27ce58)[_0x19e760(0x2d7)](_0x1460ef)[_0x19e760(0x177)](_0x19e760(0x2ba))) : (_0x31ae04[_0x19e760(0x18d)](_0x3eb5d3, 0x1), _0xf396a0(), _0x5e1fbd());
-    }), $('#cart')['on'](_0x2a474e(0x2ba), _0x2a474e(0x1b7), function () {
-        var _0x226971 = _0x2a474e,
-            _0xd6001d = $(this)[_0x226971(0x1a1)]('.item'),
-            _0x2a1c05 = _0xd6001d['attr'](_0x226971(0x18f)),
-            _0x13796c = $(this)['val']();
-        _0x31ae04[_0x2a1c05]['note'] = _0x13796c, _0xf396a0(), _0x5e1fbd();
-    });
-    var _0x364ba7 = {};
-    $(_0x2a474e(0x151))['on'](_0x2a474e(0x2ba), _0x2a474e(0x27f), function () {
-        var _0x3398e6 = _0x2a474e,
-            _0x5ccc41 = $(this)[_0x3398e6(0x13d)](_0x3398e6(0x12f)),
-            _0x77dca3 = $(this)[_0x3398e6(0x2d7)]();
-        _0x5ccc41 != _0x3398e6(0x15a) && _0x5ccc41 != _0x3398e6(0x253) && _0x5ccc41 != _0x3398e6(0x148) && (_0x364ba7[_0x5ccc41] = _0x77dca3, localStorage[_0x3398e6(0x19c)] = JSON[_0x3398e6(0x1d8)](_0x364ba7));
-    });
-    if (localStorage['buyer']) {
-        var _0x364ba7 = JSON[_0x2a474e(0x215)](localStorage[_0x2a474e(0x19c)]);
-        for (var _0x96c104 in _0x364ba7) {
-            $(_0x2a474e(0x2e2) + _0x96c104 + ']')['val'](_0x364ba7[_0x96c104])[_0x2a474e(0x177)]('change');
-        }
-    }
-    $(_0x2a474e(0x151))['on'](_0x2a474e(0x2a4), function (_0x1085ff) {
-        var _0x11e64c = _0x2a474e;
-        _0x1085ff[_0x11e64c(0x273)]();
-        if (!confirm($_config[_0x11e64c(0x2c6)][_0x11e64c(0x133)])) return;
-        else {
-            var _0x43d661 = {};
-            $(_0x11e64c(0x2a2), this)['each'](function () {
-                var _0x4edcec = _0x11e64c,
-                    _0x182da3 = $(this)['attr'](_0x4edcec(0x12f)),
-                    _0x48ddbe = $(this)[_0x4edcec(0x2d7)]();
-                _0x43d661[_0x182da3] = _0x48ddbe;
-            });
-            var _0x5610ad = $_config[_0x11e64c(0x2c6)][_0x11e64c(0x117)] + '\x0a\x0a',
-                _0x165afb = 0x0,
-                _0x3ea847 = 0x0,
-                _0xd5cf0a = 0x0,
-                _0xcda33b = 0x0;
-            for (var _0x83d75d in _0x31ae04) {
-                _0xcda33b++;
-                var _0xc8670b = _0x31ae04[_0x83d75d];
-                _0x5610ad += _0x11e64c(0x259) + (_0x31ae04[_0x11e64c(0x136)] > 0x1 ? _0xcda33b + '.\x20' : '') + '*' + _0xc8670b[_0x11e64c(0x24e)] + _0x11e64c(0x22c) + (_0xc8670b[_0x11e64c(0x1ac)] ? '[tab]' + _0xc8670b[_0x11e64c(0x1ac)]['label'] + '\x20:\x20*' + _0xc8670b[_0x11e64c(0x1ac)][_0x11e64c(0x2b1)] + '*\x0a' : '') + '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20[tab]' + $_config[_0x11e64c(0x2c6)]['cart_qty_n_price'] + _0x11e64c(0x194) + _0xc8670b[_0x11e64c(0x1a4)] + _0x11e64c(0x195) + format_currency(_0xc8670b[_0x11e64c(0x2d4)]) + '\x20=\x20*' + format_currency(_0xc8670b[_0x11e64c(0x2d4)] * _0xc8670b[_0x11e64c(0x1a4)]) + '*\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20[tab]' + $_config[_0x11e64c(0x2c6)]['cart_note'] + _0x11e64c(0x2e6) + (_0xc8670b['note'] ? '*' + _0xc8670b['note'] + '*' : '-') + _0x11e64c(0x137), _0x165afb = _0x165afb + Number(_0xc8670b['qty']), _0x3ea847 = _0x3ea847 + Number(_0xc8670b['price'] * _0xc8670b[_0x11e64c(0x1a4)]), _0xd5cf0a = _0xd5cf0a + Number(_0xc8670b[_0x11e64c(0x1cf)] * _0xc8670b['qty']);
-            }
-            var _0xdbPin  = (document.querySelector('#cart [name="db_pincode"]')  || {value:''}).value.trim();
-            var _0xdbLand = (document.querySelector('#cart [name="db_landmark"]') || {value:''}).value.trim();
-            _0x5610ad += _0x11e64c(0x28a) + (_0xd5cf0a ? $_config['text']['cart_weight'] + _0x11e64c(0x1d6) + kg(_0xd5cf0a) + '*\x0a' : '') + _0x11e64c(0x107) + $_config[_0x11e64c(0x2c6)][_0x11e64c(0x285)] + _0x11e64c(0x2bc) + _0x165afb + '\x20' + $_config[_0x11e64c(0x2c6)][_0x11e64c(0x134)] + '\x20)\x20=\x20*' + format_currency(_0x3ea847) + '*\x0a\x0a— — — — — — — — — — — — — — —\x0a\x0a📋 ' + $_config[_0x11e64c(0x2c6)][_0x11e64c(0x2b3)] + _0x11e64c(0x160) + _0x43d661[_0x11e64c(0x12f)] + _0x11e64c(0x11f) + _0x43d661['phone'] + _0x11e64c(0x218) + (_0x43d661['email'] ? '*' + $_config[_0x11e64c(0x2c6)][_0x11e64c(0x17f)] + _0x11e64c(0x183) + _0x43d661[_0x11e64c(0x109)] + '\x0a\x0a' : '') + _0x11e64c(0x107) + (_0x43d661[_0x11e64c(0x10f)] ? '*' + $_config[_0x11e64c(0x2c6)][_0x11e64c(0x2bf)] + _0x11e64c(0x149) + _0x43d661['address'] + (_0xdbPin  ? '\x0a*📍 PIN Code :* ' + _0xdbPin  : '') + (_0xdbLand ? '\x0a*🏠 Landmark :* ' + _0xdbLand : '') + '\x0a\x0a' : '') + _0x11e64c(0x174) + $_config[_0x11e64c(0x2c6)][_0x11e64c(0x2c9)] + _0x11e64c(0x183) + (_0x43d661[_0x11e64c(0x15a)] ? '\x0a\x0a' + _0x43d661['note'] : '-') + _0x11e64c(0x281) + (_0x43d661[_0x11e64c(0x253)] ? '*' + $_config[_0x11e64c(0x2c6)]['checkout_shipping'] + '*\x20:\x20' + _0x43d661[_0x11e64c(0x253)] + '\x0a' + $_config['checkout_form_shipping'][_0x43d661['shipping']][_0x11e64c(0x20e)] + '\x0a\x0a' : '') + _0x11e64c(0x107) + (_0x43d661[_0x11e64c(0x148)] ? '*' + $_config[_0x11e64c(0x2c6)][_0x11e64c(0x1fc)] + _0x11e64c(0x183) + _0x43d661[_0x11e64c(0x148)] + '\x0a' + $_config[_0x11e64c(0x111)][_0x43d661[_0x11e64c(0x148)]][_0x11e64c(0x20e)] + '\x0a\x0a' : '') + _0x11e64c(0x1d4) + location['protocol'] + '//' + location[_0x11e64c(0x212)] + '            ', _0x5610ad = _0x5610ad[_0x11e64c(0x2b8)]('\x20\x20', '')['replaceAll'](_0x11e64c(0x1e3), _0x11e64c(0x243)), _0x5610ad = encodeURIComponent(_0x5610ad);
-            var _0x13bdb1 = _0x11e64c(0x1fd) + $_config[_0x11e64c(0x13a)] + _0x11e64c(0x1db) + _0x5610ad;
-            localStorage[_0x11e64c(0x24f)](_0x11e64c(0x140)), location[_0x11e64c(0x2df)] = _0x13bdb1;
-        }
-    });
-
-    function _0xf396a0() {
-        var _0x30d6cc = _0x2a474e;
-        window['localStorage'] && (localStorage[_0x30d6cc(0x140)] = JSON['stringify'](_0x31ae04));
+    /* &#9472;&#9472;&#9472; Page background &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; */
+    body {
+      background: linear-gradient(180deg, #fbf6f0 0%, #f5ede4 60%, #f2e8de 100%);
     }
 
-    function _0x5e1fbd() {
-        var _0x4b74a6 = _0x2a474e;
-        $('#cart\x20.list')[_0x4b74a6(0x2a7)]();
-        if (_0x31ae04['length'] == 0x0) {
-            $(_0x4b74a6(0x176))[_0x4b74a6(0x1ad)](), $(_0x4b74a6(0x124))[_0x4b74a6(0x1d3)](_0x4b74a6(0x1f7)), $('#cart\x20.empty')[_0x4b74a6(0x14d)]();
-            return;
-        }
-        $(_0x4b74a6(0x176))[_0x4b74a6(0x14d)](), $(_0x4b74a6(0x124))['addClass'](_0x4b74a6(0x1f7)), $(_0x4b74a6(0x1d0))['hide']();
-        var _0x4f0a8a = 0x0,
-            _0x225549 = 0x0,
-            _0x7b357d = 0x0;
-        for (var _0x374432 in _0x31ae04) {
-            var _0xe6f07f = _0x31ae04[_0x374432],
-                _0x54cc2d = _0x4b74a6(0x257) + _0xe6f07f['id'] + _0x4b74a6(0x279) + _0x374432 + _0x4b74a6(0x1f1) + _0xe6f07f['title'] + _0x4b74a6(0x292) + (_0xe6f07f[_0x4b74a6(0x1ac)] ? _0xe6f07f[_0x4b74a6(0x1ac)]['label'] + _0x4b74a6(0x261) + _0xe6f07f[_0x4b74a6(0x1ac)][_0x4b74a6(0x2b1)] + _0x4b74a6(0x19b) : '') + _0x4b74a6(0x17b) + $_config['text'][_0x4b74a6(0x2af)] + _0x4b74a6(0x1ae) + (_0xe6f07f['note'] ? _0xe6f07f[_0x4b74a6(0x15a)] : '') + _0x4b74a6(0x1bd) + format_currency(_0xe6f07f['price']) + _0x4b74a6(0x21b) + (_0xe6f07f[_0x4b74a6(0x1d5)] ? '\x20<span\x20class=\x22unit\x22>/' + _0xe6f07f['unit'] + _0x4b74a6(0x288) : '') + _0x4b74a6(0x22f) + _0xe6f07f['link'] + _0x4b74a6(0x29d) + _0xe6f07f[_0x4b74a6(0x1c1)] + _0x4b74a6(0x1de) + (_0xe6f07f['weight'] ? _0x4b74a6(0x1e1) + $_config[_0x4b74a6(0x2c6)][_0x4b74a6(0x172)] + '\x22>' + kg(_0xe6f07f[_0x4b74a6(0x1cf)]) + _0x4b74a6(0x165) : '') + _0x4b74a6(0x130) + _0xe6f07f[_0x4b74a6(0x1a4)] + _0x4b74a6(0x18b);
-            $(_0x4b74a6(0x298))[_0x4b74a6(0x113)](_0x54cc2d), _0x4f0a8a = _0x4f0a8a + Number(_0xe6f07f[_0x4b74a6(0x1a4)]), _0x225549 = _0x225549 + Number(_0xe6f07f['price'] * _0xe6f07f[_0x4b74a6(0x1a4)]), _0x7b357d = _0x7b357d + Number(_0xe6f07f[_0x4b74a6(0x1cf)] * _0xe6f07f['qty']);
-        }
-        $(_0x4b74a6(0x240))[_0x4b74a6(0x26f)](), _0x7b357d > 0x0 ? ($('#cart\x20.cta\x20.subtotal\x20.wrap')[_0x4b74a6(0x113)](_0x4b74a6(0x1a3) + $_config[_0x4b74a6(0x2c6)][_0x4b74a6(0x172)] + _0x4b74a6(0x167) + kg(_0x7b357d) + _0x4b74a6(0x1ee)), $(_0x4b74a6(0x184))[_0x4b74a6(0x14d)]()[_0x4b74a6(0x291)](_0x4b74a6(0x251)), $(_0x4b74a6(0x184))[_0x4b74a6(0x27c)](_0x4b74a6(0x21c))['show']()) : ($(_0x4b74a6(0x184))['hide']()[_0x4b74a6(0x13d)](_0x4b74a6(0x251), !![]), $(_0x4b74a6(0x184))['prev'](_0x4b74a6(0x21c))['hide']()), $(_0x4b74a6(0x1f5))[_0x4b74a6(0x2c6)](_0x4f0a8a), $(_0x4b74a6(0x245))[_0x4b74a6(0x2c6)](format_currency(_0x225549)), $(_0x4b74a6(0x124))[_0x4b74a6(0x1d3)]('open'), setTimeout(function () {
-            var _0x51b4b0 = _0x4b74a6;
-            $(_0x51b4b0(0x124))[_0x51b4b0(0x1a0)]('open');
-        }, 0x64);
+    /* &#9472;&#9472;&#9472; Header bar &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; */
+    #header {
+      background: linear-gradient(130deg, #3d2b20 0%, #6b432a 50%, #8a5a3b 100%);
+      border-bottom: 1px solid rgba(255,255,255,.12);
     }
-}
 
-function slideshow() {
-    var _0x59719a = _0x173287;
-    $('.slideshow')[_0x59719a(0x202)](function () {
-        var _0x1a25e4 = _0x59719a,
-            _0xe2e451 = $(this),
-            _0x235734 = 0xfa0,
-            _0x347e15 = parseInt(_0xe2e451['attr'](_0x1a25e4(0x15e))),
-            _0x11d971 = 0x3e8,
-            _0x3a0565 = parseInt(_0xe2e451['attr'](_0x1a25e4(0x123))),
-            _0x33d89a;
-        _0x347e15['length'] && (_0x235734 = _0x347e15), _0x3a0565[_0x1a25e4(0x136)] && (_0x11d971 = _0x3a0565), $(_0x1a25e4(0x17e), _0xe2e451)[_0x1a25e4(0x136)] > 0x1 && (_0x33d89a = setInterval(function () {
-            var _0x311bf2 = _0x1a25e4;
-            $(_0x311bf2(0x1ab), _0xe2e451)['each'](function () {
-                var _0x278a8c = _0x311bf2,
-                    _0x21b812 = $(this);
-                _0x21b812[_0x278a8c(0x1ad)](), _0x21b812[_0x278a8c(0x237)](_0x278a8c(0x17e))[_0x278a8c(0x136)] ? _0x21b812[_0x278a8c(0x237)](_0x278a8c(0x17e))['fadeIn'](_0x11d971) : _0x21b812['closest'](_0x278a8c(0x11b))[_0x278a8c(0x1c7)](_0x278a8c(0x17e))[_0x278a8c(0x1a5)]()['fadeIn'](_0x11d971);
-            });
-        }, _0x235734), $(this)['append'](_0x1a25e4(0x1d7))), $(_0x1a25e4(0x254), _0xe2e451)['on']('click', function () {
-            var _0x89af35 = _0x1a25e4;
-            clearInterval(_0x33d89a), $(_0x89af35(0x1ab), _0xe2e451)[_0x89af35(0x202)](function () {
-                var _0x1496c9 = _0x89af35,
-                    _0x34715d = $(this);
-                _0x34715d[_0x1496c9(0x1ad)](), _0x34715d[_0x1496c9(0x27c)](_0x1496c9(0x17e))[_0x1496c9(0x136)] ? _0x34715d[_0x1496c9(0x27c)](_0x1496c9(0x17e))[_0x1496c9(0x178)](_0x11d971) : _0x34715d[_0x1496c9(0x1a1)](_0x1496c9(0x11b))[_0x1496c9(0x1c7)](_0x1496c9(0x17e))[_0x1496c9(0x156)]()[_0x1496c9(0x178)](_0x11d971);
-            });
-        }), $(_0x1a25e4(0x217), _0xe2e451)['on'](_0x1a25e4(0x18e), function () {
-            var _0x2f6681 = _0x1a25e4;
-            clearInterval(_0x33d89a), $(_0x2f6681(0x1ab), _0xe2e451)['each'](function () {
-                var _0x8342a7 = _0x2f6681,
-                    _0x40384a = $(this);
-                _0x40384a[_0x8342a7(0x1ad)](), _0x40384a[_0x8342a7(0x237)](_0x8342a7(0x17e))[_0x8342a7(0x136)] ? _0x40384a[_0x8342a7(0x237)]('.slideshow-item,\x20.widget')[_0x8342a7(0x178)](_0x11d971) : _0x40384a[_0x8342a7(0x1a1)](_0x8342a7(0x11b))[_0x8342a7(0x1c7)](_0x8342a7(0x17e))[_0x8342a7(0x1a5)]()[_0x8342a7(0x178)](_0x11d971);
-            });
-        });
-    });
-}
+    /* &#9472;&#9472;&#9472; Section page-title pill &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; */
+    #main header.page-title {
+      background: rgba(255,252,248,.94);
+      backdrop-filter: blur(8px);
+    }
 
-function product_sort() {
-    var _0x21b501 = _0x173287;
-    $(_0x21b501(0x162))['on'](_0x21b501(0x2ba), function () {
-        var _0x353d84 = _0x21b501;
-        $(_0x353d84(0x277))[_0x353d84(0x1a0)]('loading');
-        if ($(this)[_0x353d84(0x2d7)]() == 'terbaru') {
-            var _0x11c1a1 = $(_0x353d84(0x1e8));
-            _0x11c1a1[_0x353d84(0x2e7)](function (_0x2d7339, _0x308bf2) {
-                var _0x399e7b = _0x353d84;
-                return new Date($('[itemprop=\x22releaseDate\x22]', _0x308bf2)['attr'](_0x399e7b(0x181)))[_0x399e7b(0x226)]() - new Date($('[itemprop=\x22releaseDate\x22]', _0x2d7339)[_0x399e7b(0x13d)]('content'))[_0x399e7b(0x226)]();
-            }), setTimeout(function () {
-                var _0x5ba524 = _0x353d84;
-                $(_0x5ba524(0x1b2))[_0x5ba524(0x206)](_0x11c1a1), $('#sort')[_0x5ba524(0x1d3)](_0x5ba524(0x16f)), lazyload();
-            }, 0x1f4);
-        }
-        if ($(this)[_0x353d84(0x2d7)]() == _0x353d84(0x201)) {
-            var _0x11c1a1 = $(_0x353d84(0x1e8));
-            _0x11c1a1[_0x353d84(0x2e7)](function (_0x3fc531, _0x1f878b) {
-                var _0x189e13 = _0x353d84;
-                return new Date($(_0x189e13(0x14f), _0x3fc531)[_0x189e13(0x13d)](_0x189e13(0x181)))[_0x189e13(0x226)]() - new Date($(_0x189e13(0x14f), _0x1f878b)[_0x189e13(0x13d)](_0x189e13(0x181)))[_0x189e13(0x226)]();
-            }), setTimeout(function () {
-                var _0x413147 = _0x353d84;
-                $('.Blog\x20.is_loop')[_0x413147(0x206)](_0x11c1a1), $('#sort')[_0x413147(0x1d3)](_0x413147(0x16f)), lazyload();
-            }, 0x1f4);
-        }
-        if ($(this)[_0x353d84(0x2d7)]() == _0x353d84(0x116)) {
-            var _0x11c1a1 = $(_0x353d84(0x1e8));
-            _0x11c1a1[_0x353d84(0x2e7)](function (_0x3b03b7, _0x3ae59f) {
-                var _0x475f5 = _0x353d84;
-                return $(_0x475f5(0x21e), _0x3b03b7)[_0x475f5(0x13d)](_0x475f5(0x142)) - $(_0x475f5(0x21e), _0x3ae59f)[_0x475f5(0x13d)](_0x475f5(0x142));
-            }), setTimeout(function () {
-                var _0x3f1bc4 = _0x353d84;
-                $(_0x3f1bc4(0x1b2))[_0x3f1bc4(0x206)](_0x11c1a1), $('#sort')[_0x3f1bc4(0x1d3)](_0x3f1bc4(0x16f)), lazyload();
-            }, 0x1f4);
-        }
-        if ($(this)[_0x353d84(0x2d7)]() == _0x353d84(0x168)) {
-            var _0x11c1a1 = $(_0x353d84(0x1e8));
-            _0x11c1a1['sort'](function (_0x7c79d, _0x392c79) {
-                var _0x1583a5 = _0x353d84;
-                return $(_0x1583a5(0x21e), _0x392c79)['attr'](_0x1583a5(0x142)) - $('.price\x20b', _0x7c79d)['attr'](_0x1583a5(0x142));
-            }), setTimeout(function () {
-                var _0x37a941 = _0x353d84;
-                $(_0x37a941(0x1b2))[_0x37a941(0x206)](_0x11c1a1), $('#sort')[_0x37a941(0x1d3)]('loading'), lazyload();
-            }, 0x1f4);
-        }
-    }), $('#sort\x20select')['val']() != '' && $(_0x21b501(0x162))[_0x21b501(0x177)](_0x21b501(0x2ba));
-}
+    /* &#9472;&#9472;&#9472; Slideshow / banner images &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; */
+    #slide-banner #slideshow-home img,
+    #slide-banner #banner-home img {
+      border-radius: 14px;
+    }
 
-function product_convert() {
-    var _0xdfe772 = _0x173287;
-    $('.product:not(.field_loaded)')[_0xdfe772(0x202)](function () {
-        var _0x23f632 = _0xdfe772,
-            _0x54c8c6 = $(this);
-        _0x54c8c6['addClass'](_0x23f632(0x2e4)), $(_0x23f632(0x10a), _0x54c8c6)[_0x23f632(0x13d)]('content', $_config[_0x23f632(0x110)][_0x23f632(0x186)]);
-        _0x54c8c6[_0x23f632(0x14c)](_0x23f632(0x25b)) && $(_0x23f632(0x114), this)[_0x23f632(0x136)] && $('.image\x20.gallery\x20img', this)[_0x23f632(0x202)](function (_0x47cd05) {
-            var _0x1ecd07 = _0x23f632,
-                _0x245af6 = $(this)[_0x1ecd07(0x13d)](_0x1ecd07(0x2b5))[_0x1ecd07(0x28e)]('=')[0x0],
-                _0xd7a85a = _0x245af6['split']('/')[0x7],
-                _0x12a5ea = _0x245af6[_0x1ecd07(0x141)](_0xd7a85a, _0x1ecd07(0x2ce)) + _0x1ecd07(0x207),
-                _0x1992fb = _0x245af6['replace'](_0xd7a85a, _0x1ecd07(0x145)) + '=s800';
-            $('figure.cover', _0x54c8c6)[_0x1ecd07(0x206)]('<a\x20data-lightbox=\x22gallery\x22\x20data-lightbox-title=\x22' + $(_0x1ecd07(0x233), _0x54c8c6)[_0x1ecd07(0x2c6)]() + _0x1ecd07(0x2c2) + _0x1992fb + _0x1ecd07(0x260) + _0x12a5ea + '\x22/></a>');
-        });
-        var _0x50ad3c = {};
-        $('.field\x20td[class]', _0x54c8c6)[_0x23f632(0x202)](function () {
-            var _0x3b162c = _0x23f632,
-                _0x33e09a = $(this)['attr']('class');
-            _0x33e09a != _0x3b162c(0x1c1) && (_0x50ad3c[_0x33e09a] = $(this)[_0x3b162c(0x2c6)]()[_0x3b162c(0x2b8)]('\x20', '')['replaceAll']('.', '')['replaceAll'](',', '')[_0x3b162c(0x2b8)]('%', '')[_0x3b162c(0x2b8)](/(?:\r\n|\r|\n)/g, ''));
-        });
-        _0x50ad3c['status'] == _0x23f632(0x21a) && (_0x54c8c6[_0x23f632(0x1a0)]('empty'), $('figure.cover\x20a:first', _0x54c8c6)[_0x23f632(0x206)](_0x23f632(0x2a3) + $_config['text'][_0x23f632(0x2bd)] + _0x23f632(0x115)), $('[itemprop=\x22availability\x22]', _0x54c8c6)[_0x23f632(0x13d)]('content', 'https://schema.org/OutOfStock'));
-        var _0x30c618 = '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22price\x22\x20data-price=\x22' + Number(_0x50ad3c['price']) + _0x23f632(0x23b) + Number(_0x50ad3c[_0x23f632(0x1bc)]) + '\x22\x20data-unit=\x22' + _0x50ad3c['unit'] + '\x22\x20data-weight=\x22' + Number(_0x50ad3c[_0x23f632(0x1cf)]) + _0x23f632(0x13f);
-        if (_0x54c8c6[_0x23f632(0x14c)](_0x23f632(0x25b))) {
-            _0x30c618 += _0x23f632(0x270);
-            var _0x555eeb = $(_0x23f632(0x216), _0x54c8c6);
-            $(_0x23f632(0x266), _0x555eeb)['text']() == 'on' && (_0x30c618 += '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item\x20variant\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20' + $(_0x23f632(0x203), _0x555eeb)[_0x23f632(0x2c6)]() + _0x23f632(0x21d), $(_0x23f632(0x244), _0x555eeb)['each'](function () {
-                var _0xb2fe08 = _0x23f632;
-                $(this)[_0xb2fe08(0x2c6)]() && (_0x30c618 += _0xb2fe08(0x235) + ($(this)[_0xb2fe08(0x237)](_0xb2fe08(0x154))[_0xb2fe08(0x2c6)]() ? _0xb2fe08(0x129) + $(this)[_0xb2fe08(0x237)](_0xb2fe08(0x154))[_0xb2fe08(0x2c6)]()['replaceAll']('.', '')[_0xb2fe08(0x2b8)](',', '') + '\x22' : '') + '>' + $(this)[_0xb2fe08(0x2c6)]() + _0xb2fe08(0x219));
-            }), _0x30c618 += _0x23f632(0x24b));
-            _0x30c618 += _0x23f632(0x120) + $_config[_0x23f632(0x2c6)][_0x23f632(0x1f4)] + '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</label>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<fieldset>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button>-</button>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22number\x22\x20value=\x221\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button>+</button>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</fieldset>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', _0x30c618 += _0x23f632(0x138) + (_0x50ad3c[_0x23f632(0x278)] == _0x23f632(0x21a) ? _0x23f632(0x251) : '') + _0x23f632(0x28b), _0x30c618 += _0x23f632(0x227) + $_config[_0x23f632(0x2c6)][_0x23f632(0x2de)] + _0x23f632(0x283), _0x30c618 += '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20';
-            if (_0x50ad3c[_0x23f632(0x278)] == 'on') {
-                var _0x2ddb59 = $(_0x23f632(0x2a9), _0x54c8c6);
-                $(_0x23f632(0x266), _0x2ddb59)[_0x23f632(0x2c6)]() == 'on' && (_0x30c618 += '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22marketplace\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<small>' + $_config[_0x23f632(0x2c6)]['product_via_marketplace'] + _0x23f632(0x126), $(_0x23f632(0x1ce), _0x2ddb59)[_0x23f632(0x202)](function () {
-                    var _0xb271f6 = _0x23f632;
-                    $(this)['text']() && (_0x30c618 += '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22' + $(this)[_0xb271f6(0x2c6)]() + _0xb271f6(0x1df) + $(this)[_0xb271f6(0x2c6)]()[_0xb271f6(0x28e)]('/')[0x2]['toLowerCase']()[_0xb271f6(0x141)]('www.', '') + '\x22\x20rel=\x22nofollow\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22https://www.google.com/s2/favicons?domain=' + $(this)[_0xb271f6(0x2c6)]()[_0xb271f6(0x28e)]('/')[0x2] + _0xb271f6(0x20a));
-                }), _0x30c618 += _0x23f632(0x143));
-            }
-        }
-        var _0x47ca79 = $(_0x23f632(0x233), this);
-        $(_0x30c618)[_0x23f632(0x121)](_0x47ca79);
-        var _0x54c8c6 = $(this),
-            _0x4921bd = $(_0x23f632(0x154), _0x54c8c6)[_0x23f632(0x13d)](_0x23f632(0x188)),
-            _0x197318 = Number($(_0x23f632(0x154), _0x54c8c6)[_0x23f632(0x13d)](_0x23f632(0x142))),
-            _0x3c53a2 = Number($(_0x23f632(0x154), _0x54c8c6)[_0x23f632(0x13d)]('data-discount'));
-        if (_0x3c53a2) {
-            var _0x4cc5ce = _0x197318 - _0x197318 * _0x3c53a2 / 0x64;
-            $(_0x23f632(0x154), _0x54c8c6)[_0x23f632(0x25d)](_0x23f632(0x1bb) + _0x3c53a2 + '%</small><s>' + format_currency(_0x197318) + '</s><b\x20data-price=\x22' + _0x4cc5ce + '\x22>' + format_currency(_0x4cc5ce) + _0x23f632(0x21b) + (_0x4921bd ? _0x23f632(0x269) + _0x4921bd + '</span>' : '')), $(_0x23f632(0x1b9), this)[_0x23f632(0x13d)](_0x23f632(0x181), _0x4cc5ce);
-        } else $(_0x23f632(0x154), _0x54c8c6)[_0x23f632(0x25d)]('<b\x20data-price=\x22' + _0x197318 + '\x22>' + format_currency(_0x197318) + _0x23f632(0x21b) + (_0x4921bd ? '<span>/' + _0x4921bd + '</span>' : '')), $('[itemprop=\x22price\x22]', this)[_0x23f632(0x13d)](_0x23f632(0x181), _0x197318);
-        $('.variant\x20button', _0x54c8c6)[_0x23f632(0x202)](function () {
-            var _0x3251fa = _0x23f632,
-                _0x429551 = $(this)[_0x3251fa(0x13d)]('data-price');
-            if (!_0x429551) {
-                var _0x32f65b = $(_0x3251fa(0x154), _0x54c8c6)[_0x3251fa(0x13d)]('data-price');
-                $(this)['attr'](_0x3251fa(0x142), _0x32f65b);
-            }
-        }), $(_0x23f632(0x1f3), _0x54c8c6)['on'](_0x23f632(0x18e), function () {
-            var _0x483705 = _0x23f632;
-            $(_0x483705(0x1f3), _0x54c8c6)[_0x483705(0x1d3)](_0x483705(0x2c5)), $(this)[_0x483705(0x1a0)](_0x483705(0x2c5));
-            var _0xbcfedc = $(this)['attr']('data-price');
-            if (_0xbcfedc) {
-                if (_0x3c53a2) {
-                    var _0x6bc210 = _0xbcfedc - _0xbcfedc * _0x3c53a2 / 0x64;
-                    $(_0x483705(0x154), _0x54c8c6)['html']('<small>-' + _0x3c53a2 + _0x483705(0x192) + format_currency(_0xbcfedc) + '</s><b\x20data-price=\x22' + _0x6bc210 + '\x22>' + format_currency(_0x6bc210) + '</b>' + (_0x4921bd ? _0x483705(0x269) + _0x4921bd + _0x483705(0x288) : '')), $('[itemprop=\x22price\x22]', this)[_0x483705(0x13d)]('content', _0x6bc210);
-                } else $(_0x483705(0x154), _0x54c8c6)[_0x483705(0x25d)](_0x483705(0x187) + _0xbcfedc + '\x22>' + format_currency(_0xbcfedc) + _0x483705(0x21b) + (_0x4921bd ? _0x483705(0x269) + _0x4921bd + '</span>' : '')), $('[itemprop=\x22price\x22]', this)[_0x483705(0x13d)](_0x483705(0x181), _0xbcfedc);
-            }
-        }), $(_0x23f632(0x1b6), _0x54c8c6)[_0x23f632(0x177)]('click'), $(_0x23f632(0x161), _0x54c8c6)['on']('change', function () {
-            var _0x13bf4a = _0x23f632,
-                _0x4e9e42 = Number($(_0x13bf4a(0x161), _0x54c8c6)[_0x13bf4a(0x2d7)]());
-            _0x4e9e42 < 0x1 && (_0x4e9e42 = 0x1), $(_0x13bf4a(0x161), _0x54c8c6)[_0x13bf4a(0x2d7)](_0x4e9e42);
-        }), $(_0x23f632(0x10b), _0x54c8c6)['on'](_0x23f632(0x18e), function () {
-            var _0x3f66eb = _0x23f632,
-                _0xe41037 = Number($(_0x3f66eb(0x161), _0x54c8c6)['val']());
-            $(this)[_0x3f66eb(0x2c6)]() == '-' ? _0xe41037 = _0xe41037 - 0x1 : _0xe41037 = _0xe41037 + 0x1, $(_0x3f66eb(0x161), _0x54c8c6)[_0x3f66eb(0x2d7)](_0xe41037)['trigger'](_0x3f66eb(0x2ba));
-        });
-    });
-}
+    /* Mobile only: full-bleed slideshow, detached banner */
+    @media only screen and (max-width: 768px) {
+      #slide-banner {
+        margin: -20px -20px 0 !important;
+        grid-gap: 0 !important;
+      }
 
-function popwin(_0x119892 = '', _0x469be1 = '', _0x461cc6 = '') {
-    var _0x5b086c = _0x173287;
-    if (_0x119892) {
-        var _0x3b84a4 = _0x119892,
-            _0x4729d0 = 0x3c0;
-        _0x469be1 && (_0x4729d0 = _0x469be1);
-        var _0x57c616 = 0x21c;
-        _0x461cc6 && (_0x57c616 = _0x461cc6);
-        var _0x73898e = Number(screen['width'] / 0x2 - _0x4729d0 / 0x2),
-            _0x5ceb00 = Number(screen[_0x5b086c(0x2db)] / 0x2 - _0x57c616 / 0x2),
-            _0x1adace = window[_0x5b086c(0x1f7)](_0x3b84a4, '', _0x5b086c(0x221) + _0x4729d0 + _0x5b086c(0x2b2) + _0x57c616 + ',\x20top=' + _0x5ceb00 + _0x5b086c(0x1b0) + _0x73898e);
-        _0x1adace['focus']();
-    } else $(document)['on']('click', _0x5b086c(0x15b), function (_0x22cd03) {
-        var _0x1cc2cb = _0x5b086c;
-        _0x22cd03['stopPropagation'](), _0x22cd03[_0x1cc2cb(0x273)]();
-        var _0x581117 = $(this)[_0x1cc2cb(0x13d)]('href'),
-            _0x43e034 = $(this)['attr']('data-popwin-width'),
-            _0x47d9e7 = $(this)[_0x1cc2cb(0x13d)](_0x1cc2cb(0x1e4)),
-            _0x36cc79 = 0x3c0;
-        _0x43e034 && (_0x36cc79 = _0x43e034);
-        var _0x106e5e = 0x21c;
-        _0x47d9e7 && (_0x106e5e = _0x47d9e7);
-        var _0x4e6014 = Number(screen[_0x1cc2cb(0x14b)] / 0x2 - _0x36cc79 / 0x2),
-            _0x850c11 = Number(screen['height'] / 0x2 - _0x106e5e / 0x2),
-            _0x5a306b = window[_0x1cc2cb(0x1f7)](_0x581117, '', _0x1cc2cb(0x221) + _0x36cc79 + _0x1cc2cb(0x2b2) + _0x106e5e + ',\x20top=' + _0x850c11 + _0x1cc2cb(0x1b0) + _0x4e6014);
-        _0x5a306b[_0x1cc2cb(0x189)]();
-    });
-}
+      #slide-banner #slideshow-home img {
+        width: 100% !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+      }
 
-function shortcode() {
-    var _0x5bc60f = _0x173287;
-    $('.post-body')[_0x5bc60f(0x202)](function () {
-        var _0x44debe = _0x5bc60f;
-        $(this)[_0x44debe(0x25d)]($(this)[_0x44debe(0x25d)]()['replace'](/\[youtube\]/g, _0x44debe(0x11d))[_0x44debe(0x141)](/\[\/youtube\]/g, _0x44debe(0x27b))[_0x44debe(0x141)](/\[code\]/g, '<pre\x20data-shortcode=\x22code\x22><code>')[_0x44debe(0x141)](/\[\/code\]/g, _0x44debe(0x144))[_0x44debe(0x141)](/\[img\]/g, '<img\x20style=\x22display:block;width:100%;border-radius:10px;\x22\x20data-shortcode=\x22img\x22\x20src=\x22')[_0x44debe(0x141)](/\[\/img\]/g, _0x44debe(0x250))['replace'](/\[url\]/g, _0x44debe(0x297))['replace'](/\[\/url\]/g, _0x44debe(0x1c6)));
-    }), $(_0x5bc60f(0x2e8))[_0x5bc60f(0x202)](function () {
-        var _0x4c3498 = _0x5bc60f,
-            _0x11fe05 = $(this)['attr'](_0x4c3498(0x2d5));
-        if (_0x11fe05 == _0x4c3498(0x1c1)) {
-            var _0x3f7c81 = $(this)[_0x4c3498(0x13d)](_0x4c3498(0x2b5));
-            $(this)[_0x4c3498(0x2a5)](_0x4c3498(0x1ea) + _0x3f7c81 + _0x4c3498(0x232));
-        }
-        if (_0x11fe05 == 'youtube') {
-            var _0x354f11 = $(this)[_0x4c3498(0x13d)]('data-src'),
-                _0x35a914 = _0x354f11['split']('/')[0x3];
-            _0x354f11[_0x4c3498(0x11a)](_0x4c3498(0x24a)) >= 0x0 && (_0x35a914 = get_url_parameter('v', _0x354f11)), $(this)[_0x4c3498(0x13d)]('data-src', _0x4c3498(0x263) + _0x35a914 + '?rel=0');
-        }
-    });
-}
+      #slide-banner #banner-home {
+        margin-top: 12px !important;   /* clear separation from slideshow */
+        padding: 0 20px !important;
+        box-shadow: none !important;
+      }
 
-function translate() {
-    var _0x5ea0f4 = _0x173287;
-    $(_0x5ea0f4(0x247))[_0x5ea0f4(0x202)](function () {
-        var _0x3e22d3 = _0x5ea0f4,
-            _0x7199d1 = $(this)['attr'](_0x3e22d3(0x29a));
-        $_config['text'][_0x7199d1] ? $(this)[_0x3e22d3(0x2c6)]($_config[_0x3e22d3(0x2c6)][_0x7199d1]) : $(this)[_0x3e22d3(0x2c6)](_0x7199d1);
-    }), $(_0x5ea0f4(0x16d))[_0x5ea0f4(0x202)](function () {
-        var _0x484e80 = _0x5ea0f4,
-            _0x489b33 = $(this)[_0x484e80(0x13d)](_0x484e80(0x1ef));
-        $_config['text'][_0x489b33] ? $(this)[_0x484e80(0x13d)]('label', $_config[_0x484e80(0x2c6)][_0x489b33]) : $(this)[_0x484e80(0x13d)]('label', _0x489b33);
-    }), $(_0x5ea0f4(0x2c1))[_0x5ea0f4(0x202)](function () {
-        var _0x4f0c0f = _0x5ea0f4,
-            _0x4b2984 = $(this)['attr'](_0x4f0c0f(0x23c));
-        $_config[_0x4f0c0f(0x2c6)][_0x4b2984] ? $(this)[_0x4f0c0f(0x13d)](_0x4f0c0f(0x299), $_config[_0x4f0c0f(0x2c6)][_0x4b2984]) : $(this)['attr'](_0x4f0c0f(0x299), _0x4b2984);
-    }), $(_0x5ea0f4(0x204))[_0x5ea0f4(0x202)](function () {
-        var _0x1b51ca = _0x5ea0f4,
-            _0x5dc45c = $(this)['attr']('data-text-pop-title');
-        $_config[_0x1b51ca(0x2c6)][_0x5dc45c] ? $(this)[_0x1b51ca(0x13d)](_0x1b51ca(0x106), $_config[_0x1b51ca(0x2c6)][_0x5dc45c]) : $(this)[_0x1b51ca(0x13d)]('data-pop-title', _0x5dc45c);
-    });
-}
+      #slide-banner #banner-home img {
+        width: 100% !important;
+        border-radius: 12px !important;
+        box-shadow: var(--card_shadow) !important;
+      }
+    }
 
-function _0x972e() {
-    var _0x2e5342 = ['</p>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '.slideshow-item:visible,\x20.widget:visible', 'variant', 'hide', '..\x22\x20value=\x22', 'true', ',\x20left=', '<h4>', '.Blog\x20.is_loop', 'stopPropagation', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20name=\x22address\x22\x20placeholder=\x22', '#lightbox\x20.lb-np.lb-next:visible', '.variant\x20button:first', '.item\x20.note', '[target*=\x22pop-\x22]', '[itemprop=\x22price\x22]', 'page', '<small>-', 'discount', '\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<b\x20class=\x22total\x22>', '\x22\x20data-img=\x22', '\x22\x20required>\x20\x20\x20\x20\x20\x20\x20\x20', '\x22][data-lightbox=\x22', 'img', '</h4>', 'background-image', '.variant\x20button.active', 'a[href*=\x22#\x22]', '\x22\x20target=\x22_blank\x22\x20rel=\x22nofollow\x20external\x22>Lihat\x20Tautan</a>', 'find', 'months', 'url(', '\x22\x20data-info=\x22', 'outerHeight', 'cart_remove', '#lightbox\x20.lb-np.lb-next', '.link', 'weight', '#cart\x20.empty', 'tahun', 'reverse', 'removeClass', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20via.\x20', 'unit', '\x20=\x20*', '\x20\x20<button\x20class=\x22nav-left\x22\x20aria-label=\x22Navigation\x22>\x20\x20\x20\x20<svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20viewBox=\x220\x200\x20512\x20512\x22><path\x20d=\x22M217.9\x20256L345\x20129c9.4-9.4\x209.4-24.6\x200-33.9-9.4-9.4-24.6-9.3-34\x200L167\x20239c-9.1\x209.1-9.3\x2023.7-.7\x2033.1L310.9\x20417c4.7\x204.7\x2010.9\x207\x2017\x207s12.3-2.3\x2017-7c9.4-9.4\x209.4-24.6\x200-33.9L217.9\x20256z\x22/></svg>\x20\x20</button>\x20\x20<button\x20class=\x22nav-right\x22\x20aria-label=\x22Navigation\x22>\x20\x20\x20\x20<svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20viewBox=\x220\x200\x20512\x20512\x22><path\x20d=\x22M294.1\x20256L167\x20129c-9.4-9.4-9.4-24.6\x200-33.9s24.6-9.3\x2034\x200L345\x20239c9.1\x209.1\x209.3\x2023.7.7\x2033.1L201.1\x20417c-4.7\x204.7-10.9\x207-17\x207s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6\x200-33.9l127-127.1z\x22/></svg>\x20\x20</button>\x20\x20\x20', 'stringify', '&#0169;', 'keydown', '&text=', 'load', '\x20/\x20', '\x22/>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '\x22\x20target=\x22_blank\x22\x20title=\x22', 'days', '<small\x20class=\x22weight\x22\x20title=\x22', 'top', '[tab]', 'data-popwin-height', 'lh3.googleusercontent.com', 'mousedown', '%20', '.Blog\x20article', '<div\x20class=\x22pop\x22></div>', '<a\x20class=\x22lightbox\x22\x20href=\x22', 'detik', '.blogger.com', 'toLowerCase', '</b>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', 'data-text-label', 'iframe', '\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22left\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<b\x20class=\x22title\x22>', '\x22><i\x20class=\x22pop-back\x22><svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20viewBox=\x220\x200\x20512\x20512\x22><path\x20d=\x22M217.9\x20256L345\x20129c9.4-9.4\x209.4-24.6\x200-33.9-9.4-9.4-24.6-9.3-34\x200L167\x20239c-9.1\x209.1-9.3\x2023.7-.7\x2033.1L310.9\x20417c4.7\x204.7\x2010.9\x207\x2017\x207s12.3-2.3\x2017-7c9.4-9.4\x209.4-24.6\x200-33.9L217.9\x20256z\x22/></svg></i></a>', '.variant\x20button', 'product_qty', '#cart\x20.cta\x20.subtotal\x20.qty,\x20#cart-btn\x20.qty', '&m=1', 'open', 'substr', '\x20Gram', 'article#', '</b></small><h3>', 'checkout_payment', 'https://api.whatsapp.com/send?phone=', 'li.dropdown', 'appendTo', 'round', 'terlama', 'each', '.label', '[data-text-pop-title]', 'onload', 'append', '=w150-h150-c', 'data-feed', '[data-feed]', '&sz=24\x22\x20alt=\x22favicon\x22/>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '[href=\x22', '\x22\x20style=\x22display:none;\x22/>', 'datetime', 'info', 'article:last-of-type', 'years', 'exec', 'hostname', '3598ZxvOHl', '#lightbox\x20.lb-count', 'parse', '.variant', '.nav-right', '\x20)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '</button>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', 'off', '</b>', '.detail', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</label>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<fieldset>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '.price\x20b', 'undefined', '508KaokEt', 'toolbar=no,\x20location=no,\x20directories=no,\x20status=no,\x20menubar=no,\x20scrollbars=yes,\x20resizable=1,\x20copyhistory=no,\x20width=', 'data-lightbox-desc', '\x0a\x0avia.\x20', 'scrollTop', '[id=pop-video]\x20iframe', 'getTime', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22cart-add\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20viewBox=\x220\x200\x20512\x20512\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<path\x20d=\x22M387.9\x20373.7h49.2l17.5-75.4h-66.7zM387.9\x20448h.5c18.7\x200\x2033.4-12.5\x2038.3-29.5l6-25.9h-44.8V448zM265.4\x20392.5h103.7V448H265.4zM75\x20373.7h49v-75.4H57.5zM142.9\x20192h103.7v87.5H142.9zM265.4\x20192h103.7v87.5H265.4zM85.5\x20418.3c4.7\x2017\x2019.4\x2029.7\x2038.1\x2029.7h.5v-55.5H79.4l6.1\x2025.8zM142.9\x20392.5h103.7V448H142.9zM265.4\x20298.3h103.7v75.4H265.4zM142.9\x20298.3h103.7v75.4H142.9z\x22\x20/>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<path\x20d=\x22M464\x20192h-47.9V96c0-17.6-14.4-32-32-32H127.9c-17.6\x200-32\x2014.4-32\x2032v96H48c-10.3\x200-17.9\x209.6-15.6\x2019.6l19.7\x2067.9H124V106c0-7.7\x206.3-14\x2014-14h236c7.7\x200\x2014\x206.3\x2014\x2014v173.5h72l19.6-67.9c2.3-10-5.3-19.6-15.6-19.6z\x22\x20/>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</svg>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</h3>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22pop-close\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20viewBox=\x220\x200\x20512\x20512\x22><path\x20d=\x22M278.6\x20256l68.2-68.2c6.2-6.2\x206.2-16.4\x200-22.6-6.2-6.2-16.4-6.2-22.6\x200L256\x20233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6\x200-3.1\x203.1-4.7\x207.2-4.7\x2011.3\x200\x204.1\x201.6\x208.2\x204.7\x2011.3l68.2\x2068.2-68.2\x2068.2c-3.1\x203.1-4.7\x207.2-4.7\x2011.3\x200\x204.1\x201.6\x208.2\x204.7\x2011.3\x206.2\x206.2\x2016.4\x206.2\x2022.6\x200l68.2-68.2\x2068.2\x2068.2c6.2\x206.2\x2016.4\x206.2\x2022.6\x200\x206.2-6.2\x206.2-16.4\x200-22.6L278.6\x20256z\x22/></svg>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</header>\x20\x20\x20\x20\x20\x20\x20\x20', '#lightbox\x20.lb-wrap\x20figure\x20figcaption', '#lightbox\x20.lb-wrap\x20figure\x20.lb-img\x20img', 'slice', '*\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '#blog-pager\x20.loadmore-btn', 'charAt', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22right\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20class=\x22link\x22\x20href=\x22', '</p>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<hr\x20style=\x22border:0;border-top:1px\x20solid\x20#ddd;\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22https://lapak.kangrian.net/', '\x20\x20\x20\x20\x20\x20\x20\x20<fieldset>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20name=\x22name\x22\x20placeholder=\x22', '\x22></a>', '.title', '?m=1', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20', 'menit', 'next', 'data-offset-top', 'pop-video', 'Disalin!', '\x22\x20data-discount=\x22', 'data-text-placeholder', 'a.blog-pager-newer-link', '.LinkList\x20li\x20a:contains(\x22_\x22)', '<i\x20class=\x22icon\x20right\x22><svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20viewBox=\x220\x200\x20512\x20512\x22><path\x20d=\x22M256\x20294.1L383\x20167c9.4-9.4\x2024.6-9.4\x2033.9\x200s9.3\x2024.6\x200\x2034L273\x20345c-9.1\x209.1-23.7\x209.3-33.1.7L95\x20201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3\x207-17c9.4-9.4\x2024.6-9.4\x2033.9\x200l127.1\x20127z\x22/></svg></i>', '#cart\x20.cta\x20.subtotal\x20.wrap\x20.grid.weight', '.cart-add', 'ago', '\x20\x20\x20\x20', '.name', '#cart\x20.cta\x20.subtotal\x20.sub,\x20#cart-btn\x20.sub', 'hari', '[data-text]', '.variant\x20label', 'prop', 'https://www.youtube.com/watch?v=', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</fieldset>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '1.bp.blogspot.com', '[data-lightbox]', 'title', 'removeItem', '\x22\x20alt=\x22image\x22/>', 'disabled', 'a.blog-pager-older-link\x20>\x20figure', 'shipping', '.nav-left', '</h4>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>', '<ul\x20class=\x22sub\x22></ul>', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item\x22\x20data-id=\x22', '27177jSuUmv', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', 'w100-h100-c', 'is_post', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<link\x20href=\x22https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap\x22\x20rel=\x22stylesheet\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<style>hr\x20{\x20margin:0!important;\x20}\x20body\x20{\x20padding:\x200px!important;\x20}\x20*\x20{\x20font-family:\x20\x22Rubik\x22,\x20sans-serif;\x20font-weight:400;\x20box-sizing:border-box;margin:0;padding:0;\x20text-decoration:none;\x20color:#636363;\x20}\x20b\x20{\x20font-weight:\x20500;\x20color:#232323;\x20}</style>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22notice_html\x22\x20style=\x22display:flex;background:#fafafa;min-height:100vh;text-align:center;\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22margin:auto;width:480px;max-width:80%;background:white;padding:30px;border-radius:10px;border:1px\x20solid\x20#ddd;\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<svg\x20style=\x22fill:#636363;width:100px;height:100px;display:block;margin:0\x20auto\x2020px\x22\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20viewBox=\x220\x200\x20512\x20512\x22><path\x20d=\x22M228.9\x2079.9L51.8\x20403.1C40.6\x20423.3\x2055.5\x20448\x2078.9\x20448h354.3c23.3\x200\x2038.2-24.7\x2027.1-44.9L283.1\x2079.9c-11.7-21.2-42.5-21.2-54.2\x200zM273.6\x20214L270\x20336h-28l-3.6-122h35.2zM256\x20402.4c-10.7\x200-19.1-8.1-19.1-18.4s8.4-18.4\x2019.1-18.4\x2019.1\x208.1\x2019.1\x2018.4-8.4\x2018.4-19.1\x2018.4z\x22/></svg>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2><b>Peringatan</b>\x20:</h2>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>', 'html', '#lightbox\x20.lb-close', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</optgroup>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</select>\x20\x20\x20\x20\x20\x20\x20\x20', '\x22><img\x20data-src=\x22', '\x20:\x20<b\x20class=\x22variant\x22>', '</b><br><br><small>#ERR_ITEM</small>', 'https://www.youtube.com/embed/', 'data-lightbox', '.pop', '.status', '<b>Kode\x20Lisensi</b>\x20hanya\x20bisa\x20digunakan\x20pada\x20website\x20dengan\x20domain\x20:\x20<b>', '#lightbox', '<span>/', '<div\x20class=\x22pop-wrap\x22></div>', '749nyMkAp', 'data-weight', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22pop-video\x22\x20data-pop-title=\x22Video\x22\x20data-pop-width=\x22960\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22video\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<iframe\x20allowfullscreen=\x22true\x22></iframe>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '\x20Kg', 'remove', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22option\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '2.bp.blogspot.com', '176754vbNBMS', 'preventDefault', 'javascript:void(0)', '#lightbox\x20.lb-np.lb-prev:visible', 'parent', '#sort', 'status', '\x22\x20data-index=\x22', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<header\x20class=\x22pop-header\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22pop-title\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '\x22></iframe></div>', 'prev', '.is_single\x20article\x20.attr-sticky', '?autoplay=1&showinfo=0', '[name]', '\x22\x20required>\x20\x20\x20\x20\x20\x20\x20\x20</fieldset>\x20\x20\x20\x20', '\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', 'fadeOut', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '.pop-wrap', 'cart_total', '#lightbox\x20.lb-wrap', 'localhost', '</span>', 'view', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20â€”\x20â€”\x20â€”\x20â€”\x20â€”\x20â€”\x20â€”\x20â€”\x20â€”\x20â€”\x20â€”\x20â€”\x20â€”\x20â€”\x20â€”\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22chat\x22\x20target=\x22pop-chat\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<svg\x20viewBox=\x220\x200\x20512\x20512\x22\x20xmlns=\x22http://www.w3.org/2000/svg\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<path\x20d=\x22M260.062\x2032C138.605\x2032\x2040.134\x20129.701\x2040.134\x20250.232c0\x2041.23\x2011.532\x2079.79\x2031.559\x20112.687L32\x20480l121.764-38.682c31.508\x2017.285\x2067.745\x2027.146\x20106.298\x2027.146C381.535\x20468.464\x20480\x20370.749\x20480\x20250.232\x20480\x20129.701\x20381.535\x2032\x20260.062\x2032zm109.362\x20301.11c-5.174\x2012.827-28.574\x2024.533-38.899\x2025.072-10.314.547-10.608\x207.994-66.84-16.434-56.225-24.434-90.052-83.844-92.719-87.67-2.669-3.812-21.78-31.047-20.749-58.455\x201.038-27.413\x2016.047-40.346\x2021.404-45.725\x205.351-5.387\x2011.486-6.352\x2015.232-6.413\x204.428-.072\x207.296-.132\x2010.573-.011\x203.274.124\x208.192-.685\x2012.45\x2010.639\x204.256\x2011.323\x2014.443\x2039.153\x2015.746\x2041.989\x201.302\x202.839\x202.108\x206.126.102\x209.771-2.012\x203.653-3.042\x205.935-5.961\x209.083-2.935\x203.148-6.174\x207.042-8.792\x209.449-2.92\x202.665-5.97\x205.572-2.9\x2011.269\x203.068\x205.693\x2013.653\x2024.356\x2029.779\x2039.736\x2020.725\x2019.771\x2038.598\x2026.329\x2044.098\x2029.317\x205.515\x203.004\x208.806\x202.67\x2012.226-.929\x203.404-3.599\x2014.639-15.746\x2018.596-21.169\x203.955-5.438\x207.661-4.373\x2012.742-2.329\x205.078\x202.052\x2032.157\x2016.556\x2037.673\x2019.551\x205.51\x202.989\x209.193\x204.529\x2010.51\x206.9\x201.317\x202.38.901\x2013.531-4.271\x2026.359z\x22></path>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</svg>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</button>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '\x22\x20required></textarea>\x20\x20\x20\x20\x20\x20\x20\x20', '.pop.open', 'split', 'keyCode', 'src=\x22', 'removeAttr', '</b>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', 'a.blog-pager-older-link', '.item\x20.qty\x20input', 'data-bg', 'offset', '<a\x20data-shortcode=\x22url\x22\x20href=\x22', '#cart\x20.list', 'placeholder', 'data-text', 'checkout_form', '11XCPQLE', '\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20class=\x22img\x22\x20src=\x22', '#cart\x20.form', 'toko-wa-plus-blogger-template', 'data-pop-height', 'data-url', '[name]:visible', '<span\x20class=\x22empty\x22><b>', 'submit', 'wrap', '4319910FgIXtx', 'empty', '\x22/>', '.marketplace', 'animate', 'body', '.LinkList\x20li\x20a[href*=\x22#\x22]', 'pop-open', '</option>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<optgroup\x20label=\x22', 'cart_note', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<select\x20name=\x22shipping\x22\x20required>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22\x22\x20selected\x20hidden>', 'value', ',\x20height=', 'checkout_info', '[data-src]:not([lazy=\x22true\x22])', 'src', '4.bp.blogspot.com', '#cart-close', 'replaceAll', 'push', 'change', '<figure\x20class=\x22loading\x22></figure><div\x20class=\x22flex\x20right\x22><div\x20class=\x22wrap\x22><small><b>', '\x20(\x20', 'product_empty', '<b>Kode\x20Lisensi</b>\x20hanya\x20bisa\x20digunakan\x20untuk\x20<b>', 'checkout_address', 'product_prev', '[data-text-placeholder]', '\x22\x20href=\x22', '.pop-title\x20h3', '\x20article\x20h1', 'active', 'text', 'checkout_name', '<p\x20class=\x22shippay\x22><b>', 'checkout_note', '#pop-bagikan\x20.copy\x20button', '<b>Kode\x20Lisensi</b>\x20dibutuhkan..<br><br><small>#ERR_LICENSE</small>', '\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22lightbox\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22lb-wrap\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<figure>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22lb-img\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22lb-count\x22></div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<nav\x20class=\x22lb-nav\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22lb-np\x20lb-prev\x22></div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22lb-close\x22></div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22lb-np\x20lb-next\x22></div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</nav>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</figure>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20', 'style', 'w150-h150-c', '<figure\x20class=\x22loading\x22></figure><div\x20class=\x22flex\x20left\x22><div\x20class=\x22wrap\x22><small><b>', 'setAttribute', '<p>', '#lightbox\x20.lb-np.lb-prev,\x20#lightbox\x20.lb-np.lb-next', '[id*=\x22pop-\x22]:not(\x22.pop-loaded\x22)', 'price', 'data-shortcode', '397kDRmdl', 'val', 'Escape', 'seconds', 'data-id', 'height', 'toString', 'yang\x20lalu', 'product_add', 'href', 'contextmenu', 'lb-loading', '#cart\x20.form\x20[name=', 'a.blog-pager-newer-link\x20>\x20figure', 'field_loaded', '<figure><img\x20alt=\x22', '\x20:\x20', 'sort', '[data-shortcode]', 'lazy', 'hash', 'url', '86248tiqgSo', '<img\x20src=\x22', 'data-pop-title', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '\x22\x20width=\x2224\x22\x20height=\x2224\x22/><figcaption>', 'email', 'meta[itemprop=\x22priceCurrency\x22]', '.qty\x20button', '[data-lightbox=\x22', 'input', '<a\x20target=\x22', 'address', 'money', 'checkout_form_payment', 'data-info', 'prepend', '.image\x20.gallery', '</b></span>', 'terendah', 'checkout_intro', 'wrapInner', '#header\x20a[target=pop-search]', 'indexOf', '.slideshow', 'scroll', '<div\x20class=\x22video\x22><iframe\x20allowfullscreen=\x22true\x22\x20data-shortcode=\x22youtube\x22\x20data-src=\x22', '\x20.is_loop', '*\x20(\x20', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item\x20qty\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', 'insertAfter', 'getFullYear', 'data-fade', '#cart-btn', '#pop-chat', '</small>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<br>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '#lightbox\x20.lb-np', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<option\x20value=\x22', 'data-price=\x22', 'timeago', 'html,\x20body', '.LinkList', 'checkout_form_shipping', 'Dilarang\x20menghapus\x20variable\x20<b>$license_key</b>..', 'name', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<fieldset\x20class=\x22qty\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20type=\x22button\x22>-</button>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22number\x22\x20value=\x22', '#header', 'Dilarang\x20menghapus\x20variable\x20<b>$license_item</b>..', 'checkout_confirm', 'cart_order', 'tagName', 'length', '\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22cta\x20', '[data-bg]', 'whatsapp', 'location', 'ul:first', 'attr', '\x20:</b></p>', '\x22></div>\x20\x20\x20\x20\x20\x20\x20\x20', 'cart', 'replace', 'data-price', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', '</code></pre>', 's800', '\x22\x20required>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22tel\x22\x20name=\x22phone\x22\x20placeholder=\x22', '.loadmore-btn', 'payment', '*\x20:\x0a\x0a', 'stop', 'width', 'hasClass', 'show', '.pop-content', '[itemprop=\x22releaseDate\x22]', 'insertBefore', '#cart', '=w100-h100-c', 'copy', '.price', '</b><br><br><small>#ERR_DOMAIN</small>', 'last', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</option>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', 'data-src', 'shadow', 'note', '[target=\x22_popwin\x22]', '#lightbox\x20.lb-np.lb-prev', '.pop-close', 'data-delay', '265wGeUQq', '\x20:\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20*', '.qty\x20input', '#sort\x20select', '[data-src]', 'getElementById', '</small>', 'overflow', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</span>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<b>', 'tertinggi', '.dropdown', 'select', '\x5c$&', '.blogspot.com', '[data-text-label]', '3.bp.blogspot.com', 'loading', '</h3></div></div>', 'lightbox_open', 'cart_weight', 'data-pop-width', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20*', 'innerHTML', '#cart\x20.list_n_form,\x20#cart\x20.cta', 'trigger', 'fadeIn', '.item', 'toUpperCase', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20class=\x22note\x22\x20type=\x22text\x22\x20placeholder=\x22+\x20', 'data-hide-id', 'dropdown', '.slideshow-item,\x20.widget', 'checkout_email', '\x20article\x20.post-body\x20img:first-of-type', 'content', 'css', '*\x20:\x20', '#cart\x20[name=shipping]', 'form', 'currency', '<b\x20data-price=\x22', 'data-unit', 'focus', '<img\x20data-src=\x22', '\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20type=\x22button\x22>+</button>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</fieldset>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>', '.img', 'splice', 'click', 'data-index', 'data-lightbox-index', 'join', '%</small><s>', '#lightbox\x20.lb-wrap\x20figure\x20.lb-img', '\x20:\x20*', '*\x20x\x20', '#contact', 'beforeunload', '</p>', '#comments\x20.datetime\x20a:not(.timeago)', 'option:selected', '</b><br>', 'buyer', 'checkout_shipping', 'minutes', '\x22></textarea>\x20\x20\x20\x20\x20\x20\x20\x20', 'addClass', 'closest', '[datetime]:not(.timeago)', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22grid\x20weight\x22>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20', 'qty', 'first', '6011930THGMYr', '13406172aJVLhy', '\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20name=\x22note\x22\x20placeholder=\x22', 'country_id'];
-    _0x972e = function () {
-        return _0x2e5342;
+    /* &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+       LUXURY PRODUCT CARD
+    &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; */
+
+    /* Card shell */
+    #main .is_loop article {
+      background: #fffdf8;
+      border: 1px solid rgba(138,90,59,.14);
+      border-radius: 20px;
+      padding: 0;
+      overflow: hidden;
+      box-shadow: var(--card_shadow);
+      transition:
+        transform   .38s cubic-bezier(.22,1,.36,1),
+        box-shadow  .38s cubic-bezier(.22,1,.36,1),
+        border-color .38s ease;
+    }
+
+    #main .is_loop article:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--card_shadow_hover);
+      border-color: rgba(176,125,74,.42);
+    }
+
+    /* &#9472;&#9472; Thumbnail frame &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; */
+    #main .is_loop article figure.cover {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border-radius: var(--thumb_radius);
+      background: #ede0d0;
+      margin: 0;
+    }
+
+    /* remove the default margin-bottom the base skin sets on the link */
+    #main .is_loop article figure.cover a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+      position: relative;
+    }
+
+    /* The thumbnail image itself */
+    #main .is_loop article figure.cover a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border-radius: 0;
+      box-shadow: none;
+      transition:
+        transform .58s cubic-bezier(.22,1,.36,1),
+        filter    .58s cubic-bezier(.22,1,.36,1);
+      filter: brightness(1.01) saturate(1.04) contrast(1.01);
+      will-change: transform;
+      /* Crisp scaling on all browsers */
+      image-rendering: -webkit-optimize-contrast;
+    }
+
+    /* Zoom the image on card hover */
+    #main .is_loop article:hover figure.cover a img {
+      transform: scale(1.08);
+      filter: brightness(1.05) saturate(1.14) contrast(1.02);
+    }
+
+    /* Warm gold shimmer layer &#8212; slides in from bottom-right on hover */
+    #main .is_loop article figure.cover::after {
+      content: &#39;&#39;;
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        148deg,
+        rgba(255,215,120,.00) 0%,
+        rgba(255,215,120,.00) 50%,
+        rgba(255,200,100,.16) 100%
+      );
+      opacity: 0;
+      transition: opacity .42s ease;
+      pointer-events: none;
+      border-radius: var(--thumb_radius);
+    }
+
+    #main .is_loop article:hover figure.cover::after {
+      opacity: 1;
+    }
+
+    /* Thin gold shimmer line at the top edge of the thumbnail */
+    #main .is_loop article figure.cover::before {
+      content: &#39;&#39;;
+      position: absolute;
+      top: 0; left: 10%; right: 10%;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(212,167,106,.55) 50%,
+        transparent
+      );
+      opacity: 0;
+      transition: opacity .42s ease;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    #main .is_loop article:hover figure.cover::before {
+      opacity: 1;
+    }
+
+    /* &#9472;&#9472; Card info area (below thumbnail) &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; */
+    #main .is_loop article .title {
+      display: block;
+      margin: 14px 14px 4px;
+      font-size: 87%;
+      font-weight: 700;
+      letter-spacing: 0.015em;
+      color: #1c1612;
+      line-height: 1.4;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    #main .is_loop article .price {
+      display: block;
+      font-size: 81%;
+      margin: 0 14px 16px;
+      color: #7a5235;
+    }
+
+    #main .is_loop article .price b {
+      font-size: 120%;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: -0.01em;
+    }
+
+    /* &quot;Out of stock&quot; badge &#8212; refined */
+    #main .is_loop article .price small {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(28,22,18,.68);
+      color: rgba(255,255,255,.92);
+      font-size: 62%;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,.12);
+      line-height: 1.5;
+    }
+
+    /* Thin gold accent line at the very bottom of each card */
+    #main .is_loop article::after {
+      content: &#39;&#39;;
+      display: block;
+      height: 2px;
+      margin: 0 18px 12px;
+      border-radius: 999px;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(176,125,74,.30) 40%,
+        rgba(212,167,106,.55) 60%,
+        transparent
+      );
+      opacity: 0;
+      transition: opacity .38s ease;
+    }
+
+    #main .is_loop article:hover::after {
+      opacity: 1;
+    }
+
+    /* &#9472;&#9472;&#9472; Feature / trust section &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; */
+    #feature {
+      background: linear-gradient(120deg, #2f2118 0%, #553724 60%, #6d4530 100%);
+    }
+
+    /* &#9472;&#9472;&#9472; Contact / footer headings &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; */
+    #contact .widget h3,
+    #footer #footer-section h3 {
+      color: #8a5a3b;
+      letter-spacing: 0.02em;
+    }
+
+    /* &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+       CART DRAWER &#8212; Form pinned at top, product list scrolls below
+    &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; */
+
+    /* Make list_n_form a flex column so we can reorder children */
+    #cart .list_n_form {
+      display: flex !important;
+      flex-direction: column !important;
+      overflow: hidden !important;
+      /* restore the exact height the base skin reserves */
+      height: calc(100% - 80px - 80px - 60px) !important;
+    }
+
+    /* Form: takes exactly its content height &#8212; ZERO internal scroll */
+    #cart .list_n_form .form {
+      order: 0;
+      flex: 0 0 auto !important;       /* height = content, never grows/shrinks */
+      max-height: none !important;     /* no cap */
+      overflow: visible !important;    /* absolutely no scroll inside form */
+      background: #fdfaf6;
+      border-top: none !important;
+      border-bottom: 3px solid var(--key);
+      box-shadow: 0 4px 12px -4px rgba(44,20,8,.10);
+      /* tighter spacing so all fields fit without scrolling */
+      padding: 10px 20px 12px !important;
+      grid-gap: 8px !important;
+    }
+
+    /* Product list: the ONLY scrollable zone */
+    #cart .list_n_form .list {
+      order: 1;
+      flex: 1 1 0 !important;          /* fills remaining height */
+      min-height: 0 !important;        /* allow it to shrink to zero if needed */
+      overflow-y: auto !important;
+      box-shadow: none;
+    }
+
+    /* &#9472;&#9472;&#9472; Form fields &#8212; full overhaul &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; */
+
+    /* Compact section header strip */
+    #cart .list_n_form .form::before {
+      content: &#39;Delivery Details&#39;;
+      display: block;
+      font-size: 68%;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: white;
+      background: linear-gradient(90deg, var(--key), var(--gold));
+      margin: -10px -20px 8px;
+      padding: 5px 20px;
+    }
+
+    /* Labels */
+    #cart .list_n_form .form fieldset legend,
+    #cart .list_n_form .form label {
+      display: block;
+      font-weight: 700;
+      font-size: 68%;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 2px;
+    }
+
+    /* Every input / select */
+    #cart .list_n_form .form input,
+    #cart .list_n_form .form select {
+      height: 42px !important;
+      background-color: #fff8f2 !important;
+      border: 1.5px solid rgba(176,125,74,.28) !important;
+      border-bottom: 2.5px solid var(--gold) !important;
+      border-radius: 8px !important;
+      color: #1c1612 !important;
+      font-weight: 600 !important;
+      font-size: 88% !important;
+      padding-left: 40px !important;
+      padding-right: 12px !important;
+      padding-top: 2px !important;
+      background-repeat: no-repeat !important;
+      background-size: 16px 16px !important;
+      background-position: 12px center !important;
+      box-shadow: 0 2px 6px rgba(138,90,59,.06) !important;
+      transition: all .15s ease !important;
+      caret-color: var(--key);
+    }
+
+    /* Textarea &#8212; compact but usable */
+    #cart .list_n_form .form textarea {
+      height: auto !important;
+      min-height: 52px !important;
+      max-height: 52px !important;
+      background-color: #fff8f2 !important;
+      border: 1.5px solid rgba(176,125,74,.28) !important;
+      border-bottom: 2.5px solid var(--gold) !important;
+      border-radius: 8px !important;
+      color: #1c1612 !important;
+      font-weight: 600 !important;
+      font-size: 88% !important;
+      padding-left: 40px !important;
+      padding-top: 8px !important;
+      padding-right: 12px !important;
+      background-repeat: no-repeat !important;
+      background-size: 16px 16px !important;
+      background-position: 12px 10px !important;
+      box-shadow: 0 2px 6px rgba(138,90,59,.06) !important;
+      line-height: 1.4 !important;
+      resize: none !important;
+      transition: all .15s ease !important;
+      caret-color: var(--key);
+    }
+
+    /* Focus &#8212; warm glow ring */
+    #cart .list_n_form .form input:focus,
+    #cart .list_n_form .form select:focus,
+    #cart .list_n_form .form textarea:focus {
+      background-color: #fffdf9 !important;
+      border-color: var(--key) !important;
+      border-bottom-color: var(--key) !important;
+      box-shadow: 0 0 0 3px rgba(138,90,59,.14), 0 4px 14px rgba(138,90,59,.09) !important;
+      outline: none !important;
+    }
+
+    /* Placeholder text */
+    #cart .list_n_form .form input::placeholder,
+    #cart .list_n_form .form textarea::placeholder {
+      color: rgba(0,0,0,.52);
+      font-weight: 500;
+    }
+
+    /* &#9472;&#9472;&#9472; Dark icons override &#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; */
+    #cart .list_n_form .form input[name=name] {
+      background-image: url(&quot;data:image/svg+xml,%3Csvg fill=&#39;%23333&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 512 512&#39;%3E%3Cpath d=&#39;M447.8 438.3c-7.2-31.8-48.3-47.3-62.5-52.3-15.6-5.5-37.8-6.8-52.1-10-8.2-1.8-20.1-6.3-24.1-11.1s-1.6-49.3-1.6-49.3 7.4-11.5 11.4-21.7c4-10.1 8.4-37.9 8.4-37.9s8.2 0 11.1-14.4c3.1-15.7 8-21.8 7.4-33.5-.6-11.5-6.9-11.2-6.9-11.2s6.1-16.7 6.8-51.3c.9-41.1-31.3-81.6-89.6-81.6-59.1 0-90.6 40.5-89.7 81.6.8 34.6 6.7 51.3 6.7 51.3s-6.3-.3-6.9 11.2c-.6 11.7 4.3 17.8 7.4 33.5 2.8 14.4 11.1 14.4 11.1 14.4s4.4 27.8 8.4 37.9c4 10.2 11.4 21.7 11.4 21.7s2.4 44.5-1.6 49.3c-4 4.8-15.9 9.3-24.1 11.1-14.3 3.2-36.5 4.5-52.1 10-14.2 5-55.3 20.5-62.5 52.3-1.1 5 2.7 9.7 7.9 9.7H440c5.1 0 8.9-4.7 7.8-9.7z&#39;/%3E%3C/svg%3E&quot;);
+    }
+    #cart .list_n_form .form input[name=phone] {
+      background-image: url(&quot;data:image/svg+xml,%3Csvg fill=&#39;%23333&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 512 512&#39;%3E%3Cpath d=&#39;M436.9 364.8c-14.7-14.7-50-36.8-67.4-45.1-20.2-9.7-27.6-9.5-41.9.8-11.9 8.6-19.6 16.6-33.3 13.6-13.7-2.9-40.7-23.4-66.9-49.5-26.2-26.2-46.6-53.2-49.5-66.9-2.9-13.8 5.1-21.4 13.6-33.3 10.3-14.3 10.6-21.7.8-41.9C184 125 162 89.8 147.2 75.1c-14.7-14.7-18-11.5-26.1-8.6 0 0-12 4.8-23.9 12.7-14.7 9.8-22.9 18-28.7 30.3-5.7 12.3-12.3 35.2 21.3 95 27.1 48.3 53.7 84.9 93.2 124.3l.1.1.1.1c39.5 39.5 76 66.1 124.3 93.2 59.8 33.6 82.7 27 95 21.3 12.3-5.7 20.5-13.9 30.3-28.7 7.9-11.9 12.7-23.9 12.7-23.9 2.9-8.1 6.2-11.4-8.6-26.1z&#39;/%3E%3C/svg%3E&quot;);
+    }
+    #cart .list_n_form .form input[name=email] {
+      background-image: url(&quot;data:image/svg+xml,%3Csvg fill=&#39;%23333&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 512 512&#39;%3E%3Cpath d=&#39;M460.6 147.3L353 256.9c-.8.8-.8 2 0 2.8l75.3 80.2c5.1 5.1 5.1 13.3 0 18.4-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8l-75-79.9c-.8-.8-2.1-.8-2.9 0L313.7 297c-15.3 15.5-35.6 24.1-57.4 24.2-22.1.1-43.1-9.2-58.6-24.9l-17.6-17.9c-.8-.8-2.1-.8-2.9 0l-75 79.9c-2.5 2.5-5.9 3.8-9.2 3.8s-6.7-1.3-9.2-3.8c-5.1-5.1-5.1-13.3 0-18.4l75.3-80.2c.7-.8.7-2 0-2.8L51.4 147.3c-1.3-1.3-3.4-.4-3.4 1.4V368c0 17.6 14.4 32 32 32h352c17.6 0 32-14.4 32-32V148.7c0-1.8-2.2-2.6-3.4-1.4z&#39;/%3E%3Cpath d=&#39;M256 295.1c14.8 0 28.7-5.8 39.1-16.4L452 119c-5.5-4.4-12.3-7-19.8-7H79.9c-7.5 0-14.4 2.6-19.8 7L217 278.7c10.3 10.5 24.2 16.4 39 16.4z&#39;/%3E%3C/svg%3E&quot;);
+    }
+    #cart .list_n_form .form textarea[name=address] {
+      background-image: url(&quot;data:image/svg+xml,%3Csvg fill=&#39;%23333&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 512 512&#39;%3E%3Cpath d=&#39;M258.5 104.1c-1.5-1.2-3.5-1.2-5 0l-156 124.8c-.9.8-1.5 1.9-1.5 3.1v230c0 1.1.9 2 2 2h108c1.1 0 2-.9 2-2V322c0-1.1.9-2 2-2h92c1.1 0 2 .9 2 2v140c0 1.1.9 2 2 2h108c1.1 0 2-.9 2-2V232c0-1.2-.6-2.4-1.5-3.1l-156-124.8z&#39;/%3E%3Cpath d=&#39;M458.7 204.2l-189-151.4C265.9 49.7 261 48 256 48s-9.9 1.7-13.7 4.8L160 119.7V77.5c0-1.1-.9-2-2-2H98c-1.1 0-2 .9-2 2v92.2l-42.7 35.1c-3.1 2.5-5.1 6.2-5.3 10.2-.2 4 1.3 7.9 4.1 10.7 2.6 2.6 6.1 4.1 9.9 4.1 3.2 0 6.3-1.1 8.8-3.1l183.9-148c.5-.4.9-.4 1.3-.4s.8.1 1.3.4l183.9 147.4c2.5 2 5.6 3.1 8.8 3.1 3.7 0 7.2-1.4 9.9-4.1 2.9-2.8 4.4-6.7 4.2-10.7-.3-4-2.2-7.7-5.4-10.2z&#39;/%3E%3C/svg%3E&quot;);
+    }
+    #cart .list_n_form .form textarea[name=note] {
+      background-image: url(&quot;data:image/svg+xml,%3Csvg fill=&#39;%23333&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 512 512&#39;%3E%3Cpath d=&#39;M64 368v80h80l235.727-235.729-79.999-79.998L64 368zm377.602-217.602c8.531-8.531 8.531-21.334 0-29.865l-50.135-50.135c-8.531-8.531-21.334-8.531-29.865 0l-39.468 39.469 79.999 79.998 39.469-39.467z&#39;/%3E%3C/svg%3E&quot;);
+    }
+    #cart .list_n_form .form input[name=db_pincode] {
+      background-image: url(&quot;data:image/svg+xml,%3Csvg fill=&#39;%23333&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 384 512&#39;%3E%3Cpath d=&#39;M192 0C86 0 0 86 0 192c0 87.5 140.3 272.3 176.2 318.6 8 10.3 23.5 10.3 31.5 0C243.7 464.3 384 279.5 384 192 384 86 298 0 192 0zm0 272a80 80 0 1 1 0-160 80 80 0 1 1 0 160z&#39;/%3E%3C/svg%3E&quot;);
+    }
+    #cart .list_n_form .form input[name=db_landmark] {
+      background-image: url(&quot;data:image/svg+xml,%3Csvg fill=&#39;%23333&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 512 512&#39;%3E%3Cpath d=&#39;M80 448h352v32H80zm32-64h64V160h-64zm112 0h64V96h-64zm112 0h64V224h-64z&#39;/%3E%3C/svg%3E&quot;);
+    }
+
+    /* PIN Code + Landmark: stacked, full width, compact gap */
+    #cart .list_n_form .form .db-addr-extras {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 8px !important;
+      border: 0;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+
+    #cart .list_n_form .form .db-addr-extras input {
+      width: 100% !important;
+    }
+
+    /* Shipping / payment detail cards */
+    #cart .list_n_form .form .detail {
+      border-color: rgba(138,90,59,.25);
+      background: rgba(253,250,246,.9);
+    }
+
+    #cart .list_n_form .form .detail h4 {
+      font-size: 88%;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: var(--key);
+    }
+
+    #cart .list_n_form .form .detail p {
+      font-size: 86%;
+      font-weight: 500;
+      color: #3d2b1a;
+    }
+
+    /* Brand alert modal (replaces browser default alert) */
+    #db-alert {
+      position: fixed;
+      z-index: 100001;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(22, 12, 5, .45);
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity .2s ease;
+    }
+
+    #db-alert.open {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    #db-alert .db-alert-card {
+      width: min(430px, 100%);
+      background: linear-gradient(180deg, #fffdf9 0%, #f8efe4 100%);
+      border: 1px solid rgba(176,125,74,.35);
+      border-bottom: 4px solid var(--key);
+      border-radius: 14px;
+      box-shadow: 0 20px 45px rgba(40, 20, 9, .24);
+      overflow: hidden;
+      transform: translateY(8px) scale(.98);
+      transition: transform .2s ease;
+    }
+
+    #db-alert.open .db-alert-card {
+      transform: translateY(0) scale(1);
+    }
+
+    #db-alert .db-alert-head {
+      background: linear-gradient(90deg, var(--key), var(--gold));
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      font-size: 74%;
+      padding: 9px 14px;
+    }
+
+    #db-alert .db-alert-body {
+      color: #1b120c;
+      font-size: 95%;
+      line-height: 1.5;
+      padding: 16px 16px 12px;
+      max-height: 48vh;
+      overflow-y: auto;
+      white-space: pre-line;
+    }
+
+    #db-alert .db-alert-foot {
+      padding: 0 16px 16px;
+      text-align: right;
+    }
+
+    #db-alert .db-alert-ok {
+      height: 40px;
+      min-width: 88px;
+      border: 1px solid var(--key);
+      border-bottom: 2px solid rgba(0,0,0,.16);
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--key), var(--gold));
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 0 18px;
+    }
+
+    #db-alert .db-alert-ok:active {
+      transform: translateY(1px);
+    }
+  </style>
+  <script>
+    const $_config = {
+
+    &quot;page&quot; : {
+    &quot;title&quot;: &quot;<data:blog.title/>&quot;,
+    &quot;name&quot;: &quot;<data:blog.pageName/>&quot;,
+    },
+
+    &quot;url&quot; : {
+    &quot;canonical&quot;: &quot;<data:view.url.canonical/>&quot;,
+    &quot;home&quot;: &quot;<data:blog.canonicalHomepageUrl/>&quot;,
+    },
+
     };
-    return _0x972e();
-}
 
-function etc() {
-    var _0xb92604 = _0x173287;
-    $(window)['on'](_0xb92604(0x197), function () {
-        var _0x34ad43 = _0xb92604;
-        $(_0x34ad43(0x2ab))[_0x34ad43(0x1a0)](_0x34ad43(0x16f)), setTimeout(function () {
-            var _0x2b9bca = _0x34ad43;
-            $(_0x2b9bca(0x2ab))[_0x2b9bca(0x1d3)](_0x2b9bca(0x16f));
-        }, 0x7d0);
-    }), $(window)['on'](_0xb92604(0x11c), function () {
-        var _0x429be0 = _0xb92604;
-        $(window)[_0x429be0(0x224)]() > 0x0 ? $(_0x429be0(0x131))[_0x429be0(0x1a0)](_0x429be0(0x159)) : $(_0x429be0(0x131))['removeClass']('shadow');
-    }), $(_0xb92604(0x119))['on'](_0xb92604(0x18e), function () {
-        setTimeout(function () {
-            var _0x5ccef7 = _0x4917;
-            $('#header\x20#pop-search\x20[type=search]')[_0x5ccef7(0x189)]();
-        }, 0x32);
-    }), $(_0xb92604(0x125))['on'](_0xb92604(0x2a4), _0xb92604(0x185), function (_0xc1207d) {
-        var _0x5c46a4 = _0xb92604;
-        _0xc1207d[_0x5c46a4(0x273)]();
-        var _0xa69642 = $(_0x5c46a4(0x10d), this)[_0x5c46a4(0x2d7)]() + _0x5c46a4(0x223) + location[_0x5c46a4(0x2df)],
-            _0x38e164 = _0x5c46a4(0x1fd) + $_config[_0x5c46a4(0x13a)] + _0x5c46a4(0x1db) + encodeURIComponent(_0xa69642);
-        popwin(_0x38e164);
-    }), $(_0xb92604(0x2ac))[_0xb92604(0x202)](function () {
-        var _0x288496 = _0xb92604;
-        $(this)[_0x288496(0x13d)](_0x288496(0x2df), _0x288496(0x274)), $(this)['append'](_0x288496(0x23f));
-        var _0x2fd84d = $(this)[_0x288496(0x276)]('li');
-        _0x2fd84d[_0x288496(0x1a0)](_0x288496(0x17d)), _0x2fd84d[_0x288496(0x118)]('<span\x20class=\x22dropdown-title\x22></span>'), _0x2fd84d['append'](_0x288496(0x256));
-    }), $(_0xb92604(0x23e))[_0xb92604(0x202)](function () {
-        var _0x83b1cc = _0xb92604,
-            _0x801bf6 = $(this)[_0x83b1cc(0x276)]('li')[_0x83b1cc(0x27c)](_0x83b1cc(0x169))['find']('ul');
-        $(this)[_0x83b1cc(0x276)]('li')[_0x83b1cc(0x1ff)](_0x801bf6);
-        var _0x25486d = $(this)['text']()[_0x83b1cc(0x2b8)]('_', '')[_0x83b1cc(0x2b8)]('_\x20', '');
-        $(this)['text'](_0x25486d);
-    }), $(_0xb92604(0x12c))['on'](_0xb92604(0x18e), _0xb92604(0x1fe), function () {
-        var _0x39f973 = _0xb92604;
-        $(this)[_0x39f973(0x1c7)](_0x39f973(0x13c))['toggle'](), $(this)['toggleClass'](_0x39f973(0x2c5));
-    });
-    $('[data-feed]')['length'] && $(_0xb92604(0x209))['each'](function () {
-        var _0x47be9a = _0xb92604,
-            _0x5833ae = $(this),
-            _0x2bf99d = $(this)[_0x47be9a(0x13d)](_0x47be9a(0x208))[_0x47be9a(0x141)](_0x47be9a(0x234), '')[_0x47be9a(0x141)](_0x47be9a(0x1f6), '')[_0x47be9a(0x2b8)]('\x20', _0x47be9a(0x1e7));
-        _0x5833ae[_0x47be9a(0x1a0)](_0x47be9a(0x16f)), _0x5833ae[_0x47be9a(0x1dc)](_0x2bf99d + _0x47be9a(0x11e), function () {
-            var _0x26f430 = _0x47be9a,
-                _0x1cad47 = $(this)[_0x26f430(0x25d)]();
-            _0x5833ae['html'](_0x1cad47);
-            var _0x5b1138 = _0x5833ae[_0x26f430(0x13d)](_0x26f430(0x17c));
-            _0x5b1138 && (_0x5833ae[_0x26f430(0x1c7)](_0x26f430(0x1fa) + _0x5b1138)['length'] ? _0x5833ae[_0x26f430(0x1c7)](_0x26f430(0x1fa) + _0x5b1138)[_0x26f430(0x26f)]() : _0x5833ae['find'](_0x26f430(0x20f))[_0x26f430(0x26f)]()), product_convert(), lazyload(), timeago(), _0x5833ae[_0x26f430(0x1d3)]('loading'), _0x5833ae['find']('article')['length'] == 0x0 && _0x5833ae['closest']('#related')[_0x26f430(0x26f)]();
-        });
-    });
-    $(_0xb92604(0x2ca))['on']('click', function (_0x35ff07) {
-        var _0x191f05 = _0xb92604,
-            _0x5e2fc9 = $(this);
-        _0x5e2fc9['siblings'](_0x191f05(0x10d))[_0x191f05(0x16a)](), document['execCommand'](_0x191f05(0x153)), _0x5e2fc9['text'](_0x191f05(0x23a)), setTimeout(function () {
-            var _0x3dcf08 = _0x191f05;
-            _0x5e2fc9[_0x3dcf08(0x2c6)]('Salin');
-        }, 0x7d0);
-    });
-    if (window['location']['hash']) {
-        if ($(window['location'][_0xb92604(0x2ea)])[_0xb92604(0x136)]) {
-            var _0x250af4 = $('#header')[_0xb92604(0x1cb)](),
-                _0x4859c2 = $(_0xb92604(0x27d))[_0xb92604(0x1cb)]();
-            $('html,\x20body')[_0xb92604(0x14a)]()['animate']({
-                'scrollTop': $(window[_0xb92604(0x13b)][_0xb92604(0x2ea)])[_0xb92604(0x296)]()['top'] - _0x250af4 - _0x4859c2 - 0x14
-            }, 0x1f4), $(window[_0xb92604(0x13b)][_0xb92604(0x2ea)])[_0xb92604(0x1a0)](_0xb92604(0x189)), setTimeout(function () {
-                var _0x167f7 = _0xb92604;
-                $(window['location'][_0x167f7(0x2ea)])[_0x167f7(0x1d3)](_0x167f7(0x189));
-            }, 0x7d0);
-        }
-    }
-    $(document)['on'](_0xb92604(0x18e), _0xb92604(0x1c5), function (_0x2fe7c0) {
-        var _0x5e4018 = _0xb92604,
-            _0x30bae6 = '#' + $(this)[_0x5e4018(0x13d)]('href')[_0x5e4018(0x28e)]('#')[0x1];
-        if ($(_0x30bae6)[_0x5e4018(0x136)] && $(this)['attr'](_0x5e4018(0x2df))[_0x5e4018(0x28e)]('#')[0x0] === '') {
-            _0x2fe7c0[_0x5e4018(0x273)]();
-            var _0x23ef0f = $(_0x5e4018(0x131))[_0x5e4018(0x1cb)](),
-                _0xffd7ee = $(_0x5e4018(0x27d))[_0x5e4018(0x1cb)]();
-            _0xffd7ee ? $(_0x5e4018(0x12b))[_0x5e4018(0x14a)]()[_0x5e4018(0x2aa)]({
-                'scrollTop': $(_0x30bae6)['offset']()[_0x5e4018(0x1e2)] - _0x23ef0f - _0xffd7ee - 0x14
-            }, 0x1f4) : $(_0x5e4018(0x12b))[_0x5e4018(0x14a)]()[_0x5e4018(0x2aa)]({
-                'scrollTop': $(_0x30bae6)['offset']()['top'] - _0x23ef0f - 0x14
-            }, 0x1f4), $(_0x30bae6)[_0x5e4018(0x1a0)](_0x5e4018(0x189)), setTimeout(function () {
-                var _0x5e5750 = _0x5e4018;
-                $(_0x30bae6)[_0x5e5750(0x1d3)]('focus');
-            }, 0x7d0);
-        }
-    }), $(document)['on'](_0xb92604(0x18e), _0xb92604(0x147), function (_0x3ff404) {
-        var _0x47cbbf = _0xb92604;
-        _0x3ff404[_0x47cbbf(0x273)]();
-        let _0x399822 = $(this)[_0x47cbbf(0x13d)](_0x47cbbf(0x2df)),
-            _0xeb2d70 = $('#blog-pager\x20.loadmore-btn'),
-            _0x6c7c50 = $(_0x47cbbf(0x22d))[_0x47cbbf(0x2c6)]();
-        _0x399822 && $['ajax']({
-            'url': _0x399822,
-            'beforeSend': function () {
-                var _0x4f75e6 = _0x47cbbf;
-                _0xeb2d70[_0x4f75e6(0x1a0)](_0x4f75e6(0x16f));
-            },
-            'complete': function () {
-                var _0xd2b6d6 = _0x47cbbf;
-                _0xeb2d70['removeClass'](_0xd2b6d6(0x16f));
-            },
-            'success': function (_0x3e7cd8) {
-                var _0x139d8b = _0x47cbbf;
-                let _0x48b031 = $(_0x3e7cd8)[_0x139d8b(0x1c7)]('.Blog\x20.is_loop')[_0x139d8b(0x25d)](),
-                    _0x3ecfc9 = $(_0x3e7cd8)['find'](_0x139d8b(0x147))[_0x139d8b(0x13d)](_0x139d8b(0x2df));
-                $('.Blog\x20.is_loop')['append'](_0x48b031), _0xeb2d70[_0x139d8b(0x14d)](), product_convert(), product_sort(), lazyload(), timeago(), _0x3ecfc9 ? _0xeb2d70[_0x139d8b(0x13d)](_0x139d8b(0x2df), _0x3ecfc9) : _0xeb2d70[_0x139d8b(0x282)]();
+    console.log($_config);
+  </script>
+  &lt;!--</head>--&gt;
+  &lt;/head&gt;
+  <body id='top' itemscope='' itemtype='https://schema.org/WebPage'>
+    <b:section class='config' id='config' name='Setting / Konfigurasi' showaddelement='false' version='3'>
+      <b:widget id='HTML11' locked='true' title='Kode Lisensi ( Premium )' type='HTML' version='3' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'/>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <script>const $license_key = &#39;<data:content/>&#39;;</script>
+        </b:includable>
+      </b:widget>
+      <b:widget id='HTML12' locked='true' title='WhatsApp Admin' type='HTML' version='3' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>918486713268</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <script>
+            $_config.whatsapp = &#39;<data:content/>&#39;;
+          </script>
+        </b:includable>
+      </b:widget>
+      <b:widget id='HTML13' locked='true' title='Visibilitas - Form Checkout ( true / false )' type='HTML' version='3' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA["address" : true,
+"payment" : false,]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <script>
+            $_config.checkout_form = {
+            <data:content/>
             }
-        });
+          </script>
+        </b:includable>
+      </b:widget>
+      <b:widget id='HTML14' locked='true' title='Shipping - Form Checkout ( custom )' type='HTML' version='3' visible='false'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA["Pesan - Ambil ( Pickup )" : {
+  "status" : true,
+  "info" : "Jl. Alamat Toko, No. 123 - Bandung, Indonesia 40241",
+  "img" : "https://i.ibb.co/VgKRYNX/pickup.png",
+},
+"Pesan - Antar ( Go-Send )" : {
+  "status" : true,
+  "info" : "Ongkir di Tempat",
+  "img" : "https://i.ibb.co/G7brrLH/go-send.png",
+},
+"Pesan - Antar ( GrabExpress )" : {
+  "status" : true,
+  "info" : "Ongkir di Tempat",
+  "img" : "https://i.ibb.co/XVzSfnC/grab-express.png",
+},]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <script>
+            $_config.checkout_form_shipping = {
+            <data:content/>
+            }
+          </script>
+        </b:includable>
+      </b:widget>
+      <b:widget id='HTML15' locked='true' title='Payment - Form Checkout ( custom )' type='HTML' version='3' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA["Cash on Delivery" : {
+  "status" : true,
+  "img" : "https://i.ibb.co/yhZyS09/dana.png",
+},
+"Transfer Online" : {
+  "status" : false,
+  "info" : "paypal.me/kangrian",
+  "img" : "https://i.ibb.co/xmgJSC8/paypal.png",
+},]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <script>
+            $_config.checkout_form_payment = {
+            <data:content/>
+            }
+          </script>
+        </b:includable>
+      </b:widget>
+      <b:widget id='HTML16' locked='true' title='Teks / Translate' type='HTML' version='3' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA["menu" : "Menu",
+  "share" : "Share",
+  "copy" : "Copy",
+  "search" : "Search",
+  "search_placeholder" : "Search Products",
+  "product_empty" : "Out of Stock",
+  "product_not_found" : "Product Not Found",
+  "product_explore" : "New Arrivals",
+  "product_qty" : "Qty",
+  "product_add" : "Add to Cart",
+  "product_via_marketplace" : "Or, checkout via your favorite marketplace:",
+  "product_all" : "All Products",
+  "product_loadmore" : "Load More",
+  "product_more_in" : "More in",
+  "product_prev" : "Previous",
+  "product_next" : "Next",
+  "product_sort" : "Sort By",
+  "product_sort_new" : "Newest First",
+  "product_sort_low" : "Price: Low to High",
+  "product_sort_high" : "Price: High to Low",
+  "cart_order" : "Order",
+  "cart_note" : "Notes",
+  "cart_remove" : "Remove this item?",
+  "cart_qty_n_price" : "Qty & Price",
+  "cart_total" : "Total",
+  "cart_weight" : "Order Weight",
+  "cart_send" : "Submit Order",
+  "cart_empty" : "Your cart is empty",
+  "checkout_confirm" : "Confirm checkout?",
+  "checkout_intro" : "Hello, I would like to place an order:",
+  "checkout_info" : "Customer Information",
+  "checkout_name" : "Full Name",
+  "checkout_phone" : "Phone Number",
+  "checkout_address" : "Shipping Address",
+  "checkout_email" : "Email Address",
+  "checkout_note" : "Order Notes (Optional)",
+  "checkout_shipping" : "Shipping Method",
+  "checkout_payment" : "Payment Method",
+  "error_title" : "404 Error",
+  "error_desc" : "Page not found",
+  "error_back" : "Back to",
+  "error_home" : "Home",
+  "chat_title" : "Chat via WhatsApp",
+  "chat_intro" : "Hello! How can we help you?",
+  "chat_placeholder" : "Type your question here..."]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <script>
+            $_config.text = {
+            <data:content/>
+            }
+          </script>
+        </b:includable>
+      </b:widget>
+      <b:widget id='HTML17' locked='true' title='Mata Uang ( Currency )' type='HTML' version='3' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA["country_id" : "in-IN",
+"currency" : "INR",]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <script>
+            $_config.money = {
+            <data:content/>
+            }
+          </script>
+        </b:includable>
+      </b:widget>
+    </b:section>
+    <header id='header'>
+      <div class='wrapper'>
+        <b:section class='header-section' id='header-section' name='Header' showaddelement='false' version='3'>
+          <b:widget id='LinkList11' locked='true' title='Menu' type='LinkList' version='2' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='link-3'>/search/label/Bedroom?max-results=8</b:widget-setting>
+              <b:widget-setting name='sorting'>NONE</b:widget-setting>
+              <b:widget-setting name='link-4'>/search/label/Dining?max-results=8</b:widget-setting>
+              <b:widget-setting name='text-1'>Living Room</b:widget-setting>
+              <b:widget-setting name='link-1'>/search/label/Living%20Room?max-results=8</b:widget-setting>
+              <b:widget-setting name='text-0'>About Us</b:widget-setting>
+              <b:widget-setting name='link-2'>#dropdown</b:widget-setting>
+              <b:widget-setting name='text-3'>_Bedroom</b:widget-setting>
+              <b:widget-setting name='link-0'>/p/about.html</b:widget-setting>
+              <b:widget-setting name='text-2'>Shop by Room</b:widget-setting>
+              <b:widget-setting name='text-4'>_Dining</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <b:include name='content'/>
+            </b:includable>
+            <b:includable id='content'>
+              <a class='menu' data-text-pop-title='menu' target='pop-menu'>
+                <i class='icon'>
+                  <svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M432 176H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 272H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16zM432 368H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h352c8.8 0 16 7.2 16 16s-7.2 16-16 16z'/></svg>
+                </i>
+              </a>
+              <div data-pop-width='320' id='pop-menu'>
+                <ul>
+                  <b:loop values='data:links' var='link'>
+                    <li><a expr:href='data:link.target'><data:link.name/></a></li>
+                  </b:loop>
+                </ul>
+                <small>
+                  &amp;#0169; <b><data:blog.title/></b>
+                </small>
+              </div>
+            </b:includable>
+          </b:widget>
+          <b:widget id='Header11' locked='true' title='Heidari Furniture (Header)' type='Header' version='2' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEiOfd-rDoK1zw7LAWuTCblLb3TkNgfcrmRaGVudDX2dBY564sNhCMybG4DYnVu9iLp23iBxLuNUIkRAh9sZaEKsGbEFtCDyqrl5Ay8WjmoiFKlujBuHQ30F4_08ZaaT-D43i5pu5I3ZFPm00J2nd9WBmAJKiKFKLB9vHrpEJ94ycOv2F7t_HZoxw2QTw8X-=s1078</b:widget-setting>
+              <b:widget-setting name='displayHeight'>245</b:widget-setting>
+              <b:widget-setting name='sectionWidth'>1202</b:widget-setting>
+              <b:widget-setting name='useImage'>true</b:widget-setting>
+              <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+              <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+              <b:widget-setting name='displayWidth'>1078</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main' var='this'>
+              <a class='logo' expr:href='data:blog.canonicalHomepageUrl' expr:title='data:title'>
+                <span>
+                  <b:if cond='data:image'>
+                    <img expr:alt='data:title + &quot; - &quot; + data:caption' expr:src='resizeImage(data:image, 300)' height='30' width='300'/>
+                    <b:else/>
+                    <b><data:blog.title/></b>
+                  </b:if>
+                  <small><data:this.description/></small>
+                </span>
+                <b:if cond='data:view.url == data:blog.canonicalHomepageUrl'>
+                  <hgroup style='display:none;'>
+                    <h1>
+                      <data:title/>
+                    </h1>
+                    <h2>
+                      <data:this.description/>
+                    </h2>
+                  </hgroup>
+                  <b:else/>
+                  <div style='display:none;'>
+                    <h3>
+                      <data:title/>
+                    </h3>
+                    <p>
+                      <data:this.description/>
+                    </p>
+                  </div>
+                </b:if>
+              </a>
+            </b:includable>
+            <b:includable id='behindImageStyle'>
+            </b:includable>
+            <b:includable id='description'>
+            </b:includable>
+            <b:includable id='image'>
+            </b:includable>
+            <b:includable id='title'>
+            </b:includable>
+          </b:widget>
+          <b:widget id='Label11' locked='true' title='Search &amp;amp; Label' type='Label' version='2' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+              <b:widget-setting name='display'>LIST</b:widget-setting>
+              <b:widget-setting name='selectedLabelsList'/>
+              <b:widget-setting name='showType'>ALL</b:widget-setting>
+              <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main' var='this'>
+              <a class='search' data-text-pop-title='search' target='pop-search'>
+                <i class='icon'>
+                  <svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M443.5 420.2L336.7 312.4c20.9-26.2 33.5-59.4 33.5-95.5 0-84.5-68.5-153-153.1-153S64 132.5 64 217s68.5 153 153.1 153c36.6 0 70.1-12.8 96.5-34.2l106.1 107.1c3.2 3.4 7.6 5.1 11.9 5.1 4.1 0 8.2-1.5 11.3-4.5 6.6-6.3 6.8-16.7.6-23.3zm-226.4-83.1c-32.1 0-62.3-12.5-85-35.2-22.7-22.7-35.2-52.9-35.2-84.9 0-32.1 12.5-62.3 35.2-84.9 22.7-22.7 52.9-35.2 85-35.2s62.3 12.5 85 35.2c22.7 22.7 35.2 52.9 35.2 84.9 0 32.1-12.5 62.3-35.2 84.9-22.7 22.7-52.9 35.2-85 35.2z'/></svg>
+                </i>
+              </a>
+              <div data-pop-width='640' id='pop-search'>
+                <div class='search-form' itemscope='' itemtype='https://schema.org/WebSite'>
+                  <meta expr:content='data:blog.canonicalHomepageUrl' itemprop='url'/>
+                  <form action='/search' itemprop='potentialAction' itemscope='' itemtype='https://schema.org/SearchAction' method='get' role='search'>
+                    <meta expr:content='data:blog.canonicalHomepageUrl + &quot;search?q={q}&quot;' itemprop='target'/>
+                    <input name='max-results' type='hidden' value='8'/>
+                    <input expr:value='data:blog.title' name='name' type='hidden'/>
+                    <input autocomplete='off' class='text' data-text-placeholder='search_placeholder' expr:value='data:blog.searchQuery' itemprop='query-input' name='q' required='' type='search'/>
+                    <button aria-label='Search' type='submit'>
+                      <i class='icon'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M443.5 420.2L336.7 312.4c20.9-26.2 33.5-59.4 33.5-95.5 0-84.5-68.5-153-153.1-153S64 132.5 64 217s68.5 153 153.1 153c36.6 0 70.1-12.8 96.5-34.2l106.1 107.1c3.2 3.4 7.6 5.1 11.9 5.1 4.1 0 8.2-1.5 11.3-4.5 6.6-6.3 6.8-16.7.6-23.3zm-226.4-83.1c-32.1 0-62.3-12.5-85-35.2-22.7-22.7-35.2-52.9-35.2-84.9 0-32.1 12.5-62.3 35.2-84.9 22.7-22.7 52.9-35.2 85-35.2s62.3 12.5 85 35.2c22.7 22.7 35.2 52.9 35.2 84.9 0 32.1-12.5 62.3-35.2 84.9-22.7 22.7-52.9 35.2-85 35.2z'/></svg></i>
+                    </button>
+                    <nav itemscope='' itemtype='http://schema.org/SiteNavigationElement'>
+                      <ul>
+                        <b:loop values='data:labels' var='label'>
+                          <li>
+                            <a class='label-name' expr:href='data:label.url + &quot;?max-results=8&quot;' itemprop='url'>
+                              <span itemprop='name'>
+                                <data:label.name/>
+                              </span>
+                              <b:if cond='data:this.showFreqNumbers'>
+                                <small><data:label.count/></small>
+                              </b:if>
+                            </a>
+                          </li>
+                        </b:loop>
+                      </ul>
+                    </nav>
+                  </form>
+                </div>
+              </div>
+            </b:includable>
+            <b:includable id='cloud'/>
+            <b:includable id='content'>
+            </b:includable>
+            <b:includable id='list'/>
+          </b:widget>
+          <b:widget id='HTML18' locked='true' title='Cart' type='HTML' version='3' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='content'/>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <a class='cart-btn-head'>
+                <i class='icon'>
+                  <svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'>
+                    <path d='M387.9 373.7h49.2l17.5-75.4h-66.7zM387.9 448h.5c18.7 0 33.4-12.5 38.3-29.5l6-25.9h-44.8V448zM265.4 392.5h103.7V448H265.4zM75 373.7h49v-75.4H57.5zM142.9 192h103.7v87.5H142.9zM265.4 192h103.7v87.5H265.4zM85.5 418.3c4.7 17 19.4 29.7 38.1 29.7h.5v-55.5H79.4l6.1 25.8zM142.9 392.5h103.7V448H142.9zM265.4 298.3h103.7v75.4H265.4zM142.9 298.3h103.7v75.4H142.9z'/> <path d='M464 192h-47.9V96c0-17.6-14.4-32-32-32H127.9c-17.6 0-32 14.4-32 32v96H48c-10.3 0-17.9 9.6-15.6 19.6l19.7 67.9H124V106c0-7.7 6.3-14 14-14h236c7.7 0 14 6.3 14 14v173.5h72l19.6-67.9c2.3-10-5.3-19.6-15.6-19.6z'/>
+                  </svg>
+                </i>
+              </a>
+            </b:includable>
+          </b:widget>
+        </b:section>
+      </div>
+    </header>
+
+    <main expr:class='data:view.isError ? &quot;flex&quot; : &quot;&quot;' id='main'>
+      <div class='wrapper'>
+        <b:if cond='data:view.isError'>
+          <center>
+            <h1 style='font-size:400%;'>
+              <span data-text='error_title'/>
+            </h1>
+            <p>
+              <span data-text='error_desc'/>
+            </p>
+            <small>
+              <span data-text='error_back'/>
+              <a href='/'>
+                <span data-text='error_home'/>
+              </a>
+            </small>
+          </center>
+          <b:else/>
+          <b:if cond='data:view.isHomepage'>
+            <div id='slide-banner'>
+              <b:section class='slideshow' id='slideshow-home' name='Slideshow' showaddelement='true' version='3'>
+                <b:widget id='HTML21' locked='true' title='Slideshow 1 ( YouTube Video )' type='HTML' version='3' visible='false'>
+                  <b:widget-settings>
+                    <b:widget-setting name='content'>xi0FP37j9eU</b:widget-setting>
+                  </b:widget-settings>
+                  <b:includable id='main'>
+                    <figure class='youtube'>
+                      <a expr:href='&quot;https://www.youtube.com/embed/&quot; + data:content + &quot;?autoplay=1&amp;rel=0&quot;' expr:title='data:title' target='_popwin'>
+                        <img expr:alt='data:title' expr:data-src='&quot;https://img.youtube.com/vi/&quot; + data:content + &quot;/sddefault.jpg&quot;' height='640' width='1280'/>
+                        <svg viewBox='-35.20005 -41.33325 305.0671 247.9995' xmlns='http://www.w3.org/2000/svg'><path class='bg' d='M229.763 25.817c-2.699-10.162-10.65-18.165-20.748-20.881C190.716 0 117.333 0 117.333 0S43.951 0 25.651 4.936C15.553 7.652 7.6 15.655 4.903 25.817 0 44.236 0 82.667 0 82.667s0 38.429 4.903 56.85C7.6 149.68 15.553 157.681 25.65 160.4c18.3 4.934 91.682 4.934 91.682 4.934s73.383 0 91.682-4.934c10.098-2.718 18.049-10.72 20.748-20.882 4.904-18.421 4.904-56.85 4.904-56.85s0-38.431-4.904-56.85'/><path class='play' d='M93.333 117.559l61.333-34.89-61.333-34.894z'/></svg>
+                      </a>
+                      <b:if cond='data:title'>
+                        <figcaption style='display:none;'><data:title/></figcaption>
+                      </b:if>
+                    </figure>
+                  </b:includable>
+                </b:widget>
+                <b:widget id='Image11' locked='true' title='Slideshow 2' type='Image' version='3' visible='true'>
+                  <b:widget-settings>
+                    <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEgXWKAdso9YfCstQneVWWuRPCQsz_88e2dF01WwwEe41Q6G3DA3n01HbFBffYCpoCFO2SZokancacOwlGQa8YaAUjCU-9ClqL5wT10aq9myPdAX_vH4m02L4IOK3ipWXCDXsKIvyGdAqYnvh510dCbgAj77mBi42u4FFFGW8ZFpqQqxFmp_7cVNLTsxWOx_=s1280</b:widget-setting>
+                    <b:widget-setting name='displayHeight'>640</b:widget-setting>
+                    <b:widget-setting name='sectionWidth'>1202</b:widget-setting>
+                    <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                    <b:widget-setting name='displayWidth'>1280</b:widget-setting>
+                    <b:widget-setting name='link'/>
+                    <b:widget-setting name='caption'>Keterangan</b:widget-setting>
+                  </b:widget-settings>
+                  <b:includable id='main'>
+                    <b:include name='content'/>
+                  </b:includable>
+                  <b:includable id='content'>
+                    <figure>
+                      <b:tag cond='data:link' expr:href='data:link' expr:title='data:title' name='a'>
+                        <img expr:alt='data:title + &quot; - &quot; + data:caption' expr:data-src='resizeImage(data:sourceUrl, 1280, &quot;2:1&quot;)' height='640' width='1280'/>
+                      </b:tag>
+                      <b:if cond='data:title AND data:caption'>
+                        <figcaption style='display:none;'><data:title/> &#8212; <data:caption/></figcaption>
+                      </b:if>
+                    </figure>
+                  </b:includable>
+                </b:widget>
+                <b:widget id='Image12' locked='true' title='Slideshow 3' type='Image' version='3' visible='true'>
+                  <b:widget-settings>
+                    <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEhhGcE2Xu_awAVRaxq8A56TXQEcN1jA-0lP72hn-LKKJhnhyy6namrJW17KKUmPT0QrP-Yp4KfS8wNL3SFhtziAuEcP4JWAYRM24mZdXjWNzOfqp6_jyZ8Ku0cLuc-Wa_SqS3Ln2i-jScexkTP2xXAMoWfMaKILOl0MU1x3xiiwkLyfLYi1X-8ZK7AgIr68=s1280</b:widget-setting>
+                    <b:widget-setting name='displayHeight'>640</b:widget-setting>
+                    <b:widget-setting name='sectionWidth'>1202</b:widget-setting>
+                    <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                    <b:widget-setting name='displayWidth'>1280</b:widget-setting>
+                    <b:widget-setting name='link'/>
+                    <b:widget-setting name='caption'>Keterangan</b:widget-setting>
+                  </b:widget-settings>
+                  <b:includable id='main'>
+                    <b:include name='content'/>
+                  </b:includable>
+                  <b:includable id='content'>
+                    <figure>
+                      <b:tag cond='data:link' expr:href='data:link' expr:title='data:title' name='a'>
+                        <img expr:alt='data:title + &quot; - &quot; + data:caption' expr:data-src='resizeImage(data:sourceUrl, 1280, &quot;2:1&quot;)' height='640' width='1280'/>
+                      </b:tag>
+                      <b:if cond='data:title AND data:caption'>
+                        <figcaption style='display:none;'><data:title/> &#8212; <data:caption/></figcaption>
+                      </b:if>
+                    </figure>
+                  </b:includable>
+                </b:widget>
+                <b:widget id='Image13' locked='true' title='Slideshow 4' type='Image' version='3' visible='true'>
+                  <b:widget-settings>
+                    <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjZV4GaFOiecSmkk4oKelnW2PGoDEh-9s6_7tyy4PaHaqL1QN_aOlFYjAuZP53RrENB9qH6YOSWvnaH9J7ZE8sLhEWHEoNmuSwFi6uYXBuYpzqnhxwCbBE3e8GKhffw8WfuDpGnKLfi2KkQlitRTfkpzFanM2SsdVRX9XzMujNiUYeJQOnWu0DSx-dCajEK=s1280</b:widget-setting>
+                    <b:widget-setting name='displayHeight'>640</b:widget-setting>
+                    <b:widget-setting name='sectionWidth'>1202</b:widget-setting>
+                    <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                    <b:widget-setting name='displayWidth'>1280</b:widget-setting>
+                    <b:widget-setting name='link'/>
+                    <b:widget-setting name='caption'>Keterangan</b:widget-setting>
+                  </b:widget-settings>
+                  <b:includable id='main'>
+                    <b:include name='content'/>
+                  </b:includable>
+                  <b:includable id='content'>
+                    <figure>
+                      <b:tag cond='data:link' expr:href='data:link' expr:title='data:title' name='a'>
+                        <img expr:alt='data:title + &quot; - &quot; + data:caption' expr:data-src='resizeImage(data:sourceUrl, 1280, &quot;2:1&quot;)' height='640' width='1280'/>
+                      </b:tag>
+                      <b:if cond='data:title AND data:caption'>
+                        <figcaption style='display:none;'><data:title/> &#8212; <data:caption/></figcaption>
+                      </b:if>
+                    </figure>
+                  </b:includable>
+                </b:widget>
+                <b:widget id='Image14' locked='true' title='Slideshow 4' type='Image' version='3' visible='true'>
+                  <b:widget-settings>
+                    <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEgR_KhbHB8tfvrPVAqDLnERFvUjHbGERc_aubiTUHUOqv-__7Q-DPmEQSVuFu2xgyDC5F6VfBeSC5RnicZhcNUw8jcc0uTV9jaZOovpH_bvwQR6woI_VO5zyfJvnf4W411NOevCRz1eA8SRVsNn3b_7zKQUMi5wTphbPbURxVPnXtkhOkt42iPk8CxGagcF=s1280</b:widget-setting>
+                    <b:widget-setting name='displayHeight'>640</b:widget-setting>
+                    <b:widget-setting name='sectionWidth'>1202</b:widget-setting>
+                    <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                    <b:widget-setting name='displayWidth'>1280</b:widget-setting>
+                    <b:widget-setting name='link'/>
+                    <b:widget-setting name='caption'>Keterangan</b:widget-setting>
+                  </b:widget-settings>
+                  <b:includable id='main'>
+                    <b:include name='content'/>
+                  </b:includable>
+                  <b:includable id='content'>
+                    <figure>
+                      <b:tag cond='data:link' expr:href='data:link' expr:title='data:title' name='a'>
+                        <img expr:alt='data:title + &quot; - &quot; + data:caption' expr:data-src='resizeImage(data:sourceUrl, 1280, &quot;2:1&quot;)' height='640' width='1280'/>
+                      </b:tag>
+                      <b:if cond='data:title AND data:caption'>
+                        <figcaption style='display:none;'><data:title/> &#8212; <data:caption/></figcaption>
+                      </b:if>
+                    </figure>
+                  </b:includable>
+                </b:widget>
+              </b:section>
+              <b:section class='banner' id='banner-home' name='Banner' showaddelement='false' version='3'>
+                <b:widget id='Image15' locked='true' title='Banner' type='Image' version='3' visible='true'>
+                  <b:widget-settings>
+                    <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEhZBuQ69af9hJ1n8GfTJG6dYwh02RYI-sXzP0Ud6fuf5cK_xARhI6NpMMyKu1xxESMGWC-6hCY1C4xXtj-n1AkoxxVwCmBgXEleAzpkmdnihRsAsKVuvcVlYoR3oIYyB9SFHQq4hKdMYFZ47YYO3ji4ZGogP5yXVSwpZWTJlfs__OA8N13BeEflMTBWOasd=s1024</b:widget-setting>
+                    <b:widget-setting name='displayHeight'>1024</b:widget-setting>
+                    <b:widget-setting name='sectionWidth'>1202</b:widget-setting>
+                    <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                    <b:widget-setting name='displayWidth'>1024</b:widget-setting>
+                    <b:widget-setting name='link'/>
+                    <b:widget-setting name='caption'/>
+                  </b:widget-settings>
+                  <b:includable id='main'>
+                    <b:include name='content'/>
+                  </b:includable>
+                  <b:includable id='content'>
+                    <figure>
+                      <b:tag cond='data:link' expr:href='data:link' expr:title='data:title' name='a'>
+                        <img expr:alt='data:title + &quot; - &quot; + data:caption' expr:data-src='resizeImage(data:sourceUrl, 1280, &quot;1:1&quot;)' height='1280' width='1280'/>
+                      </b:tag>
+                      <b:if cond='data:title AND data:caption'>
+                        <figcaption style='display:none;'><data:title/> &#8212; <data:caption/></figcaption>
+                      </b:if>
+                    </figure>
+                  </b:includable>
+                </b:widget>
+              </b:section>
+            </div>
+          </b:if>
+          <b:section class='feed-label' cond='data:view.isHomepage' id='feed-label' name='Featured Post' showaddelement='false' version='3'>
+            <b:widget cond='data:view.isHomepage' id='HTML31' locked='true' title='Living Room' type='HTML' version='3' visible='true'>
+              <b:widget-settings>
+                <b:widget-setting name='content'>Living Room</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <div style='margin-top:40px;'>
+                  <header class='page-title'>
+                    <div class='left'>
+                      <div class='wrap'>
+                        <h2>
+                          <data:title/>
+                        </h2>
+                      </div>
+                    </div>
+                    <a class='right' expr:href='data:blog.canonicalHomepageUrl + &quot;search/label/&quot; + data:content + &quot;?max-results=8&quot;'>
+                      <small class='wrap'>
+                        <span data-text='product_all'/>
+                        <i class='icon right'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z'/></svg></i>
+                      </small>
+                    </a>
+                  </header>
+                  <div expr:data-feed='data:blog.canonicalHomepageUrl + &quot;search/label/&quot; + data:content + &quot;?max-results=4&quot;'/>
+                </div>
+              </b:includable>
+            </b:widget>
+            <b:widget cond='data:view.isHomepage' id='HTML32' locked='true' title='Bedroom' type='HTML' version='3' visible='true'>
+              <b:widget-settings>
+                <b:widget-setting name='content'>Bedroom</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <div style='margin-top:40px;'>
+                  <header class='page-title'>
+                    <div class='left'>
+                      <div class='wrap'>
+                        <h2>
+                          <data:title/>
+                        </h2>
+                      </div>
+                    </div>
+                    <a class='right' expr:href='data:blog.canonicalHomepageUrl + &quot;search/label/&quot; + data:content + &quot;?max-results=8&quot;'>
+                      <small class='wrap'>
+                        <span data-text='product_all'/>
+                        <i class='icon right'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z'/></svg></i>
+                      </small>
+                    </a>
+                  </header>
+                  <div expr:data-feed='data:blog.canonicalHomepageUrl + &quot;search/label/&quot; + data:content + &quot;?max-results=4&quot;'/>
+                </div>
+              </b:includable>
+            </b:widget>
+            <b:widget cond='data:view.isHomepage' id='HTML33' locked='true' title='Item Pilihan 3' type='HTML' version='3' visible='false'>
+              <b:widget-settings>
+                <b:widget-setting name='content'>Hoodies</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <div style='margin-top:40px;'>
+                  <header class='page-title'>
+                    <div class='left'>
+                      <div class='wrap'>
+                        <h2>
+                          <data:title/>
+                        </h2>
+                      </div>
+                    </div>
+                    <a class='right' expr:href='data:blog.canonicalHomepageUrl + &quot;search/label/&quot; + data:content + &quot;?max-results=8&quot;'>
+                      <small class='wrap'>
+                        <span data-text='product_all'/>
+                        <i class='icon right'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z'/></svg></i>
+                      </small>
+                    </a>
+                  </header>
+                  <div expr:data-feed='data:blog.canonicalHomepageUrl + &quot;search/label/&quot; + data:content + &quot;?max-results=4&quot;'/>
+                </div>
+              </b:includable>
+            </b:widget>
+          </b:section>
+          <b:section class='index' id='index' name='Index' showaddelement='true' version='3'>
+            <b:widget cond='data:view.isLabelSearch' id='LinkList21' locked='true' title='Banner Label' type='LinkList' version='2' visible='true'>
+              <b:widget-settings>
+                <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                <b:widget-setting name='text-1'>Living Room</b:widget-setting>
+                <b:widget-setting name='link-1'>https://lh3.googleusercontent.com/-iR0wwXP5WAQ/Yo0lNXhHPmI/AAAAAAAABZ4/wxi5Wz-1jBAXX3U4YCQWdkoHiCUz-s3qQCNcBGAsYHQ/h120/l1.jpg</b:widget-setting>
+                <b:widget-setting name='text-0'>All Products</b:widget-setting>
+                <b:widget-setting name='link-2'>https://lh3.googleusercontent.com/-KWWF6wSB9d0/Yo0s9rh5TbI/AAAAAAAABa0/Xs4-RSrLN_sUpZRdfKs37TqEhslrRAu_gCNcBGAsYHQ/h120/l2.jpg</b:widget-setting>
+                <b:widget-setting name='link-0'>https://dummyimage.com/1280x480/55626f/FFFFFF.jpg</b:widget-setting>
+                <b:widget-setting name='text-2'>Bedroom</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <b:include name='content'/>
+              </b:includable>
+              <b:includable id='content'>
+                <b:loop values='data:links' var='link'>
+                  <b:if cond='data:link.name == data:blog.pageName'>
+                    <div id='label-banner'>
+                      <img expr:alt='data:link.name' expr:data-src='resizeImage(data:link.target, 1280)'/>
+                    </div>
+                  </b:if>
+                </b:loop>
+              </b:includable>
+            </b:widget>
+            <b:widget id='Blog11' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'>
+              <b:widget-settings>
+                <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+                <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+                <b:widget-setting name='authorLabel'>Oleh.</b:widget-setting>
+                <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+                <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='showAuthor'>false</b:widget-setting>
+                <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='timestampLabel'/>
+                <b:widget-setting name='reactionsLabel'/>
+                <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+                <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                <b:widget-setting name='showLabels'>false</b:widget-setting>
+                <b:widget-setting name='showLocation'>false</b:widget-setting>
+                <b:widget-setting name='postLabelsLabel'/>
+                <b:widget-setting name='showTimestamp'>false</b:widget-setting>
+                <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+                <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+                <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+                <b:widget-setting name='showReactions'>false</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main' var='this'>
+                <b:if cond='data:view.isMultipleItems'>
+                  <header class='page-title'>
+                    <div class='left'>
+                      <h2>
+                        <b:if cond='data:view.isSearch and !data:view.isLabelSearch'>
+                          Hasil untuk &quot;<data:blog.searchQuery/>&quot;
+                          <b:else/>
+                          <b:if cond='data:blog.pageName'>
+                            <data:blog.pageName/>
+                            <b:else/>
+                            <span data-text='product_explore'/>
+                          </b:if>
+                        </b:if>
+                      </h2>
+                    </div>
+                    <div class='right'>
+                      <div id='sort'>
+                        <select>
+                          <optgroup data-text-label='product_sort'>
+                            <option data-text='product_sort' hidden='' selected='' value=''/>
+                            <option data-text='product_sort_low' value='terendah'/>
+                            <option data-text='product_sort_high' value='tertinggi'/>
+                            <option data-text='product_sort_new' value='terbaru'/>
+                          </optgroup>
+                        </select>
+                      </div>
+                    </div>
+                  </header>
+                </b:if>
+                <b:if cond='data:numPosts == 0'>
+                  <center style='padding:100px 0;'>
+                    <span data-text='product_not_found'/>
+                  </center>
+                  <b:else/>
+                  <div expr:class='data:view.isMultipleItems ? &quot;is_loop&quot; : &quot;is_single&quot;'>
+                    <b:loop index='i' values='data:posts' var='post'>
+                      <b:include data='post' name='postCommentsAndAd'/>
+                    </b:loop>
+                  </div>
+                  <b:if cond='data:view.isMultipleItems AND data:olderPageUrl'>
+                    <div class='loadmore' id='blog-pager'>
+                      <a class='loadmore-btn' expr:href='data:olderPageUrl'>
+                        <i class='icon left'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z'/></svg></i>
+                        <span data-text='product_loadmore'/>
+                      </a>
+                    </div>
+                  </b:if>
+                </b:if>
+              </b:includable>
+              <b:includable id='aboutPostAuthor'>
+                <div class='author-name'>
+                  <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+                    <span>
+                      <data:post.author.name/>
+                    </span>
+                  </a>
+                </div>
+                <div>
+                  <span class='author-desc'>
+                    <data:post.author.aboutMe/>
+                  </span>
+                </div>
+              </b:includable>
+              <b:includable id='addComments'>
+                <a expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
+                  <b:message name='messages.postAComment'/>
+                </a>
+              </b:includable>
+              <b:includable id='blogThisShare'>
+                <b:with value='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' var='onclick'>
+                  <b:include name='platformShare'/>
+                </b:with>
+              </b:includable>
+              <b:includable id='bylineByName' var='byline'>
+                <b:switch var='data:byline.name'>
+                  <b:case value='share'/>
+                  <b:include cond='data:post.shareUrl' name='postShareButtons'/>
+                  <b:case value='comments'/>
+                  <b:include cond='data:post.allowComments' name='postCommentsLink'/>
+                  <b:case value='location'/>
+                  <b:include cond='data:post.location' name='postLocation'/>
+                  <b:case value='timestamp'/>
+                  <b:include cond='not data:view.isPage' name='postTimestamp'/>
+                  <b:case value='author'/>
+                  <b:include name='postAuthor'/>
+                  <b:case value='labels'/>
+                  <b:include cond='data:post.labels' name='postLabels'/>
+                  <b:case value='icons'/>
+                  <b:include cond='data:post.emailPostUrl' name='emailPostIcon'/>
+                </b:switch>
+              </b:includable>
+              <b:includable id='bylineRegion' var='regionItems'>
+                <b:loop values='data:regionItems' var='byline'>
+                  <b:include data='byline' name='bylineByName'/>
+                </b:loop>
+              </b:includable>
+              <b:includable id='commentAuthorAvatar'>
+                <div class='avatar-image-container'>
+                  <b:if cond='data:comment.authorUrl'>
+                    <a expr:href='data:comment.authorUrl' rel='nofollow external' target='_blank'>
+                      <b:if cond='resizeImage(data:comment.authorAvatarSrc, 60, &quot;1:1&quot;) != &quot;//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=w60-h60-p-k-no-nu&quot;'>
+                        <img class='author-avatar' expr:data-src='resizeImage(data:comment.authorAvatarSrc, 60, &quot;1:1&quot;)' height='60' width='60'/>
+                        <b:else/>
+                        <img class='author-avatar' data-src='//lh3.googleusercontent.com/-imNJ4gbF2L0/X6k_bZmMLYI/AAAAAAAAAG8/9CjngL1HfsgjdzQWVIG2FUvNsTHTGOddACLcBGAsYHQ/h60/avatar_circle_blue_512dp.png' height='60' width='60'/>
+                      </b:if>
+                    </a>
+                    <b:else/>
+                    <img class='author-avatar' expr:data-src='resizeImage(data:comment.authorAvatarSrc, 60, &quot;1:1&quot;)' height='60' width='60'/>
+                  </b:if>
+                </div>
+              </b:includable>
+              <b:includable id='commentDeleteIcon' var='comment'>
+                <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+                  <b:if cond='data:showCmtPopup'>
+                    <div class='goog-toggle-button'>
+                      <div class='goog-inline-block comment-action-icon'/>
+                    </div>
+                    <b:else/>
+                    (
+                    <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:messages.deleteComment'>
+                      Hapus?
+                    </a>
+                    )
+                  </b:if>
+                </span>
+              </b:includable>
+              <b:includable id='commentForm' var='post'>
+                <div class='comment-form'>
+                  <b:if cond='data:this.messages.blogComment'>
+                    <p><data:this.messages.blogComment/></p>
+                  </b:if>
+                </div>
+              </b:includable>
+              <b:includable id='commentFormIframeSrc' var='post'>
+                <a expr:href='data:post.commentFormIframeSrc appendParams {skin: &quot;contempo&quot;}' id='comment-editor-src'/>
+              </b:includable>
+              <b:includable id='commentItem' var='comment'>
+                <div expr:class='&quot;comment &quot; + data:comment.adminClass' expr:id='&quot;c&quot; + data:comment.id' itemprop='comment' itemscope='' itemtype='http://schema.org/UserComments'>
+                  <b:include cond='data:blog.enabledCommentProfileImages' name='commentAuthorAvatar'/>
+
+                  <div class='comment-block'>
+                    <div class='comment-author'>
+                      <a expr:href='data:comment.url' itemprop='url' target='_blank'>
+                        <span itemprop='creator' itemscope='' itemtype='http://schema.org/Person'>
+                          <b itemprop='name'>
+                            <data:comment.author/>
+                          </b>
+                          <b:if cond='data:comment.authorUrl'>
+                            <meta expr:content='data:comment.authorUrl' itemprop='url'/>
+                          </b:if>
+                        </span>
+                      </a>
+                    </div>
+                    <div class='comment-text' itemprop='commentText'>
+                      <data:comment.body/>
+                      <br/>
+                      <span class='comment-timestamp'>
+                        <time expr:datetime='data:comment.timestamp' expr:title='data:comment.timestamp' itemprop='commentTime'><data:comment.timestamp/></time>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </b:includable>
+              <b:includable id='commentList' var='comments'>
+                <div id='comments-block'>
+                  <b:loop values='data:comments' var='comment'>
+                    <b:include data='comment' name='commentItem'/>
+                  </b:loop>
+                </div>
+              </b:includable>
+              <b:includable id='commentPicker' var='post'>
+                <b:if cond='data:post.showThreadedComments'>
+                  <b:include data='post' name='threadedComments'/>
+                  <b:else/>
+                  <b:include data='post' name='comments'/>
+                </b:if>
+              </b:includable>
+              <b:includable id='comments' var='post'>
+                <section expr:data-num-comments='data:post.numberOfComments' id='comments'>
+                  <b:if cond='data:post.allowComments'>
+                    <b:if cond='data:post.numberOfComments != 0'>
+                      <a class='comments-add ' target='pop-komentar-add'>
+                        <h3 itemprop='interactionStatistic' itemscope='' itemtype='https://schema.org/InteractionCounter'>
+                          <meta content='https://schema.org/CommentAction' itemprop='interactionType'/>
+                          <i class='icon left'><svg viewBox='0 0 510 510' x='0px' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0px'><path d='M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z M102,178.5h306v51H102V178.5z M306,306H102v-51h204V306z M408,153H102v-51h306V153z'/></svg></i>
+                          <span itemprop='userInteractionCount'><data:post.numberOfComments/></span> Komentar
+                        </h3>
+                      </a>
+                      <b:else/>
+                      <a class='comments-add' target='pop-komentar-add'>
+                        <i class='icon left'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M416 277.333H277.333V416h-42.666V277.333H96v-42.666h138.667V96h42.666v138.667H416v42.666z'/></svg></i>
+                        Tambahkan Komentar
+                      </a>
+                    </b:if>
+                    <div expr:data-pop-title='data:post.numberOfComments != 0 ? data:post.numberOfComments + &quot; Komentar&quot; : &quot;+ Tambahkan Komentar&quot;' id='pop-komentar-add'>
+
+                      <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
+                        <b:include cond='data:post.comments' data='post.comments' name='commentList'/>
+                      </div>
+
+                      <b:if cond='data:post.commentPagingRequired'>
+                        <div class='paging-control-container'>
+                          <b:if cond='data:post.hasOlderLinks'>
+                            <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
+                              <data:messages.oldest/>
+                            </a>
+                            <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
+                              <data:messages.older/>
+                            </a>
+                          </b:if>
+
+                          <span class='comment-range-text'>
+                            <data:post.commentRangeText/>
+                          </span>
+
+                          <b:if cond='data:post.hasNewerLinks'>
+                            <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
+                              <data:messages.newer/>
+                            </a>
+                            <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
+                              <data:messages.newest/>
+                            </a>
+                          </b:if>
+                        </div>
+                      </b:if>
+                      <b:if cond='data:this.messages.blogComment'>
+                        <p>
+                          <data:this.messages.blogComment/>
+                        </p>
+                        <br/>
+                      </b:if>
+                      <b:if cond='data:view.isPost'>
+                        <iframe class='comment-form' expr:data-src='&quot;https://www.blogger.com/comment-iframe.g?blogID=&quot; + data:blog.blogId + &quot;&amp;postID=&quot; + data:post.id + &quot;&amp;skin=contempo&quot;' target='_top'/>
+                        <b:else/>
+                        <iframe class='comment-form' expr:data-src='&quot;https://www.blogger.com/comment-iframe.g?blogID=&quot; + data:blog.blogId + &quot;&amp;pageID=&quot; + data:post.id + &quot;&amp;skin=contempo&quot;' target='_top'/>
+                      </b:if>
+                    </div>
+                  </b:if>
+                </section>
+              </b:includable>
+              <b:includable id='commentsLink'>
+                <a class='comment-link' expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
+                  <b:if cond='data:post.numberOfComments &gt; 0'>
+                    <b:message name='messages.numberOfComments'>
+                      <b:param expr:value='data:post.numberOfComments' name='numComments'/>
+                    </b:message>
+                    <b:else/>
+                    <data:messages.postAComment/>
+                  </b:if>
+                </a>
+              </b:includable>
+              <b:includable id='commentsLinkIframe'>
+                <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+              </b:includable>
+              <b:includable id='commentsTitle'>
+                <h3 class='title'><data:messages.comments/></h3>
+              </b:includable>
+              <b:includable id='defaultAdUnit'>
+                <ins class='adsbygoogle' data-ad-format='auto' expr:data-ad-client='data:adClientId ?: data:blog.adsenseClientId' expr:data-ad-host='data:blog.adsenseHostId' expr:data-analytics-uacct='data:blog.analyticsAccountNumber' expr:style='data:style ?: &quot;display: block;&quot;'/>
+                <script>
+                  (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              </b:includable>
+              <b:includable id='emailPostIcon'>
+                <span class='byline post-icons'>
+                  <!-- email post links -->
+                  <span class='item-action'>
+                    <a expr:href='data:post.emailPostUrl' expr:title='data:messages.emailPost'>
+                      <b:include data='{ iconClass: &quot;touch-icon sharing-icon&quot; }' name='emailIcon'/>
+                    </a>
+                  </span>
+                </span>
+              </b:includable>
+              <b:includable id='facebookShare'>
+                <b:with value='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' var='onclick'>
+                  <b:include name='platformShare'/>
+                </b:with>
+              </b:includable>
+              <b:includable id='feedLinks'>
+                <b:if cond='!data:view.isPost'> <!-- Blog feed links -->
+                  <b:if cond='data:feedLinks'>
+                    <div class='blog-feeds'>
+                      <b:include data='feedLinks' name='feedLinksBody'/>
+                    </div>
+                  </b:if>
+                  <b:else/> <!--Post feed links -->
+                  <div class='post-feeds'>
+                    <b:loop values='data:posts' var='post'>
+                      <b:if cond='data:post.allowComments and data:post.feedLinks'>
+                        <b:include data='post.feedLinks' name='feedLinksBody'/>
+                      </b:if>
+                    </b:loop>
+                  </div>
+                </b:if>
+              </b:includable>
+              <b:includable id='feedLinksBody' var='links'>
+                <div class='feed-links'>
+                  <data:messages.subscribeTo/>
+                  <b:loop values='data:links' var='f'>
+                    <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+                  </b:loop>
+                </div>
+              </b:includable>
+              <b:includable id='footerBylines'>
+                <b:if cond='data:widgets.Blog.first.footerBylines'>
+                  <b:loop index='i' values='data:widgets.Blog.first.footerBylines' var='region'>
+                    <b:if cond='not data:region.items.empty'>
+                      <div expr:class='&quot;post-footer-line post-footer-line-&quot; + (data:i + 1)'>
+                        <b:with value='&quot;footer-&quot; + (data:i + 1)' var='regionName'>
+                          <b:include data='region.items' name='bylineRegion'/>
+                        </b:with>
+                      </div>
+                    </b:if>
+                  </b:loop>
+                </b:if>
+              </b:includable>
+              <b:includable id='googlePlusShare'>
+                <div class='goog-inline-block google-plus-share-container'>
+                  <g:plusone annotation='inline' expr:href='data:originalUrl.canonical.http' size='medium' source='blogger:blog:plusone'/>
+                </div>
+              </b:includable>
+              <b:includable id='headerByline'>
+                <b:if cond='data:widgets.Blog.first.headerByline'>
+                  <div class='post-header'>
+                    <div class='post-header-line-1'>
+                      <b:with value='&quot;header-1&quot;' var='regionName'>
+                        <b:include data='data:widgets.Blog.first.headerByline.items' name='bylineRegion'/>
+                      </b:with>
+                    </div>
+                  </div>
+                </b:if>
+              </b:includable>
+              <b:includable id='homePageLink'>
+                <a class='home-link' expr:href='data:blog.canonicalHomepageUrl'>
+                  <data:messages.home/>
+                </a>
+              </b:includable>
+              <b:includable id='iframeComments' var='post'>
+                <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+              </b:includable>
+              <b:includable id='inlineAd' var='post'>
+                <b:if cond='!data:view.isPreview'>
+                  <b:if cond='data:this.adCode or data:this.adClientId or data:blog.adsenseClientId'>
+                    <!-- Ad -->
+                    <div class='inline-ad'>
+                      <b:if cond='data:this.adCode != &quot;&quot;'>
+                        <data:this.adCode/>
+                        <b:else/>
+                        <b:include cond='data:this.adClientId or data:blog.adsenseClientId' name='defaultAdUnit'/>
+                      </b:if>
+                    </div>
+                  </b:if>
+                  <b:else/>
+                  <div class='inline-ad'>
+                    <div class='inline-ad-placeholder'>
+                      <span><b:message name='messages.adsGoHere'/></span>
+                    </div>
+                  </div>
+                </b:if>
+              </b:includable>
+              <b:includable id='linkShare'>
+                <b:with value='&quot;window.prompt(\&quot;Copy to clipboard: Ctrl+C, Enter\&quot;, \&quot;&quot; + data:originalUrl + &quot;\&quot;); return false;&quot;' var='onclick'>
+                  <b:include name='platformShare'/>
+                </b:with>
+              </b:includable>
+              <b:includable id='nextPageLink'>
+                <a class='blog-pager-older-link' data-text='product_prev' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:messages.olderPosts'>
+                  <data:messages.olderPosts/>
+                </a>
+              </b:includable>
+              <b:includable id='otherSharingButton'>
+                <span class='sharing-platform-button sharing-element-other' expr:aria-label='data:messages.shareToOtherApps.escaped' expr:data-url='data:originalUrl' expr:title='data:messages.shareToOtherApps.escaped' role='menuitem' tabindex='-1'>
+                  <b:with value='{key: &quot;sharingOther&quot;}' var='platform'>
+                    <b:include name='sharingPlatformIcon'/>
+                  </b:with>
+                  <span class='platform-sharing-text'><data:messages.shareOtherApps.escaped/></span>
+                </span>
+              </b:includable>
+              <b:includable id='platformShare'>
+                <a expr:class='&quot;goog-inline-block sharing-&quot; + data:platform.key' expr:data-url='data:originalUrl' expr:href='data:shareUrl + &quot;&amp;target=&quot; + data:platform.target' expr:onclick='data:onclick ? data:onclick : &quot;&quot;' expr:title='data:platform.shareMessage' target='_blank'>
+                  <span class='share-button-link-text'>
+                    <data:platform.shareMessage/>
+                  </span>
+                </a>
+              </b:includable>
+              <b:includable id='post' var='post'>
+                <div class='post'>
+                  <b:include data='post' name='postMeta'/>
+                  <b:include data='post' name='postTitle'/>
+                  <b:include name='headerByline'/>
+                  <b:if cond='data:view.isSingleItem'>
+                    <b:include data='post' name='postBody'/>
+                    <b:else/>
+                    <b:include data='post' name='postBodySnippet'/>
+                    <b:include data='post' name='postJumpLink'/>
+                  </b:if>
+                  <b:include data='post' name='postFooter'/>
+                </div>
+              </b:includable>
+              <b:includable id='postAuthor'>
+                <span class='byline post-author vcard'>
+                  <span class='post-author-label'>
+                    <data:byline.label/>
+                  </span>
+                  <span class='fn'>
+                    <b:if cond='data:post.author.profileUrl'>
+                      <meta expr:content='data:post.author.profileUrl'/>
+                      <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+                        <span><data:post.author.name/></span>
+                      </a>
+                      <b:else/>
+                      <span><data:post.author.name/></span>
+                    </b:if>
+                  </span>
+                </span>
+              </b:includable>
+              <b:includable id='postBody' var='post'>
+                <!-- If metaDescription is empty, use the post body as the schema.org description too, for G+/FB snippeting. -->
+                <div class='post-body entry-content float-container' expr:id='&quot;post-body-&quot; + data:post.id'>
+                  <data:post.body/>
+                </div>
+              </b:includable>
+              <b:includable id='postBodySnippet' var='post'>
+                <b:include data='post' name='postBody'/>
+              </b:includable>
+              <b:includable id='postCommentsAndAd' var='post'>
+                <article expr:class='(data:view.isPage ? &quot;is_page &quot; : &quot;&quot;) + (data:view.isPost ? &quot;is_post &quot; : &quot;&quot;) + (data:view.isPost OR data:view.isMultipleItems ? &quot;product &quot; : &quot;&quot;)' expr:id='data:post.id' expr:itemtype='data:view.isMultipleItems or data:view.isPost ? &quot;http://schema.org/Product&quot; : &quot;http://schema.org/BlogPosting&quot;' itemscope=''>
+                  <b:if cond='data:view.isMultipleItems or data:view.isPost'>
+                    <div class='microdata-product' style='display:none;'>
+
+                      <!-- https://support.google.com/merchants/answer/6324436?hl=id -->
+                      <meta content='166' itemprop='category'/>
+
+                      <div itemprop='offers' itemscope='' itemtype='https://schema.org/Offer'>
+                        <link expr:href='data:blog.canonicalUrl' itemprop='url'/>
+                        <meta content='https://schema.org/NewCondition' itemprop='itemCondition'/>
+                        <meta content='https://schema.org/InStock' itemprop='availability'/>
+                        <meta content='0' itemprop='price'/>
+                        <meta content='IDR' itemprop='priceCurrency'/>
+                        <meta content='3012-12-12' itemprop='priceValidUntil'/>
+                      </div>
+                      <div itemprop='aggregateRating' itemscope='' itemtype='https://schema.org/AggregateRating'>
+                        <meta content='89' itemprop='reviewCount'/>
+                        <meta content='4.4' itemprop='ratingValue'/>
+                      </div>
+                      <div itemprop='review' itemscope='' itemtype='https://schema.org/Review'>
+                        <div itemprop='author' itemscope='' itemtype='https://schema.org/Person'>
+                          <meta expr:content='data:post.author.name' itemprop='name'/>
+                        </div>
+                        <div itemprop='reviewRating' itemscope='' itemtype='https://schema.org/Rating'>
+                          <meta content='4' itemprop='ratingValue'/>
+                          <meta content='5' itemprop='bestRating'/>
+                        </div>
+                      </div>
+                      <meta expr:content='&quot;SKU-&quot; + data:post.id' itemprop='sku'/>
+                      <meta expr:content='&quot;MPN-&quot; + data:post.id' itemprop='mpn'/>
+                      <div itemprop='brand' itemscope='' itemtype='https://schema.org/Brand'>
+                        <meta expr:content='data:blog.title' itemprop='name'/>
+                      </div>
+                    </div>
+                  </b:if>
+                  <b:if cond='data:view.isSingleItem'>
+                    <meta expr:content='data:blog.metaDescription' itemprop='description'/>
+                    <b:else/>
+                    <meta expr:content='data:post.snippets.short' itemprop='description'/>
+                  </b:if>
+                  <b:if cond='data:post.date.iso8601'>
+                    <meta expr:content='data:post.date.iso8601' itemprop='releaseDate'/>
+                  </b:if>
+                  <b:if cond='data:view.isPage AND data:post.lastUpdated.iso8601'>
+                    <meta expr:content='data:post.lastUpdated.iso8601' itemprop='dateModified'/>
+                  </b:if>
+                  <meta expr:content='data:blog.canonicalUrl' itemprop='mainEntityOfPage'/>
+                  <meta expr:content='data:blog.canonicalUrl' itemprop='url'/>
+
+                  <b:if cond='data:view.isSingleItem'>
+                    <div class='article-left'>
+                      <div class='sticky'>
+                        <figure class='cover' expr:style='data:view.isPage ? &quot;display:none;&quot; : &quot; &quot;' itemprop='image' itemscope='' itemtype='https://schema.org/ImageObject'>
+                          <figcaption itemprop='caption' style='display:none;'><data:post.title/></figcaption>
+                          <b:if cond='data:view.isPost'>
+                            <b:if cond='data:blog.isMobileRequest'>
+                              <meta content='400' itemprop='width'/>
+                              <meta content='400' itemprop='height'/>
+                              <b:else/>
+                              <meta content='800' itemprop='width'/>
+                              <meta content='800' itemprop='height'/>
+                            </b:if>
+                            <b:if cond='data:post.thumbnailUrl'>
+                              <a data-lightbox='gallery' expr:data-lightbox-title='data:post.title' expr:href='resizeImage(data:post.thumbnailUrl, 800)'>
+                                <b:if cond='data:blog.isMobileRequest'>
+                                  <img class='img' expr:alt='data:post.title' expr:data-src='resizeImage(data:post.thumbnailUrl, 400, &quot;1:1&quot;)' height='400' width='400'/>
+                                  <meta expr:content='resizeImage(data:post.thumbnailUrl, 400, &quot;1:1&quot;)' itemprop='url contentUrl'/>
+                                  <b:else/>
+                                  <img class='img' expr:alt='data:post.title' expr:data-src='resizeImage(data:post.thumbnailUrl, 800, &quot;1:1&quot;)' height='800' width='800'/>
+                                  <meta expr:content='resizeImage(data:post.thumbnailUrl, 800, &quot;1:1&quot;)' itemprop='url contentUrl'/>
+                                </b:if>
+                              </a>
+                              <b:else/>
+                              <a data-lightbox='gallery' expr:data-lightbox-title='data:post.title' href='https://dummyimage.com/800x800/55626f/FFFFFF.jpg'>
+                                <b:if cond='data:blog.isMobileRequest'>
+                                  <img data-src='https://dummyimage.com/400x400/55626f/FFFFFF.jpg' expr:alt='data:post.title' height='400' width='400'/>
+                                  <meta content='https://dummyimage.com/400x400/55626f/FFFFFF.jpg' itemprop='url contentUrl'/>
+                                  <b:else/>
+                                  <img data-src='https://dummyimage.com/800x800/55626f/FFFFFF.jpg' expr:alt='data:post.title' height='800' width='800'/>
+                                  <meta content='https://dummyimage.com/800x800/55626f/FFFFFF.jpg' itemprop='url contentUrl'/>
+                                </b:if>
+                              </a>
+                            </b:if>
+                            <b:else/><!-- isPage -->
+                            <b:if cond='data:post.thumbnailUrl'>
+                              <b:if cond='data:blog.isMobileRequest'>
+                                <img expr:alt='data:post.title' expr:data-src='resizeImage(data:post.thumbnailUrl, 400, &quot;2:1&quot;)' height='200' width='400'/>
+                                <meta expr:content='resizeImage(data:post.thumbnailUrl, 400, &quot;2:1&quot;)' itemprop='url contentUrl'/>
+                                <b:else/>
+                                <img expr:alt='data:post.title' expr:data-src='resizeImage(data:post.thumbnailUrl, 800, &quot;2:1&quot;)' height='400' width='800'/>
+                                <meta expr:content='resizeImage(data:post.thumbnailUrl, 800, &quot;2:1&quot;)' itemprop='url contentUrl'/>
+                              </b:if>
+                              <b:else/>
+                              <b:if cond='data:blog.isMobileRequest'>
+                                <img data-src='https://dummyimage.com/400x200/55626f/FFFFFF.jpg' expr:alt='data:post.title' height='200' width='400'/>
+                                <meta content='https://dummyimage.com/400x200/55626f/FFFFFF.jpg' itemprop='url contentUrl'/>
+                                <b:else/>
+                                <img data-src='https://dummyimage.com/800x400/55626f/FFFFFF.jpg' expr:alt='data:post.title' height='400' width='800'/>
+                                <meta content='https://dummyimage.com/800x400/55626f/FFFFFF.jpg' itemprop='url contentUrl'/>
+                              </b:if>
+                            </b:if>
+                            <b:if cond='data:blog.isMobileRequest'>
+                              <meta content='400' itemprop='width'/>
+                              <meta content='200' itemprop='height'/>
+                              <b:else/>
+                              <meta content='800' itemprop='width'/>
+                              <meta content='400' itemprop='height'/>
+                            </b:if>
+                          </b:if>
+                        </figure>
+                        <b:if cond='data:view.isPost'>
+                          <nav class='breadcrumb' itemscope='itemscope' itemtype='https://schema.org/BreadcrumbList'>
+                            <ol>
+                              <li itemprop='itemListElement' itemscope='itemscope' itemtype='https://schema.org/ListItem'>
+                                <a expr:href='data:blog.canonicalHomepageUrl' itemprop='item'>
+                                  <meta content='0' itemprop='position'/>
+                                  <span itemprop='name'><i class='icon left'><svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'><path d='M0 0h24v24H0V0z' fill='none'/><path d='M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z'/></svg></i><data:blog.title/></span>
+                                </a>
+                              </li>
+                              <b:loop index='i' values='data:post.labels' var='label'>
+                                <span class='pager'>\</span>
+                                <li itemprop='itemListElement' itemscope='itemscope' itemtype='https://schema.org/ListItem'>
+                                  <a expr:href='data:label.url + &quot;?max-results=8&quot;' itemprop='item'>
+                                    <meta expr:content='data:i+1' itemprop='position'/>
+                                    <span itemprop='name'><data:label.name/></span>
+                                  </a>
+                                </li>
+                              </b:loop>
+                            </ol>
+                            <a class='bagikan' data-text-pop-title='share' target='pop-bagikan'><i class='icon'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M448 248L288 96v85.334C138.666 202.667 85.333 309.334 64 416c53.333-74.666 117.333-108.802 224-108.802v87.469L448 248z'/></svg></i></a>
+                          </nav>
+                        </b:if>
+                      </div>
+                    </div>
+                    <div class='article-right'>
+                      <div class='sticky'>
+                        <h1 class='title' expr:itemprop='data:view.isPage ? &quot;name headline&quot; : &quot;name&quot;'>
+                          <data:post.title/>
+                        </h1>
+                        <div class='attr'>
+                          <span class='left'>
+                            <span class='wrap'>
+                              <span itemprop='author' itemscope='' itemtype='http://schema.org/Person'>
+                                <!-- a expr:href='data:post.author.profileUrl' itemprop='url' target='_popwin' -->
+                                <a expr:href='data:blog.canonicalHomepageUrl' itemprop='url'>
+                                  <meta expr:content='resizeImage(data:post.author.authorPhoto.image, 40, &quot;1:1&quot;)' itemprop='image'/>
+                                  <img expr:alt='data:post.author.name' expr:data-src='resizeImage(data:post.author.authorPhoto.image, 40, &quot;1:1&quot;)' height='40' width='40'/>
+                                  <b itemprop='name'><data:post.author.name/></b>            
+                                </a>
+                              </span>
+                              &amp;nbsp;
+                              <time class='waktu' expr:datetime='data:post.date.iso8601' expr:title='data:post.date'><data:post.date/></time>
+                            </span>
+                          </span>
+                          <span class='right'>
+                            <span class='wrap'/>
+                          </span>
+                        </div>
+                        <div class='post-body lightbox-auto' expr:itemprop='data:view.isPage ? &quot;articleBody&quot; : &quot;&quot;'>
+                          <data:post.body/>
+                        </div>
+                        <!-- b:include data='post' name='comments'/ -->
+                      </div>
+                    </div>
+
+                    <b:else/>
+
+                    <figure class='cover' itemprop='image' itemscope='' itemtype='https://schema.org/ImageObject'>
+                      <a expr:href='data:post.url' expr:title='data:post.title'>
+                        <b:if cond='data:post.thumbnailUrl'>
+                          <img decoding='async' expr:alt='data:post.title' expr:data-src='resizeImage(data:post.thumbnailUrl, 600, &quot;1:1&quot;)' height='600' loading='lazy' width='600'/>
+                          <meta expr:content='resizeImage(data:post.thumbnailUrl, 600, &quot;1:1&quot;)' itemprop='url contentUrl'/>
+                          <b:else/>
+                          <img data-src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 600 600%27%3E%3Crect fill=%27%23f6efe7%27 width=%27600%27 height=%27600%27/%3E%3Cpath fill=%27%23d4a76a%27 opacity=%270.35%27 d=%27M200 280 Q300 180 400 280 Q300 380 200 280Z%27/%3E%3C/svg%3E' decoding='async' expr:alt='data:post.title' height='600' loading='lazy' width='600'/>
+                          <meta content='' itemprop='url contentUrl'/>
+                        </b:if>
+                      </a>
+                      <meta content='600' itemprop='width'/>
+                      <meta content='600' itemprop='height'/>
+                      <figcaption itemprop='caption' style='display:none;'><data:post.title/></figcaption>
+                    </figure>
+
+                    <a expr:href='data:post.url' expr:title='data:post.title'>
+                      <h2 class='title' expr:itemprop='data:view.isPage ? &quot;name headline&quot; : &quot;name&quot;'>
+                        <data:post.title/>
+                      </h2>
+                    </a>
+
+                    <div class='post-body lightbox-auto' expr:itemprop='data:view.isPage ? &quot;articleBody&quot; : &quot;&quot;'>
+                      <data:post.body/>
+                    </div>
+
+                  </b:if>
+                </article>
+
+                <b:if cond='data:view.isPost'>
+                  <section id='article-bottom'>
+                    <b:loop index='i' values='data:post.labels' var='label'>
+                      <b:if cond='data:i == 0'>
+                        <div id='related'>
+                          <header class='page-title'>
+                            <div class='left'>
+                              <h3>
+                                <span data-text='product_more_in'/>
+                                <a expr:href='data:label.url + &quot;?max-results=8&quot;'><data:label.name/></a>
+                              </h3>
+                            </div>
+                            <div class='right'>
+                              <a expr:href='data:label.url + &quot;?max-results=8&quot;'>
+                                <small>
+                                  <span data-text='product_all'/>
+                                  <i class='icon right'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z'/></svg></i>
+                                </small>
+                              </a>
+                            </div>
+                          </header>
+                          <div expr:data-feed='data:label.url + &quot;?max-results=5&quot;' expr:data-hide-id='data:post.id'/>
+                        </div>
+                      </b:if>
+                    </b:loop>
+                    <b:include name='postPagination'/>
+                    <div id='pop-bagikan'>
+                      <div class='grid-preview'>
+                        <b:if cond='data:post.thumbnailUrl'>
+                          <img expr:alt='data:post.title' expr:data-src='resizeImage(data:post.thumbnailUrl, 60, &quot;1:1&quot;)' height='60' width='60'/>
+                          <b:else/>
+                          <img data-src='https://dummyimage.com/60x60/55626f/FFFFFF.jpg' expr:alt='data:post.title' height='60' width='60'/>
+                        </b:if>
+                        <div class='info'>
+                          <div class='wrap'>
+                            <h4><data:post.title/></h4>
+                            <small><data:blog.metaDescription/></small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='grid'>
+                        <a expr:href='&quot;https://api.whatsapp.com/send?text=&quot; + data:post.url' target='_popwin'>
+                          <i class='icon whatsapp'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M260.062 32C138.605 32 40.134 129.701 40.134 250.232c0 41.23 11.532 79.79 31.559 112.687L32 480l121.764-38.682c31.508 17.285 67.745 27.146 106.298 27.146C381.535 468.464 480 370.749 480 250.232 480 129.701 381.535 32 260.062 32zm109.362 301.11c-5.174 12.827-28.574 24.533-38.899 25.072-10.314.547-10.608 7.994-66.84-16.434-56.225-24.434-90.052-83.844-92.719-87.67-2.669-3.812-21.78-31.047-20.749-58.455 1.038-27.413 16.047-40.346 21.404-45.725 5.351-5.387 11.486-6.352 15.232-6.413 4.428-.072 7.296-.132 10.573-.011 3.274.124 8.192-.685 12.45 10.639 4.256 11.323 14.443 39.153 15.746 41.989 1.302 2.839 2.108 6.126.102 9.771-2.012 3.653-3.042 5.935-5.961 9.083-2.935 3.148-6.174 7.042-8.792 9.449-2.92 2.665-5.97 5.572-2.9 11.269 3.068 5.693 13.653 24.356 29.779 39.736 20.725 19.771 38.598 26.329 44.098 29.317 5.515 3.004 8.806 2.67 12.226-.929 3.404-3.599 14.639-15.746 18.596-21.169 3.955-5.438 7.661-4.373 12.742-2.329 5.078 2.052 32.157 16.556 37.673 19.551 5.51 2.989 9.193 4.529 10.51 6.9 1.317 2.38.901 13.531-4.271 26.359z'/></svg></i>
+                        </a>
+                        <a expr:href='&quot;https://t.me/share/url?url=&quot; + data:post.url' target='_popwin'>
+                          <i class='icon telegram'><svg viewBox='0 0 54 54' x='0px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0px'><g><rect fill='transparent' height='53.4' width='53.8' x='-0.2' y='0.1'/><path d='M49.7,16.5c1.3,3.1,2,6.3,2,9.7s-0.7,6.6-2,9.7c-1.3,3.1-3.1,5.7-5.3,8c-2.2,2.2-4.9,4-8,5.3c-3.1,1.3-6.3,2-9.7,2 c-3.4,0-6.6-0.7-9.7-2s-5.7-3.1-8-5.3c-2.2-2.2-4-4.9-5.3-8c-1.3-3.1-2-6.3-2-9.7s0.7-6.6,2-9.7c1.3-3.1,3.1-5.7,5.3-8 c2.2-2.2,4.9-4,8-5.3s6.3-2,9.7-2c3.4,0,6.6,0.7,9.7,2c3.1,1.3,5.7,3.1,8,5.3C46.6,10.8,48.3,13.5,49.7,16.5z M34.8,37.7l4.1-19.3 c0.2-0.8,0.1-1.4-0.3-1.8c-0.4-0.4-0.8-0.4-1.4-0.2l-24.1,9.3c-0.5,0.2-0.9,0.4-1.1,0.7c-0.2,0.3-0.2,0.5-0.1,0.7 c0.1,0.2,0.4,0.4,0.9,0.5l6.2,1.9l14.3-9c0.4-0.3,0.7-0.3,0.9-0.2c0.1,0.1,0.1,0.2-0.1,0.4L22.5,31.3L22,37.7 c0.4,0,0.8-0.2,1.3-0.6l3-2.9l6.2,4.6C33.8,39.5,34.5,39.1,34.8,37.7z'/></g></svg></i>
+                        </a>
+                        <a expr:href='&quot;https://www.facebook.com/sharer/sharer.php?u=&quot; + data:post.url' target='_popwin'>
+                          <i class='icon facebook'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M426.8 64H85.2C73.5 64 64 73.5 64 85.2v341.6c0 11.7 9.5 21.2 21.2 21.2H256V296h-45.9v-56H256v-41.4c0-49.6 34.4-76.6 78.7-76.6 21.2 0 44 1.6 49.3 2.3v51.8h-35.3c-24.1 0-28.7 11.4-28.7 28.2V240h57.4l-7.5 56H320v152h106.8c11.7 0 21.2-9.5 21.2-21.2V85.2c0-11.7-9.5-21.2-21.2-21.2z'/></svg></i>
+                        </a>
+                        <a expr:href='&quot;https://twitter.com/intent/tweet?text=&quot; + data:post.url' target='_popwin'>
+                          <i class='icon twitter'><svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6-18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6.8 15 2.5 22.1-80.5-4-151.9-42.6-199.6-101.3-8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7-16-.4-31-4.8-44-12.1v1.2c0 47 33.4 86.1 77.7 95-8.1 2.2-16.7 3.4-25.5 3.4-6.2 0-12.3-.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3-33.1 26-74.9 41.5-120.3 41.5-7.8 0-15.5-.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-.1-8.4-.3-12.5C462.6 146 479 129 492 109.5z'/></svg></i>
+                        </a>
+                        <div class='copy'>
+                          <input expr:value='data:post.url' onclick='select()' readonly='' type='text'/>
+                          <button data-text='copy'/>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </b:if>
+              </b:includable>
+              <b:includable id='postCommentsLink'>
+                <b:if cond='data:view.isMultipleItems'>
+                  <span class='byline post-comment-link container'>
+                    <b:include cond='data:post.commentSource != 1' name='commentsLink'/>
+                  </span>
+                </b:if>
+              </b:includable>
+              <b:includable id='postFooter' var='post'>
+                <div class='post-footer'>
+                  <b:include name='footerBylines'/>
+                  <b:include data='post' name='postFooterAuthorProfile'/>
+                </div>
+              </b:includable>
+              <b:includable id='postFooterAuthorProfile' var='post'>
+                <b:if cond='data:post.author.aboutMe and data:view.isPost'>
+                  <div class='author-profile'>
+                    <b:if cond='data:post.author.authorPhoto.url'>
+                      <img class='author-image' expr:data-src='data:post.author.authorPhoto.url' width='50px'/>
+                      <div class='author-about'>
+                        <b:include data='post' name='aboutPostAuthor'/>
+                      </div>
+                      <b:else/>
+                      <b:include data='post' name='aboutPostAuthor'/>
+                    </b:if>
+                  </div>
+                </b:if>
+              </b:includable>
+              <b:includable id='postHeader' var='post'>
+                <b:include name='headerByline'/>
+              </b:includable>
+              <b:includable id='postJumpLink' var='post'>
+                <div class='jump-link flat-button'>
+                  <a expr:href='data:post.url fragment &quot;more&quot;' expr:title='data:post.title'>
+                    <b:eval expr='data:blog.jumpLinkMessage'/>
+                  </a>
+                </div>
+              </b:includable>
+              <b:includable id='postLabels'>
+                <span class='byline post-labels'>
+                  <span class='byline-label'><data:byline.label/></span>
+                  <b:loop index='i' values='data:post.labels' var='label'>
+                    <a expr:href='data:label.url' rel='tag'>
+                      <data:label.name/>
+                    </a>
+                  </b:loop>
+                </span>
+              </b:includable>
+              <b:includable id='postLocation'>
+                <span class='byline post-location'>
+                  <data:byline.label/>
+                  <a expr:href='data:post.location.mapsUrl' target='_blank'><data:post.location.name/></a>
+                </span>
+              </b:includable>
+              <b:includable id='postMeta' var='post'>
+                <b:include data='post' name='postMetadataJSON'/>
+              </b:includable>
+              <b:includable id='postMetadataJSONImage'>
+                &quot;image&quot;: {
+                &quot;@type&quot;: &quot;ImageObject&quot;,
+                <b:if cond='data:post.featuredImage.isResizable'>
+                  &quot;url&quot;: &quot;<b:eval expr='resizeImage(data:post.featuredImage, 800, &quot;1:1&quot;)'/>&quot;,
+                  &quot;height&quot;: 630,
+                  &quot;width&quot;: 1200
+                  <b:else/>
+                  &quot;url&quot;: &quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=w1200&quot;,
+                  &quot;height&quot;: 348,
+                  &quot;width&quot;: 1200
+                </b:if>
+                },
+              </b:includable>
+              <b:includable id='postMetadataJSONPublisher'>
+                &quot;publisher&quot;: {
+                &quot;@type&quot;: &quot;Organization&quot;,
+                &quot;name&quot;: &quot;Blogger&quot;,
+                &quot;logo&quot;: {
+                &quot;@type&quot;: &quot;ImageObject&quot;,
+                &quot;url&quot;: &quot;https://lh3.googleusercontent.com/ULB6iBuCeTVvSjjjU1A-O8e9ZpVba6uvyhtiWRti_rBAs9yMYOFBujxriJRZ-A=h60&quot;,
+                &quot;width&quot;: 206,
+                &quot;height&quot;: 60
+                }
+                },
+              </b:includable>
+              <b:includable id='postPagination'>
+                <div class='blog-pager container' id='blog-pager'>
+                  <b:include cond='data:olderPageUrl' name='nextPageLink'/>
+                  <b:include cond='data:newerPageUrl' name='previousPageLink'/>
+                </div>
+              </b:includable>
+              <b:includable id='postReactions'>
+                <!-- Reaction feature no longer available. The includable is retained for backwards-compatibility. -->
+              </b:includable>
+              <b:includable id='postShareButtons'>
+                <div class='byline post-share-buttons goog-inline-block'>
+                  <b:with value='data:sharingId ?: ((data:widget.instanceId ?: &quot;sharing&quot;) + &quot;-&quot; + (data:regionName ?: &quot;byline&quot;) + &quot;-&quot; + data:post.id)' var='sharingId'>
+                    <!-- Note: 'sharingButtons' includable is from the default Sharing widget markup. -->
+                    <b:include data='{                                              sharingId: data:sharingId,                                                originalUrl: data:post.url,                                                platforms: data:this.sharing.platforms,                                                shareUrl: data:post.shareUrl,                                                shareTitle: data:post.title,                                              }' name='sharingButtons'/>
+                  </b:with>
+                </div>
+              </b:includable>
+              <b:includable id='postTimestamp'>
+                <span class='byline post-timestamp'>
+                  <data:byline.label/>
+                  <b:if cond='data:post.url'>
+                    <meta expr:content='data:post.url.canonical'/>
+                    <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'>
+                      <time class='published' expr:datetime='data:post.date.iso8601' expr:title='data:post.date.iso8601'>
+                        <data:post.date/>
+                      </time>
+                    </a>
+                  </b:if>
+                </span>
+              </b:includable>
+              <b:includable id='postTitle' var='post'>
+                <a expr:name='data:post.id'/>
+                <b:if cond='data:post.title != &quot;&quot;'>
+                  <h3 class='post-title entry-title'>
+                    <b:if cond='data:post.link or (data:post.url and data:view.url != data:post.url)'>
+                      <a expr:href='data:post.link ?: data:post.url'><data:post.title/></a>
+                      <b:else/>
+                      <data:post.title/>
+                    </b:if>
+                  </h3>
+                </b:if>
+              </b:includable>
+              <b:includable id='previousPageLink'>
+                <a class='blog-pager-newer-link' data-text='product_next' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:messages.newerPosts'>
+                  <data:messages.newerPosts/>
+                </a>
+              </b:includable>
+              <b:includable id='sharingButton'>
+                <span expr:aria-label='data:platform.shareMessage' expr:class='&quot;sharing-platform-button sharing-element-&quot; + data:platform.key' expr:data-href='data:shareUrl + &quot;&amp;target=&quot; + data:platform.target' expr:data-url='data:originalUrl' expr:title='data:platform.shareMessage' role='menuitem' tabindex='-1'>
+                  <b:include name='sharingPlatformIcon'/>
+                  <span class='platform-sharing-text'><data:platform.name/></span>
+                </span>
+              </b:includable>
+              <b:includable id='sharingButtonContent'>
+                <div class='flat-icon-button ripple'>
+                  <b:include name='shareIcon'/>
+                </div>
+              </b:includable>
+              <b:includable id='sharingButtons'>
+                <div class='sharing' expr:aria-owns='&quot;sharing-popup-&quot; + data:sharingId' expr:data-title='data:shareTitle'>
+                  <button class='sharing-button touch-icon-button' expr:aria-controls='&quot;sharing-popup-&quot; + data:sharingId' expr:aria-label='data:messages.share.escaped' expr:id='&quot;sharing-button-&quot; + data:sharingId' role='button'>
+                    <b:include name='sharingButtonContent'/>
+                  </button>
+                  <b:include name='sharingButtonsMenu'/>
+                </div>
+              </b:includable>
+              <b:includable id='sharingButtonsMenu'>
+                <div class='share-buttons-container'>
+                  <ul aria-hidden='true' class='share-buttons hidden' expr:aria-label='data:messages.share.escaped' expr:id='&quot;sharing-popup-&quot; + data:sharingId' role='menu'>
+                    <b:loop values='(data:platforms ?: data:blog.sharing.platforms) filter (p =&gt; p.key not in {&quot;blogThis&quot;})' var='platform'>
+                      <li>
+                        <b:include name='sharingButton'/>
+                      </li>
+                    </b:loop>
+                    <li aria-hidden='true' class='hidden'>
+                      <b:include name='otherSharingButton'/>
+                    </li>
+                  </ul>
+                </div>
+              </b:includable>
+              <b:includable id='sharingPlatformIcon'>
+                <b:include data='{ iconClass: (&quot;touch-icon sharing-&quot; + data:platform.key) }' expr:name='data:platform.key + &quot;Icon&quot;'/>
+              </b:includable>
+              <b:includable id='threadedCommentForm' var='post'>
+                <div class='comment-form'>
+                  <a name='comment-form'/>
+                  <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+                  <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+                    <p><data:this.messages.blogComment/></p>
+                  </b:if>
+                  <b:include data='post' name='commentFormIframeSrc'/>
+                  <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+                  <data:post.cmtfpIframe/>
+                  <script type='text/javascript'>
+                    BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+                  </script>
+                </div>
+              </b:includable>
+              <b:includable id='threadedCommentJs' var='post'>
+                <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+                <b:template-script inline='true' name='threaded_comments'/>
+                <script type='text/javascript'>
+                  blogger.widgets.blog.initThreadedComments(
+                  <data:post.commentJso/>,
+                  <data:post.commentMsgs/>,
+                  <data:post.commentConfig/>);
+                </script>
+              </b:includable>
+              <b:includable id='threadedComments' var='post'>
+                <section class='comments threaded' expr:data-embed='data:post.embedCommentForm' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+                  <div class='comments-content'>
+                    <b:if cond='data:post.embedCommentForm'>
+                      <b:include data='post' name='threadedCommentJs'/>
+                    </b:if>
+                    <div id='comment-holder'>
+                      <data:post.commentHtml/>
+                    </div>
+                  </div>
+
+                  <p class='comment-footer'>
+                    <b:if cond='data:post.allowNewComments'>
+                      <b:include data='post' name='threadedCommentForm'/>
+                      <b:else/>
+                      <data:post.noNewCommentsText/>
+                    </b:if>
+                    <b:if cond='data:post.showManageComments'>
+                      <b:include data='post' name='manageComments'/>
+                    </b:if>
+                  </p>
+
+                  <b:if cond='data:showCmtPopup'>
+                    <div id='comment-popup'>
+                      <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+                      </iframe>
+                    </div>
+                  </b:if>
+                </section>
+              </b:includable>
+              <b:includable id='tooltipCss'>
+  <!-- LINT.IfChange -->
+  <style>
+    .post-body a.b-tooltip-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip {
+      display: block !important;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-20%, 1px);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 1;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    .post-body a.b-tooltip-container .b-tooltip iframe {
+      width: 200px;
+      height: 198px;
+      max-width: none;
+      border: none;
+      border-radius: 20px;
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (hover: hover) {
+      .post-body a.b-tooltip-container:hover .b-tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  </style>
+  <!-- LINT.ThenChange(//depot/google3/java/com/google/blogger/b2/layouts/widgets/v2-style.css) -->
+</b:includable>
+            </b:widget>
+          </b:section>
+        </b:if>
+      </div>
+    </main>
+    <b:if cond='!data:view.isError'>
+      <section id='feature'>
+        <b:section class='feature-section wrapper' id='feature-section' name='Feature' showaddelement='false' version='3'>
+          <b:widget id='Image21' locked='true' title='Order via WhatsApp' type='Image' version='3' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='displayUrl'>https://i.ibb.co/vjGVZW7/whatsapp.png</b:widget-setting>
+              <b:widget-setting name='displayHeight'>512</b:widget-setting>
+              <b:widget-setting name='sectionWidth'>1613</b:widget-setting>
+              <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+              <b:widget-setting name='displayWidth'>512</b:widget-setting>
+              <b:widget-setting name='link'>#link</b:widget-setting>
+              <b:widget-setting name='caption'>Share your selected furniture items on WhatsApp and complete checkout in minutes.</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <div class='grid'>
+                <div class='icon'>
+                  <img expr:alt='data:title + &quot; - &quot; + data:caption' expr:data-src='resizeImage(data:sourceUrl, 100, &quot;1:1&quot;)' height='100' width='100'/>
+                </div>
+                <div class='info'>
+                  <div class='wrap'>
+                    <h3>
+                      <data:title/>
+                    </h3>
+                    <p><data:caption/></p>
+                  </div>
+                </div>
+              </div>
+            </b:includable>
+            <b:includable id='content'>
+            </b:includable>
+          </b:widget>
+          <b:widget id='Image22' locked='true' title='Safe Home Delivery' type='Image' version='3' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='displayUrl'>https://i.ibb.co/ZhyXdw4/box.png</b:widget-setting>
+              <b:widget-setting name='displayHeight'>512</b:widget-setting>
+              <b:widget-setting name='sectionWidth'>1613</b:widget-setting>
+              <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+              <b:widget-setting name='displayWidth'>512</b:widget-setting>
+              <b:widget-setting name='link'>#link</b:widget-setting>
+              <b:widget-setting name='caption'>Fast dispatch, careful packaging, and tracked delivery for every furniture order.</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <div class='grid'>
+                <div class='icon'>
+                  <img expr:alt='data:title + &quot; - &quot; + data:caption' expr:data-src='resizeImage(data:sourceUrl, 100, &quot;1:1&quot;)' height='100' width='100'/>
+                </div>
+                <div class='info'>
+                  <div class='wrap'>
+                    <h3>
+                      <data:title/>
+                    </h3>
+                    <p><data:caption/></p>
+                  </div>
+                </div>
+              </div>
+            </b:includable>
+            <b:includable id='content'>
+            </b:includable>
+          </b:widget>
+          <b:widget id='Image23' locked='true' title='Cash on Delivery' type='Image' version='3' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='displayUrl'>https://i.ibb.co/QnGKKL1/wallet.png</b:widget-setting>
+              <b:widget-setting name='displayHeight'>512</b:widget-setting>
+              <b:widget-setting name='sectionWidth'>1613</b:widget-setting>
+              <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+              <b:widget-setting name='displayWidth'>512</b:widget-setting>
+              <b:widget-setting name='link'>#link</b:widget-setting>
+              <b:widget-setting name='caption'>COD available for eligible locations, with instant order confirmation via WhatsApp.</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <div class='grid'>
+                <div class='icon'>
+                  <img expr:alt='data:title + &quot; - &quot; + data:caption' expr:data-src='resizeImage(data:sourceUrl, 100, &quot;1:1&quot;)' height='100' width='100'/>
+                </div>
+                <div class='info'>
+                  <div class='wrap'>
+                    <h3>
+                      <data:title/>
+                    </h3>
+                    <p><data:caption/></p>
+                  </div>
+                </div>
+              </div>
+            </b:includable>
+            <b:includable id='content'>
+            </b:includable>
+          </b:widget>
+        </b:section>
+      </section>
+      <b:section class='contact wrapper' id='contact' name='About &amp; Contact' showaddelement='false' version='3'>
+        <b:widget id='HTML41' locked='true' title='DB Furniture Store' type='HTML' version='3' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>Modern furniture collections for living rooms, bedrooms, and dining spaces. Browse products from posts, add to cart, and place your order quickly through WhatsApp checkout.</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+            <h3>
+              <data:title/>
+            </h3>
+            <p>
+              <data:content/>
+            </p>
+          </b:includable>
+        </b:widget>
+        <b:widget id='HTML42' locked='true' title='Contact Us' type='HTML' version='3' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[NH-61, Amguri Town, Sivasagar-785680 <br/>
+Phone / WhatsApp: +91 8486713268
+<br/>
+E-mail: hello@dbfurniture.com]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+            <h3>
+              <data:title/>
+            </h3>
+            <p>
+              <data:content/>
+            </p>
+          </b:includable>
+        </b:widget>
+      </b:section>
+    </b:if>
+    <footer id='footer'>
+      <div class='wrapper'>
+        <b:section class='footer-section' id='footer-section' name='Footer' showaddelement='false' version='3'>
+          <b:widget id='LinkList31' locked='true' title='Media Sosial' type='LinkList' version='2' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='link-5'>https://www.tiktok.com/@kangriannn</b:widget-setting>
+              <b:widget-setting name='link-3'>https://twitter.com/kangriannn</b:widget-setting>
+              <b:widget-setting name='link-4'>https://www.youtube.com/kangrian</b:widget-setting>
+              <b:widget-setting name='text-1'>Telegram</b:widget-setting>
+              <b:widget-setting name='text-0'>Instagram</b:widget-setting>
+              <b:widget-setting name='text-3'>Twitter</b:widget-setting>
+              <b:widget-setting name='text-2'>Facebook</b:widget-setting>
+              <b:widget-setting name='text-5'>TikTok</b:widget-setting>
+              <b:widget-setting name='text-4'>YouTube</b:widget-setting>
+              <b:widget-setting name='sorting'>NONE</b:widget-setting>
+              <b:widget-setting name='link-1'>https://t.me/lapak_kangrian</b:widget-setting>
+              <b:widget-setting name='link-2'>https://www.facebook.com/kangrian.net</b:widget-setting>
+              <b:widget-setting name='link-0'>https://www.instagram.com/kangriannn</b:widget-setting>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <b:include name='content'/>
+            </b:includable>
+            <b:includable id='content'>
+              <div class='left'>
+                <div class='wrap'>
+                  <nav class='socmed'>
+                    <b:loop values='data:links' var='link'>
+                      <a data-popwin-height='640' data-popwin-width='1280' expr:href='data:link.target' expr:title='data:link.name' rel='external nofollow' target='_popwin'>
+                        <i class='icon'>
+                          <b:if cond='data:link.name == &quot;Instagram&quot;'>
+                            <svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M336 96c21.2 0 41.3 8.4 56.5 23.5S416 154.8 416 176v160c0 21.2-8.4 41.3-23.5 56.5S357.2 416 336 416H176c-21.2 0-41.3-8.4-56.5-23.5S96 357.2 96 336V176c0-21.2 8.4-41.3 23.5-56.5S154.8 96 176 96h160m0-32H176c-61.6 0-112 50.4-112 112v160c0 61.6 50.4 112 112 112h160c61.6 0 112-50.4 112-112V176c0-61.6-50.4-112-112-112z'/><path d='M360 176c-13.3 0-24-10.7-24-24s10.7-24 24-24c13.2 0 24 10.7 24 24s-10.8 24-24 24zM256 192c35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64 28.7-64 64-64m0-32c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96z'/></svg>
+                          </b:if>
+                          <b:if cond='data:link.name == &quot;Facebook&quot;'>
+                            <svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M426.8 64H85.2C73.5 64 64 73.5 64 85.2v341.6c0 11.7 9.5 21.2 21.2 21.2H256V296h-45.9v-56H256v-41.4c0-49.6 34.4-76.6 78.7-76.6 21.2 0 44 1.6 49.3 2.3v51.8h-35.3c-24.1 0-28.7 11.4-28.7 28.2V240h57.4l-7.5 56H320v152h106.8c11.7 0 21.2-9.5 21.2-21.2V85.2c0-11.7-9.5-21.2-21.2-21.2z'/></svg>
+                          </b:if>
+                          <b:if cond='data:link.name == &quot;Twitter&quot;'>
+                            <svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6-18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6.8 15 2.5 22.1-80.5-4-151.9-42.6-199.6-101.3-8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7-16-.4-31-4.8-44-12.1v1.2c0 47 33.4 86.1 77.7 95-8.1 2.2-16.7 3.4-25.5 3.4-6.2 0-12.3-.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3-33.1 26-74.9 41.5-120.3 41.5-7.8 0-15.5-.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-.1-8.4-.3-12.5C462.6 146 479 129 492 109.5z'/></svg>
+                          </b:if>
+                          <b:if cond='data:link.name == &quot;YouTube&quot;'>
+                            <svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path d='M508.6 148.8c0-45-33.1-81.2-74-81.2C379.2 65 322.7 64 265 64h-18c-57.6 0-114.2 1-169.6 3.6C36.6 67.6 3.5 104 3.5 149 1 184.6-.1 220.2 0 255.8c-.1 35.6 1 71.2 3.4 106.9 0 45 33.1 81.5 73.9 81.5 58.2 2.7 117.9 3.9 178.6 3.8 60.8.2 120.3-1 178.6-3.8 40.9 0 74-36.5 74-81.5 2.4-35.7 3.5-71.3 3.4-107 .2-35.6-.9-71.2-3.3-106.9zM207 353.9V157.4l145 98.2-145 98.3z'/></svg>
+                          </b:if>
+                          <b:if cond='data:link.name == &quot;Telegram&quot;'>
+                            <svg viewBox='0 0 54 54' x='0px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0px'><g><rect fill='transparent' height='53.4' width='53.8' x='-0.2' y='0.1'/><path d='M49.7,16.5c1.3,3.1,2,6.3,2,9.7s-0.7,6.6-2,9.7c-1.3,3.1-3.1,5.7-5.3,8c-2.2,2.2-4.9,4-8,5.3c-3.1,1.3-6.3,2-9.7,2 c-3.4,0-6.6-0.7-9.7-2s-5.7-3.1-8-5.3c-2.2-2.2-4-4.9-5.3-8c-1.3-3.1-2-6.3-2-9.7s0.7-6.6,2-9.7c1.3-3.1,3.1-5.7,5.3-8 c2.2-2.2,4.9-4,8-5.3s6.3-2,9.7-2c3.4,0,6.6,0.7,9.7,2c3.1,1.3,5.7,3.1,8,5.3C46.6,10.8,48.3,13.5,49.7,16.5z M34.8,37.7l4.1-19.3 c0.2-0.8,0.1-1.4-0.3-1.8c-0.4-0.4-0.8-0.4-1.4-0.2l-24.1,9.3c-0.5,0.2-0.9,0.4-1.1,0.7c-0.2,0.3-0.2,0.5-0.1,0.7 c0.1,0.2,0.4,0.4,0.9,0.5l6.2,1.9l14.3-9c0.4-0.3,0.7-0.3,0.9-0.2c0.1,0.1,0.1,0.2-0.1,0.4L22.5,31.3L22,37.7 c0.4,0,0.8-0.2,1.3-0.6l3-2.9l6.2,4.6C33.8,39.5,34.5,39.1,34.8,37.7z'/></g></svg>
+                          </b:if>
+                          <b:if cond='data:link.name == &quot;TikTok&quot;'>
+                            <svg viewBox='-58.35000000000002 -186.70564362582354 2548.289756960746 2538.849821747569' xmlns='http://www.w3.org/2000/svg'><g fill='#25f4ee'><path d='M779.38 890.55v-88.12a650.81 650.81 0 0 0-92.45-7.94c-299.8-.64-565.22 193.64-655.25 479.6S47.92 1871.34 294 2042.56a684.7 684.7 0 0 1 485.36-1152z'/><path d='M796 1888.72c167.62-.23 305.4-132.28 312.74-299.74V94.62h273A512.17 512.17 0 0 1 1373.8 0h-373.41v1492.92c-6.21 168.31-144.32 301.63-312.74 301.9a317.76 317.76 0 0 1-144.45-36.11A313.48 313.48 0 0 0 796 1888.72zM1891.66 601.64v-83.06a509.85 509.85 0 0 1-282.4-85.22 517.79 517.79 0 0 0 282.4 168.28z'/></g><path d='M1609.26 433.36a514.19 514.19 0 0 1-127.84-339.47h-99.68a517.16 517.16 0 0 0 227.52 339.47zM686.93 1167.9a313.46 313.46 0 0 0-144.46 590.81A312.75 312.75 0 0 1 796 1262.51a329.69 329.69 0 0 1 92.44 14.49V897.05a654.77 654.77 0 0 0-92.44-7.22h-16.62v288.9a321.13 321.13 0 0 0-92.45-10.83z' fill='#fe2c55'/><path d='M1891.66 601.64v288.91a886.23 886.23 0 0 1-517.86-168.29v759.1c-.8 378.78-308.09 685.43-686.87 685.43A679.65 679.65 0 0 1 294 2042.56 685.43 685.43 0 0 0 1481.42 1576V819.05A887.71 887.71 0 0 0 2000 985.17v-372a529.59 529.59 0 0 1-108.34-11.53z' fill='#fe2c55'/><path d='M1373.8 1481.36v-759.1a886.11 886.11 0 0 0 518.58 166.12v-288.9a517.87 517.87 0 0 1-283.12-166.12 517.16 517.16 0 0 1-227.52-339.47h-273V1589a313.46 313.46 0 0 1-567 171.17 313.46 313.46 0 0 1 144.46-590.83 321.35 321.35 0 0 1 92.45 14.45V894.88A684.71 684.71 0 0 0 293.29 2050.5a679.65 679.65 0 0 0 393.64 116.29c378.78 0 686.07-306.65 686.87-685.43z'/></svg>
+                          </b:if>
+                        </i>
+                      </a>
+                    </b:loop>
+                  </nav>
+                </div>
+              </div>
+              <div class='right'>
+                <p id='copyright'>
+                  &amp;#0169;2021 &#8212; <b style='white-space:nowrap;'><data:blog.title/></b>
+                </p>
+              </div>
+            </b:includable>
+          </b:widget>
+        </b:section>
+      </div>
+    </footer>
+    <div data-text-pop-title='chat_title' id='pop-chat'>
+      <div class='ui'>
+        <p>
+          <span data-text='chat_intro'/>
+        </p>
+        <form autocomplete='off' id='chat-whatsapp'>
+          <input data-text-placeholder='chat_placeholder' name='text' required='' type='text'/>
+          <button>
+            <i class='icon'>
+              <svg enable-background='new 0 0 1000 1000' version='1.1' viewBox='0 0 1000 1000' x='0px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' y='0px'>
+                <path d='M10,980.5l98.6-438.2l584.7-48.5l0.1-5.9l-583.6-32.7L23,19.5l967,467.4L10,980.5z'/></svg>
+            </i>
+          </button>
+          <div class='opengraph'>
+            <b:if cond='data:blog.postImageUrl'>
+              <img expr:data-src='resizeImage(data:blog.postImageUrl, 100, &quot;1:1&quot;)'/>
+              <b:else/>
+              <img data-src='https://lh3.googleusercontent.com/-bZtEblBTe-M/Yn81iQ92fgI/AAAAAAAABVw/g9w3qf9OmhodJq7_LJ_OP_rs-QOrTF3pwCNcBGAsYHQ/w100-h100-c/no-image-icon.png'/>
+            </b:if>
+            <div class='info'>
+              <b>
+                <data:blog.pageName/>
+              </b>
+              <small>
+                <data:blog.canonicalUrl/>
+              </small>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <button id='cart-btn'>
+      <span class='wrap'>
+        <span>
+          <span class='qty'>0</span> <span data-text='cart_order'/>
+        </span>
+        <b class='sub'>0</b>
+      </span>
+    </button>
+    <form autocomplete='off' id='cart'>
+      <div class='header'>
+        <div class='wrap'>
+          <b>
+            <span>
+              <span data-text='cart_order'/>
+            </span>
+          </b>
+          <span id='cart-close'>
+            <svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z'/>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class='list_n_form'>
+        <div class='list'/>
+        <div class='form'/>
+      </div>
+      <div class='cta'>
+        <div class='subtotal'>
+          <div class='wrap'>
+            <div class='grid'>
+              <span>
+                <span data-text='cart_total'/> ( <b class='qty'>0</b> <span data-text='cart_order'/> )
+              </span>
+              <b class='sub'>0</b>
+            </div>
+          </div>
+        </div>
+        <button class='checkout'>
+          <svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M260.062 32C138.605 32 40.134 129.701 40.134 250.232c0 41.23 11.532 79.79 31.559 112.687L32 480l121.764-38.682c31.508 17.285 67.745 27.146 106.298 27.146C381.535 468.464 480 370.749 480 250.232 480 129.701 381.535 32 260.062 32zm109.362 301.11c-5.174 12.827-28.574 24.533-38.899 25.072-10.314.547-10.608 7.994-66.84-16.434-56.225-24.434-90.052-83.844-92.719-87.67-2.669-3.812-21.78-31.047-20.749-58.455 1.038-27.413 16.047-40.346 21.404-45.725 5.351-5.387 11.486-6.352 15.232-6.413 4.428-.072 7.296-.132 10.573-.011 3.274.124 8.192-.685 12.45 10.639 4.256 11.323 14.443 39.153 15.746 41.989 1.302 2.839 2.108 6.126.102 9.771-2.012 3.653-3.042 5.935-5.961 9.083-2.935 3.148-6.174 7.042-8.792 9.449-2.92 2.665-5.97 5.572-2.9 11.269 3.068 5.693 13.653 24.356 29.779 39.736 20.725 19.771 38.598 26.329 44.098 29.317 5.515 3.004 8.806 2.67 12.226-.929 3.404-3.599 14.639-15.746 18.596-21.169 3.955-5.438 7.661-4.373 12.742-2.329 5.078 2.052 32.157 16.556 37.673 19.551 5.51 2.989 9.193 4.529 10.51 6.9 1.317 2.38.901 13.531-4.271 26.359z'/>
+          </svg>
+          Send Order
+        </button>
+      </div>
+      <div class='empty'>
+        <div class='wrap'>
+          <svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M387.9 373.7h49.2l17.5-75.4h-66.7zM387.9 448h.5c18.7 0 33.4-12.5 38.3-29.5l6-25.9h-44.8V448zM265.4 392.5h103.7V448H265.4zM75 373.7h49v-75.4H57.5zM142.9 192h103.7v87.5H142.9zM265.4 192h103.7v87.5H265.4zM85.5 418.3c4.7 17 19.4 29.7 38.1 29.7h.5v-55.5H79.4l6.1 25.8zM142.9 392.5h103.7V448H142.9zM265.4 298.3h103.7v75.4H265.4zM142.9 298.3h103.7v75.4H142.9z'/>
+            <path d='M464 192h-47.9V96c0-17.6-14.4-32-32-32H127.9c-17.6 0-32 14.4-32 32v96H48c-10.3 0-17.9 9.6-15.6 19.6l19.7 67.9H124V106c0-7.7 6.3-14 14-14h236c7.7 0 14 6.3 14 14v173.5h72l19.6-67.9c2.3-10-5.3-19.6-15.6-19.6z'/>
+          </svg>
+          <span data-text='cart_empty'/>
+        </div>
+      </div>
+    </form>
+    <b:if cond='data:view.isMultipleItems'>
+      <b:if cond='data:view.url == data:blog.canonicalHomepageUrl'>
+        <script type='text/javascript'>
+          //<![CDATA[
+              $_config.url.view = 'home';
+          //]]>
+        </script>
+        <b:else/>
+        <script type='text/javascript'>
+          //<![CDATA[
+              $_config.url.view = 'index';
+          //]]>
+        </script>
+      </b:if>
+      <b:else/>
+      <script type='text/javascript'>
+        //<![CDATA[
+   $_config.url.view = 'single';
+  //]]>
+      </script>
+    </b:if>
+    <script>//<![CDATA[
+
+/* main.js */
+
+function custom_js() {
+
+  // ── Replace browser alert() with a branded modal ──
+  var dbNativeAlert = window.alert;
+  function dbEnsureAlert() {
+    if (document.getElementById('db-alert')) return document.getElementById('db-alert');
+
+    var wrap = document.createElement('div');
+    wrap.id = 'db-alert';
+    wrap.innerHTML = '' +
+      '<div class="db-alert-card" role="dialog" aria-modal="true" aria-label="Notification">' +
+        '<div class="db-alert-head">Order Update</div>' +
+        '<div class="db-alert-body"></div>' +
+        '<div class="db-alert-foot"><button type="button" class="db-alert-ok">OK</button></div>' +
+      '</div>';
+
+    document.body.appendChild(wrap);
+
+    function closeAlert() {
+      wrap.classList.remove('open');
+      document.body.classList.remove('db-alert-open');
+    }
+
+    wrap.querySelector('.db-alert-ok').addEventListener('click', closeAlert);
+    wrap.addEventListener('click', function(ev) {
+      if (ev.target === wrap) closeAlert();
     });
-    if ($_config[_0xb92604(0x103)][_0xb92604(0x289)] == 'single') {
-        var _0x1e7dcb = $_config[_0xb92604(0x2c6)][_0xb92604(0x2c0)],
-            _0x59590c = $(_0xb92604(0x293))[_0xb92604(0x13d)](_0xb92604(0x2df));
-        $(_0xb92604(0x293))[_0xb92604(0x1dc)](_0x59590c + _0xb92604(0x2c4), function () {
-            var _0x52fd42 = _0xb92604,
-                _0xd8258f = $(_0x52fd42(0x293))[_0x52fd42(0x2c6)]();
-            $('a.blog-pager-older-link')[_0x52fd42(0x25d)](_0x52fd42(0x2cf) + _0x1e7dcb + '</b></small><h3>' + _0xd8258f + _0x52fd42(0x170)), $(_0x52fd42(0x252))[_0x52fd42(0x1dc)](_0x59590c + '\x20article\x20.post-body\x20img:first-of-type', function () {
-                var _0x5ea823 = _0x52fd42,
-                    _0x1d0f24 = $(this)[_0x5ea823(0x25d)](),
-                    _0x4b2b8e = _0x1d0f24[_0x5ea823(0x28e)](_0x5ea823(0x290))[0x1],
-                    _0x253f24 = _0x4b2b8e[_0x5ea823(0x28e)]('\x22')[0x0],
-                    _0x2be9c7 = _0x253f24[_0x5ea823(0x28e)]('=')[0x0],
-                    _0x1b3f84 = _0x2be9c7[_0x5ea823(0x28e)]('/')[0x7];
-                _0x2be9c7 = _0x2be9c7[_0x5ea823(0x141)](_0x1b3f84, _0x5ea823(0x25a)) + _0x5ea823(0x152), $(_0x5ea823(0x252))[_0x5ea823(0x25d)](_0x5ea823(0x105) + _0x2be9c7 + _0x5ea823(0x2a8))['removeClass'](_0x5ea823(0x16f));
+    document.addEventListener('keydown', function(ev) {
+      if (ev.key === 'Escape' && wrap.classList.contains('open')) closeAlert();
+    });
+
+    return wrap;
+  }
+
+  window.alert = function(message) {
+    try {
+      var modal = dbEnsureAlert();
+      var body = modal.querySelector('.db-alert-body');
+      body.textContent = String(message == null ? '' : message);
+      modal.classList.add('open');
+      document.body.classList.add('db-alert-open');
+      var okBtn = modal.querySelector('.db-alert-ok');
+      setTimeout(function() { okBtn.focus(); }, 10);
+    } catch (err) {
+      dbNativeAlert(message);
+    }
+  };
+
+    // ── Open cart drawer on Add to Cart click ──
+    document.addEventListener('click', function(e) {
+        var btn = e.target.closest('button.cart-add');
+        if (!btn) return;
+        setTimeout(function() {
+            var cartHeadBtn = document.querySelector('#header .cart-btn-head, a.cart-btn-head');
+            if (cartHeadBtn) {
+                cartHeadBtn.click();
+            } else {
+                var cartEl = document.getElementById('cart');
+                if (cartEl) cartEl.classList.add('open');
+                document.body.classList.add('pop-open');
+            }
+        }, 320);
+    });
+
+    // ── localStorage helpers ──
+    var DB_KEY = 'db_checkout_v1';
+
+    function dbSave(name, value) {
+        try {
+            var d = JSON.parse(localStorage.getItem(DB_KEY) || '{}');
+            if (value && value.trim()) { d[name] = value; } else { delete d[name]; }
+            localStorage.setItem(DB_KEY, JSON.stringify(d));
+        } catch(e) {}
+    }
+
+    function dbRestore() {
+        try {
+            var d = JSON.parse(localStorage.getItem(DB_KEY) || '{}');
+            if (!d) return;
+            Object.keys(d).forEach(function(name) {
+                var el = document.querySelector('#cart [name="' + name + '"]');
+                if (el && !el.value) el.value = d[name];
+            });
+        } catch(e) {}
+    }
+
+    function dbAttach(form) {
+        form.querySelectorAll('input[name], textarea[name], select[name]').forEach(function(el) {
+            if (el.dataset.dbSave) return;
+            el.dataset.dbSave = '1';
+            ['input', 'change'].forEach(function(ev) {
+                el.addEventListener(ev, function() { dbSave(el.name, el.value); });
             });
         });
-        var _0x1f7f05 = $_config[_0xb92604(0x2c6)]['product_next'],
-            _0x4963fc = $(_0xb92604(0x23d))[_0xb92604(0x13d)](_0xb92604(0x2df));
-        $(_0xb92604(0x23d))['load'](_0x4963fc + _0xb92604(0x2c4), function () {
-            var _0x294db5 = _0xb92604,
-                _0x184455 = $(_0x294db5(0x23d))[_0x294db5(0x2c6)]();
-            $(_0x294db5(0x23d))['html'](_0x294db5(0x2bb) + _0x1f7f05 + _0x294db5(0x1fb) + _0x184455 + _0x294db5(0x170)), $(_0x294db5(0x2e3))['load'](_0x4963fc + _0x294db5(0x180), function () {
-                var _0x19cdf5 = _0x294db5,
-                    _0x38ede3 = $(this)[_0x19cdf5(0x25d)](),
-                    _0x123a56 = _0x38ede3[_0x19cdf5(0x28e)](_0x19cdf5(0x290))[0x1],
-                    _0x1ae93d = _0x123a56[_0x19cdf5(0x28e)]('\x22')[0x0],
-                    _0x3605c6 = _0x1ae93d[_0x19cdf5(0x28e)]('=')[0x0],
-                    _0x212e6c = _0x3605c6[_0x19cdf5(0x28e)]('/')[0x7];
-                _0x3605c6 = _0x3605c6[_0x19cdf5(0x141)](_0x212e6c, 'w100-h100-c') + _0x19cdf5(0x152), $(_0x19cdf5(0x2e3))[_0x19cdf5(0x25d)](_0x19cdf5(0x105) + _0x3605c6 + _0x19cdf5(0x2a8))['removeClass']('loading');
-            });
+    }
+
+    // ── Inject PIN Code + Landmark stacked below address ──
+    function dbInjectFields() {
+        var form = document.querySelector('#cart .list_n_form .form');
+        if (!form || form.querySelector('[name="db_pincode"]')) return;
+        var addrEl = form.querySelector('textarea[name="address"]');
+        if (!addrEl) return;
+        var addrRoot = addrEl;
+        while (addrRoot.parentElement !== form) addrRoot = addrRoot.parentElement;
+
+        var fs = document.createElement('fieldset');
+        fs.className = 'db-addr-extras';
+
+        var pin = document.createElement('input');
+        pin.type = 'tel';
+        pin.name = 'db_pincode';
+        pin.placeholder = 'PIN Code  (6 digits)';
+        pin.maxLength = 6;
+        pin.setAttribute('inputmode', 'numeric');
+
+        var land = document.createElement('input');
+        land.type = 'text';
+        land.name = 'db_landmark';
+        land.placeholder = 'Landmark  (e.g. Near City Mall)';
+
+        fs.appendChild(pin);
+        fs.appendChild(land);
+        addrRoot.insertAdjacentElement('afterend', fs);
+
+        dbRestore();
+        dbAttach(form);
+    }
+
+    // Also restore existing fields when cart slides open
+    var dbCartEl = document.getElementById('cart');
+    if (dbCartEl) {
+        dbCartEl.addEventListener('transitionend', function() {
+            if (!dbCartEl.classList.contains('open')) return;
+            var form = dbCartEl.querySelector('.list_n_form .form');
+            if (form) { dbRestore(); dbAttach(form); }
         });
     }
-}
 
-function timeago() {
-    var _0x2e49fb = _0x173287;
-    $(_0x2e49fb(0x1a2))[_0x2e49fb(0x202)](function () {
-        var _0x4179f0 = _0x2e49fb,
-            _0xf00734 = $(this),
-            _0x22f9ff = _0xf00734['attr']('datetime');
-        _0xf00734[_0x4179f0(0x1a0)](_0x4179f0(0x12a)), !_0xf00734['attr'](_0x4179f0(0x24e)) && _0xf00734['attr'](_0x4179f0(0x24e), _0x22f9ff), _0xf00734['text'](_0x22ec10(_0x22f9ff));
-    });
+    var dbObs = new MutationObserver(dbInjectFields);
+    dbObs.observe(document.body, { childList: true, subtree: true });
 
-    function _0x22ec10(_0x57ab42) {
-        var _0x446031 = _0x2e49fb,
-            _0x151360 = _0x446031(0x242),
-            _0xfbe255 = _0x446031(0x2d9),
-            _0x4b31b2 = _0x446031(0x19e),
-            _0x1edf17 = 'hours',
-            _0x4418d9 = _0x446031(0x1e0),
-            _0x3cf60d = _0x446031(0x1c8),
-            _0x53d596 = _0x446031(0x210);
-        $_config[_0x446031(0x110)][_0x446031(0x1a9)] == 'id-ID' && (_0x151360 = _0x446031(0x2dd), _0xfbe255 = _0x446031(0x1eb), _0x4b31b2 = _0x446031(0x236), _0x1edf17 = 'jam', _0x4418d9 = _0x446031(0x246), _0x3cf60d = 'bulan', _0x53d596 = _0x446031(0x1d1));
-        var _0x192bfb = new Date(_0x57ab42),
-            _0x4116a4 = 0x36ee80,
-            _0x35917d = 0x18 * _0x4116a4,
-            _0xe1b63b = 0x1e * _0x35917d,
-            _0x454d36 = 0x16d * _0x35917d,
-            _0x82e32c = _0x151360,
-            _0x16a422 = new Date() - _0x192bfb;
-        return _0x16a422 < 0xea60 ? Math[_0x446031(0x200)](_0x16a422 / 0x3e8) + '\x20' + _0xfbe255 + '\x20' + _0x82e32c : _0x16a422 < _0x4116a4 ? Math['round'](_0x16a422 / 0xea60) + '\x20' + _0x4b31b2 + '\x20' + _0x82e32c : _0x16a422 < _0x35917d ? Math[_0x446031(0x200)](_0x16a422 / _0x4116a4) + '\x20' + _0x1edf17 + '\x20' + _0x82e32c : _0x16a422 < _0xe1b63b ? Math['round'](_0x16a422 / _0x35917d) + '\x20' + _0x4418d9 + '\x20' + _0x82e32c : _0x16a422 < _0x454d36 ? Math[_0x446031(0x200)](_0x16a422 / _0xe1b63b) + '\x20' + _0x3cf60d + '\x20' + _0x82e32c : Math[_0x446031(0x200)](_0x16a422 / _0x454d36) + '\x20' + _0x53d596 + '\x20' + _0x82e32c;
-    }
-    $(_0x2e49fb(0x199))[_0x2e49fb(0x202)](function () {
-        var _0x3ee667 = _0x2e49fb,
-            _0x990006 = $(this),
-            _0x4a6be7 = _0x990006['text']();
-        _0x990006[_0x3ee667(0x13d)](_0x3ee667(0x20d), _0x4a6be7);
-        var _0x5a59ba = _0x990006['attr'](_0x3ee667(0x20d));
-        _0x990006[_0x3ee667(0x1a0)](_0x3ee667(0x12a)), _0x990006['attr'](_0x3ee667(0x24e), _0x5a59ba), _0x990006[_0x3ee667(0x2c6)](_0x22ec10(_0x5a59ba));
-    });
-}
 
-function format_currency(_0x2a6b8e, _0x19c09e = $_config[_0x173287(0x110)]['country_id'], _0xb43a28 = $_config[_0x173287(0x110)][_0x173287(0x186)]) {
-    var _0x5054ac = _0x173287;
-    return new Intl['NumberFormat'](_0x19c09e, {
-        'style': _0x5054ac(0x186),
-        'currency': _0xb43a28,
-        'maximumSignificantDigits': 0x3
-    })['format'](_0x2a6b8e);
-}
+    // ── Inject PIN Code + Landmark into the note field before cart() reads it ──
+    // cart() in template.js reads all [name] fields synchronously on form submit.
+    // We intercept at the CAPTURE phase (before jQuery's bubble handler runs cart()),
+    // so our values are already in the note textarea when cart() reads them.
+    document.addEventListener('submit', function(ev) {
+        var f = ev.target;
+        if (!f || f.id !== 'cart') return;
 
-function separator(_0x4976fa) {
-    var _0x2be09a = _0x173287,
-        _0x20227c = '',
-        _0x307726 = _0x4976fa[_0x2be09a(0x2dc)]()[_0x2be09a(0x28e)]('')['reverse']()['join']('');
-    for (var _0x2f60c4 = 0x0; _0x2f60c4 < _0x307726['length']; _0x2f60c4++)
-        if (_0x2f60c4 % 0x3 == 0x0) _0x20227c += _0x307726[_0x2be09a(0x1f8)](_0x2f60c4, 0x3) + '.';
-    return _0x20227c[_0x2be09a(0x28e)]('', _0x20227c['length'] - 0x1)[_0x2be09a(0x1d2)]()[_0x2be09a(0x191)]('');
-}
+        var pinEl  = f.querySelector('[name="db_pincode"]');
+        var landEl = f.querySelector('[name="db_landmark"]');
+        var noteEl = f.querySelector('textarea[name="note"]');
+        if (!noteEl) return;
 
-function kg(_0x2acbc) {
-    var _0x59255e = _0x173287,
-        _0x350fce = _0x2acbc + _0x59255e(0x1f9);
-    return _0x2acbc >= 0x3e8 && (_0x350fce = _0x2acbc / 0x3e8 + _0x59255e(0x26e)), _0x350fce;
-}
+        var pin  = pinEl  && pinEl.value.trim()  ? pinEl.value.trim()  : '';
+        var land = landEl && landEl.value.trim() ? landEl.value.trim() : '';
+        if (!pin && !land) return;
 
-function _0x4917(_0x2c9f0c, _0xca8ce1) {
-    var _0x972e69 = _0x972e();
-    return _0x4917 = function (_0x4917f8, _0x49f1f3) {
-        _0x4917f8 = _0x4917f8 - 0x103;
-        var _0x31c540 = _0x972e69[_0x4917f8];
-        return _0x31c540;
-    }, _0x4917(_0x2c9f0c, _0xca8ce1);
-}
+        // Only inject once
+        var cur = noteEl.value;
+        if (cur.indexOf('PIN Code') !== -1 || cur.indexOf('Landmark') !== -1) return;
 
-function pop() {
-    var _0x229e8c = _0x173287;
-    $('[target=pop-video]')['length'] && ($pop_video_html = _0x229e8c(0x26d), $($pop_video_html)['appendTo'](_0x229e8c(0x2ab))), $(_0x229e8c(0x2d3))['each'](function () {
-        var _0xc368c7 = _0x229e8c,
-            _0x4f3004 = $(this),
-            _0x21131b = _0x4f3004[_0xc368c7(0x13d)]('id'),
-            _0x1a34c6 = _0x4f3004['attr'](_0xc368c7(0x106)),
-            _0x4db9ff = _0x4f3004['attr']('data-pop-width'),
-            _0x4d47ba = _0x4f3004[_0xc368c7(0x13d)]('data-pop-height');
-        _0x4f3004[_0xc368c7(0x2a5)](_0xc368c7(0x1e9)), _0x4f3004['wrap'](_0xc368c7(0x26a)), _0x4f3004[_0xc368c7(0x1a0)]('pop-content\x20pop-loaded');
-        var _0x54781d = _0xc368c7(0x27a) + _0x1a34c6 + _0xc368c7(0x228);
-        _0x4f3004['closest']('.pop-wrap')['prepend'](_0x54781d), _0x4db9ff && _0x4f3004[_0xc368c7(0x1a1)](_0xc368c7(0x284))[_0xc368c7(0x182)](_0xc368c7(0x14b), _0x4db9ff);
-    }), $(_0x229e8c(0x15d))['on'](_0x229e8c(0x18e), function () {
-        var _0x3a4a2d = _0x229e8c;
-        $(this)['closest'](_0x3a4a2d(0x265))[_0x3a4a2d(0x1d3)](_0x3a4a2d(0x1f7)), $(_0x3a4a2d(0x2ab))[_0x3a4a2d(0x1d3)](_0x3a4a2d(0x2ad)), $(_0x3a4a2d(0x225))[_0x3a4a2d(0x136)] && $(_0x3a4a2d(0x225))[_0x3a4a2d(0x13d)](_0x3a4a2d(0x2b5), '');
-    }), $(document)['on'](_0x229e8c(0x18e), _0x229e8c(0x1b8), function (_0x2a9049) {
-        var _0x148104 = _0x229e8c;
-        _0x2a9049[_0x148104(0x273)]();
-        var _0x566f91 = $(this),
-            _0x3c19f8 = _0x566f91[_0x148104(0x13d)]('target'),
-            _0xc9f731 = _0x566f91[_0x148104(0x13d)](_0x148104(0x106)) ? _0x566f91[_0x148104(0x13d)](_0x148104(0x106)) : $('#' + _0x3c19f8)[_0x148104(0x13d)](_0x148104(0x106)),
-            _0x4e7b27 = _0x566f91['attr'](_0x148104(0x173)),
-            _0x54e6da = _0x566f91[_0x148104(0x13d)](_0x148104(0x2a0));
-        _0x566f91[_0x148104(0x1a1)](_0x148104(0x265))['removeClass']('open'), $(_0x148104(0x2ab))[_0x148104(0x1d3)](_0x148104(0x2ad));
-        $('#' + _0x3c19f8)[_0x148104(0x136)] && ($('body')[_0x148104(0x1a0)](_0x148104(0x2ad)), $('#' + _0x3c19f8)[_0x148104(0x1a1)](_0x148104(0x265))[_0x148104(0x1a0)](_0x148104(0x1f7)), _0x566f91[_0x148104(0x1a1)](_0x148104(0x14e))[_0x148104(0x136)] && ($back_id = _0x566f91[_0x148104(0x1a1)](_0x148104(0x14e))[_0x148104(0x13d)]('id'), _0xc9f731 = _0x148104(0x10e) + $back_id + _0x148104(0x1f2) + _0xc9f731), _0xc9f731 && $('#' + _0x3c19f8)['closest'](_0x148104(0x265))[_0x148104(0x1c7)](_0x148104(0x2c3))[_0x148104(0x25d)](_0xc9f731), $(_0x148104(0x163))[_0x148104(0x202)](function () {
-            var _0x52a390 = _0x148104,
-                _0xb44f43 = $(this)['attr'](_0x52a390(0x158));
-            $(this)[_0x52a390(0x13d)]('src', _0xb44f43)[_0x52a390(0x291)](_0x52a390(0x158));
-        }));
-        if (_0x3c19f8 == _0x148104(0x239)) {
-            $href = $(this)[_0x148104(0x13d)](_0x148104(0x2df));
-            var _0x29dcbf = $href[_0x148104(0x28e)]('/')[0x3];
-            $href[_0x148104(0x11a)](_0x148104(0x24a)) >= 0x0 && (_0x29dcbf = get_url_parameter('v', $href)), $(_0x148104(0x225))[_0x148104(0x13d)]('src', _0x148104(0x263) + _0x29dcbf + _0x148104(0x27e));
-        }
-    }), $(document)['on']('click', _0x229e8c(0x28d), function () {
-        var _0x285b49 = _0x229e8c;
-        $(this)[_0x285b49(0x1c7)](_0x285b49(0x15d))[_0x285b49(0x177)](_0x285b49(0x18e));
-    }), $(document)['on'](_0x229e8c(0x18e), '.pop-wrap', function (_0x78549) {
-        _0x78549['stopPropagation']();
-    });
-}
+        var extra = '';
+        if (pin)  extra += (extra ? '\n' : '') + 'PIN Code : ' + pin;
+        if (land) extra += (extra ? '\n' : '') + 'Landmark : ' + land;
 
-function lightbox() {
-    var _0x34045e = _0x173287,
-        _0x28c695 = _0x34045e(0x2cc);
-    $(_0x28c695)[_0x34045e(0x1ff)](_0x34045e(0x2ab)), $(_0x34045e(0x24d))[_0x34045e(0x202)](function () {
-        var _0x5cc8eb = _0x34045e,
-            _0x5f20b8 = $(this)[_0x5cc8eb(0x13d)](_0x5cc8eb(0x264)),
-            _0x2bb2bb = $('[data-lightbox=' + _0x5f20b8 + ']')['length'];
-        _0x2bb2bb > 0x1 && $('[data-lightbox=' + _0x5f20b8 + ']')['each'](function (_0xb9e43d) {
-            var _0x57bd24 = _0x5cc8eb;
-            $(this)['attr'](_0x57bd24(0x190), _0xb9e43d + 0x1 + _0x57bd24(0x1dd) + _0x2bb2bb);
-        }), $(this)['on'](_0x5cc8eb(0x1e6), function () {
-            return ![];
-        }), $(this)['on'](_0x5cc8eb(0x2e0), function () {
-            var _0x101232 = _0x5cc8eb;
-            return alert('Â©\x20' + $_config[_0x101232(0x1ba)][_0x101232(0x24e)]), ![];
-        });
-    }), $(document)['on'](_0x34045e(0x18e), _0x34045e(0x24d), function (_0x27fa27) {
-        var _0x3d11e1 = _0x34045e;
-        _0x27fa27[_0x3d11e1(0x273)]();
-        var _0x2f7867 = $(this),
-            _0x35b946 = _0x2f7867[_0x3d11e1(0x13d)]('data-lightbox'),
-            _0x34ad4f = _0x2f7867['attr']('data-lightbox-index'),
-            _0x4a9f1a = _0x2f7867[_0x3d11e1(0x13d)]('data-lightbox-title'),
-            _0x5eadec = _0x2f7867['attr'](_0x3d11e1(0x222)),
-            _0x1fec93 = _0x2f7867[_0x3d11e1(0x13d)](_0x3d11e1(0x2df));
-        $(_0x3d11e1(0x268))['scrollTop'](0x0), $(_0x3d11e1(0x25e))[_0x3d11e1(0x1ad)](), $('#lightbox\x20.lb-wrap\x20figure\x20.lb-img\x20img')[_0x3d11e1(0x26f)](), $(_0x3d11e1(0x214))[_0x3d11e1(0x1ad)](), $(_0x3d11e1(0x229))[_0x3d11e1(0x26f)](), $(_0x3d11e1(0x127))[_0x3d11e1(0x1ad)](), _0x1fec93 && ($('#lightbox\x20.lb-wrap')[_0x3d11e1(0x1a0)](_0x3d11e1(0x2e1)), $(_0x3d11e1(0x193))['prepend'](_0x3d11e1(0x18a) + _0x1fec93 + _0x3d11e1(0x2a8)), $(_0x3d11e1(0x22a))[_0x3d11e1(0x13d)](_0x3d11e1(0x2b5), _0x1fec93)['on'](_0x3d11e1(0x1dc), function () {
-            var _0x3f9703 = _0x3d11e1;
-            $(this)[_0x3f9703(0x291)](_0x3f9703(0x158)), $(this)['on'](_0x3f9703(0x1e6), function () {
-                return ![];
-            }), $(this)['on'](_0x3f9703(0x2e0), function () {
-                var _0xab4438 = _0x3f9703;
-                return alert('Â©\x20' + $_config[_0xab4438(0x1ba)][_0xab4438(0x24e)]), ![];
-            }), $('#lightbox\x20.lb-wrap')[_0x3f9703(0x1d3)](_0x3f9703(0x2e1));
-            (_0x4a9f1a || _0x5eadec) && $('#lightbox\x20.lb-wrap\x20figure')[_0x3f9703(0x206)]('<figcaption></figcaption>');
-            _0x4a9f1a && $(_0x3f9703(0x229))[_0x3f9703(0x206)](_0x3f9703(0x1b1) + _0x4a9f1a + _0x3f9703(0x1c2));
-            _0x5eadec && $('#lightbox\x20.lb-wrap\x20figure\x20figcaption')[_0x3f9703(0x206)](_0x3f9703(0x2d1) + _0x5eadec + _0x3f9703(0x198));
-            _0x34ad4f && $(_0x3f9703(0x214))[_0x3f9703(0x25d)](_0x34ad4f)['show']();
-            $(_0x3f9703(0x127))[_0x3f9703(0x14d)]();
-            if (_0x2f7867[_0x3f9703(0x27c)](_0x3f9703(0x10c) + _0x35b946 + '\x22]')[_0x3f9703(0x136)]) {
-                var _0x4f973d = _0x2f7867[_0x3f9703(0x27c)](_0x3f9703(0x10c) + _0x35b946 + '\x22]')[_0x3f9703(0x13d)](_0x3f9703(0x2df));
-                $(_0x3f9703(0x15c))['attr'](_0x3f9703(0x2da), _0x35b946)['attr'](_0x3f9703(0x2a1), _0x4f973d)['show'](), $(_0x3f9703(0x2ab))[_0x3f9703(0x206)]('<img\x20src=\x22' + _0x4f973d + '\x22\x20style=\x22display:none;\x22/>');
-            } else $(_0x3f9703(0x15c))[_0x3f9703(0x1ad)]();
-            if (_0x2f7867[_0x3f9703(0x237)](_0x3f9703(0x10c) + _0x35b946 + '\x22]')[_0x3f9703(0x136)]) {
-                var _0x4f973d = _0x2f7867[_0x3f9703(0x237)]('[data-lightbox=\x22' + _0x35b946 + '\x22]')[_0x3f9703(0x13d)](_0x3f9703(0x2df));
-                $(_0x3f9703(0x1cd))[_0x3f9703(0x13d)]('data-id', _0x35b946)['attr'](_0x3f9703(0x2a1), _0x4f973d)['show'](), $('body')['append']('<img\x20src=\x22' + _0x4f973d + _0x3f9703(0x20c));
-            } else $(_0x3f9703(0x1cd))[_0x3f9703(0x1ad)]();
-            $('#lightbox\x20.lb-close')[_0x3f9703(0x14d)]();
-        })), $('#lightbox')['addClass'](_0x3d11e1(0x1f7)), $(_0x3d11e1(0x2ab))[_0x3d11e1(0x1a0)](_0x3d11e1(0x171));
-    }), $(_0x34045e(0x2d2))['on']('click', function (_0x3d3dd9) {
-        var _0x5f7d70 = _0x34045e;
-        _0x3d3dd9[_0x5f7d70(0x1b3)]();
-        var _0x28a2d9 = $(this)[_0x5f7d70(0x13d)]('data-url'),
-            _0x579749 = $(this)[_0x5f7d70(0x13d)]('data-id');
-        $(_0x5f7d70(0x20b) + _0x28a2d9 + _0x5f7d70(0x1c0) + _0x579749 + '\x22]')[_0x5f7d70(0x177)](_0x5f7d70(0x18e));
-    }), $(_0x34045e(0x268))[_0x34045e(0x18e)](function () {
-        var _0x52d5e0 = _0x34045e;
-        $('#lightbox')['removeClass'](_0x52d5e0(0x1f7)), $('body')[_0x52d5e0(0x1d3)](_0x52d5e0(0x171));
-    }), $(_0x34045e(0x286))['on'](_0x34045e(0x18e), function (_0x407b3c) {
-        _0x407b3c['stopPropagation']();
-    }), $('#lightbox\x20.lb-close')['on']('click', function (_0x28e6ed) {
-        var _0x1f5982 = _0x34045e;
-        _0x28e6ed[_0x1f5982(0x1b3)](), $(_0x1f5982(0x268))[_0x1f5982(0x1d3)](_0x1f5982(0x1f7)), $('body')[_0x1f5982(0x1d3)](_0x1f5982(0x171));
-    }), $(document)['on'](_0x34045e(0x1da), function (_0x3c1f1b) {
-        var _0x2722c5 = _0x34045e,
-            _0x5cacc8 = _0x3c1f1b[_0x2722c5(0x28f)] || _0x3c1f1b['which'],
-            _0x3221e0 = 0x25,
-            _0x3f5acb = 0x26,
-            _0x520770 = 0x27,
-            _0x1542f1 = 0x28,
-            _0x4e8dab = 0xd;
-        _0x3c1f1b['key'] === _0x2722c5(0x2d8) && ($(_0x2722c5(0x268))['removeClass'](_0x2722c5(0x1f7)), $(_0x2722c5(0x2ab))['removeClass'](_0x2722c5(0x171)));
-        _0x5cacc8 === _0x3221e0 && $(_0x2722c5(0x275))['trigger'](_0x2722c5(0x18e));
-        _0x5cacc8 === _0x520770 && $(_0x2722c5(0x1b5))[_0x2722c5(0x177)](_0x2722c5(0x18e));
-        _0x5cacc8 === _0x3f5acb && $(_0x2722c5(0x268))[_0x2722c5(0x224)](0x0);
-        if (_0x5cacc8 === _0x1542f1) {
-            var _0x1e4fa1 = $(_0x2722c5(0x268))[_0x2722c5(0x2db)]();
-            $(_0x2722c5(0x268))[_0x2722c5(0x224)](_0x1e4fa1);
-        }
-    });
-}
+        noteEl.value = cur ? cur + '\n' + extra : extra;
+        // Dispatch change so any jQuery listeners (including cart()) pick it up
+        noteEl.dispatchEvent(new Event('change', { bubbles: true }));
+    }, true /* capture phase — runs before jQuery bubble phase */);
 
-function lazyload() {
-    var _0x2269b8 = _0x173287;
-    $(_0x2269b8(0x139))['each'](function () {
-        var _0x2c9991 = _0x2269b8,
-            _0x3a2f74 = $(this),
-            _0x172397 = _0x3a2f74['attr'](_0x2c9991(0x295));
-        _0x3a2f74[_0x2c9991(0x182)](_0x2c9991(0x1c3), _0x2c9991(0x1c9) + _0x172397 + ')')[_0x2c9991(0x291)]('data-bg');
-    }), $(_0x2269b8(0x2b4))[_0x2269b8(0x202)](function () {
-        var _0x174fd1 = _0x2269b8,
-            _0x3e0edf = $(this),
-            _0x506821 = $(window)[_0x174fd1(0x2db)](),
-            _0x4478be = $(window)[_0x174fd1(0x224)](),
-            _0x3acc90 = _0x4478be + _0x506821,
-            _0x4c539e = _0x3e0edf[_0x174fd1(0x296)]()[_0x174fd1(0x1e2)];
-        _0x3e0edf[_0x174fd1(0x13d)](_0x174fd1(0x238), _0x4c539e);
-        var _0x1d37fd = _0x3e0edf[_0x174fd1(0x13d)]('data-src');
-        _0x1d37fd = _0x1d37fd[_0x174fd1(0x141)](_0x174fd1(0x24c), _0x174fd1(0x1e5)), _0x1d37fd = _0x1d37fd['replace'](_0x174fd1(0x271), _0x174fd1(0x1e5)), _0x1d37fd = _0x1d37fd[_0x174fd1(0x141)](_0x174fd1(0x16e), 'lh3.googleusercontent.com'), _0x1d37fd = _0x1d37fd['replace'](_0x174fd1(0x2b6), _0x174fd1(0x1e5));
-        var _0x3be078 = _0x3e0edf[_0x174fd1(0x249)](_0x174fd1(0x135))[_0x174fd1(0x1ed)]();
-        if (_0x4c539e <= _0x3acc90) {
-            if (_0x3be078 == _0x174fd1(0x1c1)) _0x3e0edf[_0x174fd1(0x13d)](_0x174fd1(0x2b5), _0x1d37fd)[_0x174fd1(0x291)]('data-src'), _0x3e0edf[_0x174fd1(0x13d)](_0x174fd1(0x2e9), _0x174fd1(0x1af));
-            else _0x3be078 == 'iframe' && (_0x3e0edf['attr']('src', _0x1d37fd)[_0x174fd1(0x291)]('data-src'), _0x3e0edf[_0x174fd1(0x13d)](_0x174fd1(0x2e9), _0x174fd1(0x1af)));
-        }
-    }), $(window)['on']('scroll', function () {
-        var _0x24351c = _0x2269b8,
-            _0x3fd650 = $(window)[_0x24351c(0x2db)](),
-            _0x1b765e = $(window)['scrollTop'](),
-            _0x17db52 = _0x1b765e + _0x3fd650;
-        $('[data-src]:not([lazy=\x22true\x22])')['each'](function () {
-            var _0x30ce75 = _0x24351c,
-                _0xd52fae = $(this),
-                _0x220366 = $(window)[_0x30ce75(0x2db)](),
-                _0x5b583f = _0xd52fae[_0x30ce75(0x296)]()['top'],
-                _0x5cbcb8 = _0xd52fae[_0x30ce75(0x13d)]('data-src');
-            _0x5cbcb8 = _0x5cbcb8[_0x30ce75(0x141)](_0x30ce75(0x24c), _0x30ce75(0x1e5)), _0x5cbcb8 = _0x5cbcb8[_0x30ce75(0x141)]('2.bp.blogspot.com', _0x30ce75(0x1e5)), _0x5cbcb8 = _0x5cbcb8[_0x30ce75(0x141)]('3.bp.blogspot.com', _0x30ce75(0x1e5)), _0x5cbcb8 = _0x5cbcb8['replace'](_0x30ce75(0x2b6), _0x30ce75(0x1e5));
-            var _0x27fa62 = _0xd52fae[_0x30ce75(0x249)](_0x30ce75(0x135))[_0x30ce75(0x1ed)]();
-            if (_0x5b583f <= _0x17db52) {
-                if (_0x27fa62 == _0x30ce75(0x1c1)) _0xd52fae[_0x30ce75(0x13d)](_0x30ce75(0x2b5), _0x5cbcb8)[_0x30ce75(0x291)]('data-src'), _0xd52fae['attr']('lazy', _0x30ce75(0x1af));
-                else _0x27fa62 == _0x30ce75(0x1f0) && (_0xd52fae[_0x30ce75(0x13d)](_0x30ce75(0x2b5), _0x5cbcb8)[_0x30ce75(0x291)](_0x30ce75(0x158)), _0xd52fae[_0x30ce75(0x13d)](_0x30ce75(0x2e9), _0x30ce75(0x1af)));
-            }
-        });
-    });
 }
+ //]]></script>
+    
+<script async='async' src='//heidarifurniture.github.io/my-blogger-template/template,.js'/>
 
-function titleCase(_0x5adc6a) {
-    var _0x4e19ef = _0x173287;
-    _0x5adc6a = _0x5adc6a[_0x4e19ef(0x28e)]('\x20');
-    for (var _0x14c1f2 = 0x0; _0x14c1f2 < _0x5adc6a[_0x4e19ef(0x136)]; _0x14c1f2++) {
-        _0x5adc6a[_0x14c1f2] = _0x5adc6a[_0x14c1f2]['charAt'](0x0)[_0x4e19ef(0x17a)]() + _0x5adc6a[_0x14c1f2]['slice'](0x1);
-    }
-    return _0x5adc6a = _0x5adc6a['join']('\x20'), _0x5adc6a;
-}
-
-function $_GET(_0x41d711) {
-    var _0x5bf00f = _0x173287,
-        _0x309fba = window[_0x5bf00f(0x13b)]['search']['substring'](0x1),
-        _0x6ee4f6 = _0x309fba[_0x5bf00f(0x28e)]('&'),
-        _0x545936, _0x386a5f;
-    for (_0x386a5f = 0x0; _0x386a5f < _0x6ee4f6['length']; _0x386a5f++) {
-        _0x545936 = _0x6ee4f6[_0x386a5f][_0x5bf00f(0x28e)]('=');
-        if (_0x545936[0x0] === _0x41d711) return _0x545936[0x1] === undefined ? !![] : decodeURIComponent(_0x545936[0x1]);
-    }
-}
-
-function get_url_parameter(_0x2a3a13, _0x192e79) {
-    var _0x5b04f4 = _0x173287;
-    _0x2a3a13 = _0x2a3a13[_0x5b04f4(0x141)](/[\[\]]/g, _0x5b04f4(0x16b));
-    var _0x19c908 = new RegExp('[?&]' + _0x2a3a13 + '(=([^&#]*)|&|#|$)'),
-        _0x34768c = _0x19c908[_0x5b04f4(0x211)](_0x192e79);
-    if (!_0x34768c) return null;
-    if (!_0x34768c[0x2]) return '';
-    return decodeURIComponent(_0x34768c[0x2][_0x5b04f4(0x141)](/\+/g, '\x20'));
-}
+    &lt;!--</body>--&gt;
+  &lt;/body&gt;
+</html>
